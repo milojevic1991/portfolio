@@ -1,0 +1,67 @@
+.mainNav {
+   top: 0;
+   left: 0;
+   position: fixed;
+   z-index: 11;
+   width: 110px;
+   background-color: #1a202b;
+   height: 100%;
+   overflow: hidden;
+}
+
+
+.profileImg{
+   width: 150px;
+    background-image: url(https://lh3.googleusercontent.com/proxy/zfZeU43PCAhYBtnh9bUuNgJ6G78uj1s_ISn5dMn-JFu1i_cEQn-VeYIZ_JSdXo3VdoLDwR0aTiPz_ybwA9YCADtiZF9sGWM);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 30px brown;
+}
+
+ul{
+   list-style: none;
+}
+li {
+   text-decoration: none;
+   
+
+}
+
+li a{
+   color:white;
+   text-decoration: none;
+      
+}
+
+.menuItems{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.menuLink{
+   transform: rotate(90deg);
+   color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    text-decoration: none;
+    padding:0;
+}
+
+/* .footerName p{
+   color: #4f5765;
+    font-weight: normal;
+    font-size: 15px;
+    width: 200px;
+    transform: rotate(90deg);
+    position: relative; 
+    left: 0;
+    
+} */
