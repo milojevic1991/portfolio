@@ -11,11 +11,13 @@ overflow: hidden;
 
 @media only screen and (min-width: 770px){
 .homepage{
-   background: url('../../../assets/Images/bubble2-purple.png') 140% 46% no-repeat, url('../../../assets/Images/line.png') top center repeat-y #273040;
+   background: url('../../../assets/Images/bubble2-purple.png') 140% 35% no-repeat, url('../../../assets/Images/line.png') top center repeat-y #273040;
    /* height: 100vh; */
    overflow: hidden;
 }
 }
+
+
 
 .headerSection{
    width: 100%;
@@ -120,12 +122,24 @@ overflow: hidden;
    top:-140px;
 }
 
+
+.headerSection h3{
+   font-size: 2vw;
+   color: #e8e8e8;
+   text-align: center;
+   font-weight: 200;
+   z-index: 20;
+   letter-spacing: -1px;
+   position: relative;
+   top: -140px;
+}
+
 .about{
    margin-bottom:10%;
 }
 
 .aboutText{
-    padding: 8% 8%;
+    padding: 3% 8%;
     width: 60%;
     z-index: 500;
     position: relative;
@@ -140,15 +154,145 @@ overflow: hidden;
    color: #fff;
    text-align: center;
     font-weight: normal;
-    font-size: 5vw;
+    font-size: 4vw;
     letter-spacing: -1px;
 }
 
 .aboutText p{
    color: #fff;
    text-align: center;
-   font-weight: normal;
-   font-size: 30px;
+   font-weight: 300;
+   font-size: 23px;
    line-height: 44px;
    margin-top: 30px;
+}
+
+
+.langBtn{
+   position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    border: #273040 solid 2px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 40px rgba(0,0,0,.2), 0 0 20px rgb(137, 11, 118), 0 0 90px rgb(140, 16, 122);
+    /* animation: morphing 4s infinite; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2000;
+}
+
+.nemanjaImg{
+   background: url(/static/media/0.68b757f4.jpg) top center no-repeat;
+   background-size: cover;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin: 0 auto;
+   /* box-shadow: inset 0 0 20px black, 0 0 100px #000000e3; */
+   box-shadow: inset 0px 0px 40px rgba(1, 1, 1, 0.57), 0 0 100px 10px rgba(0,0,0,.8);
+   border: 3px solid #4b0041;
+}
+
+.btnRow{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0rem;
+    margin-top: 2rem;
+}
+
+.aboutHomeShort{
+   background: url('../../../assets/Images/wavy-purple1.png') top center no-repeat;
+   background-size: 100%, 44%;
+   padding: 0 7% 15%;
+   margin-top:-200px;
+}
+
+
+
+/*Mobie view*/
+@media only screen and (max-width: 770px) {
+  .langBtn{
+   top: 15px;
+   right: 10px;
+   width: 50px;
+   height: 50px;
+   font-size: 15px;
+  }
+  /* .mainCircles{
+   width: 100%;
+  } */
+
+  .bigBlackCircle{
+  display: none;
+}
+.circleImg{
+   width: 100%;
+   top: 155px;
+   left: 135px;
+   
+  }
+
+  .headerSection h1{
+   font-size: 13vw;
+   color: #fff;
+   text-align: center;
+   font-weight: bold;
+   z-index: 20;
+   letter-spacing: -3px;
+   position: relative;
+   top: -20px;
+}
+.headerSection h3{
+   font-size: 4vw;
+   color: #ddd;
+   text-align: center;
+   font-weight: 400;
+   margin: 1rem;
+   z-index: 20;
+   letter-spacing: -1px;
+   position: relative;
+   top: -30px;
+}
+
+.smallPurpleCircle{
+   width: 350px;
+    height: 350px;
+    margin: 170px auto;
+    position: absolute;
+    left: 140px;
+}
+.mainCircles{
+   width: auto;
+}
+.about{
+   padding: 1rem;
+}
+.aboutText{
+   margin-top: 95%;
+   width: 100%;
+   margin-left: 0;
+   padding: 2rem 0;
+   margin-bottom: 46%;
+}
+.aboutText h2{
+   font-size: 11vw;
+}
+.aboutText p{
+   padding: 0 1rem;
+   font-size: 18px;
+}
+
+
+
+  
 }

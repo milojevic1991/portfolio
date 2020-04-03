@@ -1,0 +1,21 @@
+.mainBtn{
+   font-weight: 400;
+   font-size: 17px;
+   padding: 1.5rem 5rem;
+   background-color: #0000;
+   text-shadow: 0px 0px 0px rgba(0,0,0,.3);
+   border-radius: 50px;
+   color: #fff;
+   background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
+   box-shadow: 0 7px 60px rgba(0, 0, 0, 0.51);
+   cursor: pointer;
+   transition:  0.2s all ease-in;
+}
+
+.mainBtn:hover{
+   /* background: linear-gradient(90deg, #9c1387 0%, #5c0852 100%); */
+   opacity: 0.9;
+   box-shadow: 0 17px 60px 0px rgba(0, 0, 0, 0.77);
+   transform: translateY(-5px) scale(1.005);
+}
+
