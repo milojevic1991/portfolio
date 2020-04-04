@@ -9,7 +9,7 @@
    background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
    box-shadow: 0 7px 60px rgba(0, 0, 0, 0.51);
    cursor: pointer;
-   transition:  0.2s all ease-in;
+   transition:  0.2s all ;
 }
 
 .mainBtn:hover{

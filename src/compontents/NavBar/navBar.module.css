@@ -119,6 +119,10 @@ li a {
    display: block;
    z-index: 500;
   }
+
+  .menuBtn:visited{
+    margin: 50px;
+  }
   .menuBar{
     background-color: #fff;
     height: 4px;

@@ -1,0 +1,513 @@
+.aboutMe {
+  background: url("../../../assets/Images/line.png") top center repeat-y #273040;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+.aboutMeHeader {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  background: url("../../../assets/Images/lineAbout.png") top center repeat-y
+    #901995;
+  /* background-size: 70%; */
+  position: relative;
+}
+
+.handImg {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -9%;
+  width: 60%;
+  z-index: 6;
+}
+
+.headerTitle {
+  margin-left: -325px;
+  margin-top: -325px;
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.splatterImg {
+  position: absolute;
+  width: 95%;
+  top: 0%;
+  left: 0%;
+}
+
+.smallDarkCircle {
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  margin: 190px auto;
+  background: radial-gradient(circle, #000 3%, #59005d 100%);
+  margin: 145px auto;
+  border-radius: 50%;
+  animation: morphingSmall 2s infinite;
+  left: 125px;
+  position: absolute;
+  z-index: 5;
+}
+
+@keyframes morphingSmall {
+  0% {
+    border-radius: 30% 70% 70% 50% / 50% 50% 70% 70% box-shadow 15px 15px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 45% / 76% 46% 54% 44%;
+  }
+  50% {
+    border-radius: 50% 50% 43% 67% / 55% 47% 73% 45% box-shadow -10px -5px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 43% 67% 58% 42% / 63% 68% 42% 47%;
+  }
+}
+
+.aboutMeHeader h1 {
+  font-size: 8vw;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  z-index: 20;
+  letter-spacing: -4px;
+  position: relative;
+  top: 340px;
+}
+
+.aboutMeResume {
+  padding: 12% 0;
+  background: url("../../../assets/Images/wavy-purple1.png") center 25%
+    no-repeat;
+  background-size: 100%, 44%;
+}
+
+.aboutMeResumeBox {
+  padding: 8% 8%;
+  width: 60%;
+  z-index: 500;
+  position: relative;
+  background-color: #273040bd;
+  box-shadow: 0 0 150px #000000a6;
+  margin-top: 0%;
+  margin-left: 15%;
+}
+
+.aboutMeResumeBox h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 4vw;
+  letter-spacing: -1px;
+}
+
+.aboutMeResumeBox p {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 44px;
+  margin-top: 30px;
+}
+
+.aboutMeWorkWrapper {
+  padding: 4rem 15%;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../../../assets/Images/bubble2-purple.png") 148% 12%
+      no-repeat,
+    url("../../../assets/Images/bubble2-purple.png") -48% 63% no-repeat;
+}
+
+.aboutMeWorkItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.aboutMeWorkItemCircle {
+  width: 220px;
+  height: 220px;
+  margin: 2rem 0;
+  /* background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%); */
+  border-radius: 50%;
+  animation: morphingSmall 2s infinite;
+  /* left: 75px; */
+  /* position: absolute; */
+  z-index: 1;
+  margin-bottom: -34px;
+  border: #273040 solid 2px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 26px rgba(134, 13, 134, 0.74),
+    0 0 90px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes morphingSmall {
+  0% {
+    border-radius: 30% 70% 70% 50% / 50% 50% 70% 70% box-shadow 15px 15px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 45% / 76% 46% 54% 44%;
+  }
+  50% {
+    border-radius: 50% 50% 43% 67% / 55% 47% 73% 45% box-shadow -10px -5px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 43% 67% 58% 42% / 63% 68% 42% 47%;
+  }
+}
+
+.aboutMeWorkTitle {
+  position: absolute;
+  z-index: 5;
+  font-size: 3vw;
+  color: #fff;
+  text-align: left;
+  letter-spacing: -3px;
+  top: 111px;
+}
+
+.aboutMeWorkTitleSecond h1 {
+  color: white;
+  font-weight: 500;
+  letter-spacing: -2px;
+  padding: 5px 0;
+  z-index: 5;
+  position: relative;
+}
+
+.aboutMeWorkTitleSecond h5 {
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: #918c9c;
+  text-transform: initial;
+  font-weight: 500;
+}
+
+.aboutMeWorkTech {
+  margin: 1rem 0;
+  margin-left: -1%;
+}
+
+.aboutMeWorkTech span {
+  margin: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+  font-size: 11px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ff7deb;
+  /* background: #000; */
+  background-color: #0c0d0d29;
+  border-radius: 10%;
+  box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.38),
+    0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.aboutMeWorkItem p {
+  margin-top: 10px;
+  color: #ffedfc96;
+  width: 60%;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+}
+.aboutMeEduCircleWrap {
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+.aboutMeEduBlackCircle {
+  z-index: 1;
+  top: 18%;
+  display: inline;
+  width: 650px;
+  height: 650px;
+  border: #273040 solid 2px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2), 0 0 90px rgba(0, 0, 0, 0.8);
+  animation: aboutMe_morphing__el4ZU 4s infinite;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 10% 10% 10% 11% / 40% 80% 40% 80% box-shadow 15px 15px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 78% 42% 75% 55% / 56% 66% 54% 54%;
+  }
+  50% {
+    border-radius: 100% 56% 53% 67% / 75% 67% 43% 52% box-shadow -10px -5px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 53% 67% 58% 52% / 43% 48% 42% 57%;
+  }
+}
+
+.aboutMeEduPurpleCircle {
+  z-index: 10;
+  width: 250px;
+  height: 250px;
+  margin: 190px auto;
+  background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
+  margin: 145px auto;
+  border-radius: 50%;
+  animation: aboutMe_morphingSmall___nb4j 2s infinite;
+  position: relative;
+  top: 30px;
+  animation: morphingSmall 2s infinite;
+}
+.aboutMeEduBlackCircle h1 {
+  position: absolute;
+  top: 40%;
+  /* left: 50%; */
+  z-index: 15;
+  font-size: 4vw;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.aboutMeEduCircleImg {
+  position: absolute;
+  width: 200px;
+  top: 70px;
+  left: 50px;
+  z-index: 5;
+}
+.aboutMeEduCircleImg img {
+  z-index: 1;
+  width: 550px;
+}
+
+.aboutMeWorkWrapperEdu {
+  padding: 4rem 15%;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../../../assets/Images/bubble2-purple.png") 152% 30%no-repeat,
+    url("../../../assets/Images/bubble2-purple.png") -40% 158% no-repeat;
+}
+
+.checkPortfolio {
+  background: url("../../../assets//Images/handRotated.png") 50% 156% no-repeat
+    #901995;
+
+  width: 70%;
+  margin: 6% auto 10%;
+  background-size: 20%;
+  box-shadow: 0 0 150px #000000a6, inset 0px 0px 49px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 14% 0;
+  transition: all 0.7s ease-out;
+}
+
+.checkPortfolio:hover {
+  background-color: #3e0041;
+  background-position-y: 376%;
+  background-size: 22%;
+}
+
+.checkPortfolio:hover a {
+  color: #3e0041;
+  font-size: 6vw;
+  text-shadow: 2px 2px 5px #ff5ef1;
+}
+
+.checkPortfolio a {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  z-index: 100;
+  font-size: 5vw;
+  letter-spacing: -4px;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  letter-spacing: -4px;
+  font-weight: bold;
+  font-size: 6vw;
+  transition: all 0.9s ease-out;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 770px) {
+  /* p{
+      font-size: 18px;
+
+   }
+
+   h1,h2{
+      font-size: 46px;
+   } */
+  .handImg img {
+    width: 160%;
+  }
+
+  .aboutMeHeader h1 {
+    font-size: 15vw;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    z-index: 20;
+    letter-spacing: -3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  .smallDarkCircle {
+    width: 350px;
+    height: 350px;
+    left: 155px;
+  }
+
+  .aboutMeResumeBox {
+    width: 100%;
+    z-index: 500;
+    position: relative;
+    background-color: #273040bd;
+    box-shadow: 0 0 150px #000000a6;
+    margin-top: 0%;
+    margin-left: 0;
+    padding: 4rem 0;
+  }
+
+  .aboutMeResumeBox h2 {
+    font-size: 11vw;
+  }
+  .aboutMeResumeBox p {
+    padding: 0 1rem;
+    font-size: 18px;
+  }
+
+  .aboutMeWorkWrapper {
+    width: 100%;
+    padding: 4rem 0%;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+  }
+
+  .aboutMeWorkItem {
+    align-items: center !important;
+  }
+
+  .aboutMeWorkTitle {
+    font-size: 8vw;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1px;
+    top: 111px;
+    padding: 0 5px;
+  }
+
+  .aboutMeWorkTitleSecond h1 {
+    letter-spacing: -1px;
+    padding: 5px 0;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .aboutMeWorkTitleSecond h5 {
+    z-index: 10;
+    position: relative;
+    padding: 3px 0;
+  }
+
+  .aboutMeWorkTech {
+    margin: 1rem auto;
+    margin-left: -1%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 54px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutMeWorkItem p {
+    align-items: center;
+    width: 90%;
+    text-align: justify !important ;
+  }
+
+  .aboutMeEduBlackCircle h1 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    z-index: 15;
+    font-size: 10vw;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutMeWorkWrapperEdu {
+  
+   background: url("../../../assets/Images/bubble2-purple.png") 185% 30% no-repeat,
+     url("../../../assets/Images/bubble2-purple.png") -66% 131% no-repeat;
+ }
+
+ .checkPortfolio{
+   width: 100%;
+   margin-bottom: 20%;
+   padding: 33% 0;
+   background-size: 26%;
+   margin-top: 18%;
+
+   
+
+ }
+
+ .checkPortfolio a {
+   letter-spacing: -1px;
+   font-weight: bold;
+   font-size: 13vw;
+
+   
+
+ }
+
+
+
+}

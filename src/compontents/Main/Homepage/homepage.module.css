@@ -190,7 +190,7 @@ overflow: hidden;
 }
 
 .nemanjaImg{
-   background: url(/static/media/0.68b757f4.jpg) top center no-repeat;
+   background: url('../../../assets/Images/0.jpg') top center no-repeat;
    background-size: cover;
    width: 200px;
    height: 200px;
