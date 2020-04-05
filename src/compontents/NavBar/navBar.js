@@ -37,9 +37,9 @@ const NavBar = () => {
         <div className={classes.menuItems} >
 
          
+            <NavLink className={classes.menuLink} to="/">Home</NavLink>
             <NavLink className={classes.menuLink} to="/about">About me</NavLink>
-            <NavLink className={classes.menuLink} to="/about">About me</NavLink>
-            <NavLink className={classes.menuLink} to="/idemo">About me</NavLink>
+            <NavLink className={classes.menuLink} to="/portfolio">Portfolio</NavLink>
             <NavLink className={classes.menuLink} to="/idemo">About me</NavLink>
          
           

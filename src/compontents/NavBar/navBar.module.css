@@ -2,7 +2,7 @@
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 11;
+  z-index: 2000;
   width: 110px;
   background-color: #1a202b;
   height: 100%;
@@ -60,6 +60,8 @@ li a {
   border-bottom: 3px solid #fff;
   text-decoration: none;
   padding: 0;
+  cursor: pointer;
+  z-index: 50;
 }
 
 /* .footerName p{
