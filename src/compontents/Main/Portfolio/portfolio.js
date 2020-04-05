@@ -71,7 +71,7 @@ const Portfolio = () => {
                    <h5>Raleway</h5>
                      <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
                      <p>abcdefghijklmnopqrstuvwxyz</p>
-                     <p>123456789</p>
+                     <p>1234567890</p>
                      <div className={classes.portfolioItemDescBoxColor} >
                         <span></span>
                         <span></span>
