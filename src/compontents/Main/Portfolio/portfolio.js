@@ -4,6 +4,7 @@ import classes from "./portfolio.module.css";
 import handPhoto from "../../../assets/Images/handAboutRight.png";
 import splatterAbout from "../../../assets/Images/splatterAbout.png";
 import mainScreenPortfolio from "../../../assets/Images/portfolioBoxScreen.png";
+import exampleImg from "../../../assets/Images/valeyo-device.png";
 
 const Portfolio = () => {
   return (
@@ -35,13 +36,16 @@ const Portfolio = () => {
               </p>
             </div>
 
-               {/* First portfolio section APP */}  
+               {/*  portfolio section APP */}  
             <div className={classes.portfolioItemWrapper}>
+
+              
+               {/* First portfolio section APP */}  
             <div className={classes.portfolioItem}>
               {/* left section */}
               <div className={classes.portfolioItemImageSection}>
                 <div className={classes.portfolioItemImage}>
-                  <img src="/"></img>
+                  <img src={exampleImg}></img>
                 </div>
                 <div className={classes.portfolioItemImageCircle}> </div>
               </div>
@@ -64,9 +68,99 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
+
+               {/* Second portfolio section APP */}  
+            <div className={classes.portfolioItem} style={{flexDirection:'row-reverse'}}>
+              {/* left section */}
+              <div className={classes.portfolioItemImageSection}>
+                <div className={classes.portfolioItemImage}>
+                  <img src={exampleImg}></img>
+                </div>
+                <div className={classes.portfolioItemImageCircle} style={{right:'0px',left:'unset'}}> </div>
+              </div>
+
+              {/* right section */}
+              <div className={classes.portfolioItemDesc} style={{textAlign:'left'}}>
+                <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+
+                <p style={{paddingLeft:'0',paddingRight:'15%'}}>
+                  XoranConnect is web-based service designed to complement
+                  MiniCAT. The service provides online viewing, off-site
+                  archival and backup of images, and easy access for both
+                  physician and patient
+                </p>
+                <a
+                  className={classes.portfolioItemTitleLink}
+                  href="londonborn.html#top"
+                >
+                  View Work
+                </a>
+              </div>
+            </div>
+
+
+
+               {/* Third portfolio section APP */}  
+               <div className={classes.portfolioItem}>
+              {/* left section */}
+              <div className={classes.portfolioItemImageSection}>
+                <div className={classes.portfolioItemImage}>
+                  <img src={exampleImg}></img>
+                </div>
+                <div className={classes.portfolioItemImageCircle}> </div>
+              </div>
+
+              {/* right section */}
+              <div className={classes.portfolioItemDesc}>
+                <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+
+                <p>
+                  XoranConnect is web-based service designed to complement
+                  MiniCAT. The service provides online viewing, off-site
+                  archival and backup of images, and easy access for both
+                  physician and patient
+                </p>
+                <a
+                  className={classes.portfolioItemTitleLink}
+                  href="londonborn.html#top"
+                >
+                  View Work
+                </a>
+              </div>
+            </div>
+
+
+              {/* Fourt portfolio section APP */}  
+              <div className={classes.portfolioItem} style={{flexDirection:'row-reverse'}}>
+              {/* left section */}
+              <div className={classes.portfolioItemImageSection}>
+                <div className={classes.portfolioItemImage}>
+                  <img src={exampleImg}></img>
+                </div>
+                <div className={classes.portfolioItemImageCircle} style={{right:'0px',left:'unset'}}> </div>
+              </div>
+
+              {/* right section */}
+              <div className={classes.portfolioItemDesc} style={{textAlign:'left'}}>
+                <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+
+                <p style={{paddingLeft:'0',paddingRight:'15%'}}>
+                  XoranConnect is web-based service designed to complement
+                  MiniCAT. The service provides online viewing, off-site
+                  archival and backup of images, and easy access for both
+                  physician and patient
+                </p>
+                <a
+                  className={classes.portfolioItemTitleLink}
+                  href="londonborn.html#top"
+                >
+                  View Work
+                </a>
+              </div>
+            </div>
          
                {/* Font and colors section */}
-               <div className={classes.portfolioItemDescFonts}>
+               {/* <div className={classes.portfolioItemDescFonts}>
                    <h1>Font & colors</h1>
                    <h5>Raleway</h5>
                      <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
@@ -80,7 +174,8 @@ const Portfolio = () => {
                         <span></span>
                         <span></span>
                      </div>
-                </div>           
+                </div>            */}
+
          </div>
 
 
