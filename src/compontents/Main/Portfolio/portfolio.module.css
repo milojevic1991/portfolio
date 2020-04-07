@@ -236,52 +236,194 @@
 
 
 
+.portfolioEduCircle{
+  width: 100%;
+  position: relative;
+  background: url(/static/media/wavy-purple1.b69b3700.png) center no-repeat;
+  background-size: 100%;
+  height: 650px;
+}
 
 
+.portfolioEduCircleWrapper {
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+.portfolioDarkCircle{
+  background: #273040;
+  z-index: 1;
+  top: 18%;
+  display: inline;
+  width: 650px;
+  height: 650px;
+  border: #191f2a solid 2px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 40px 5px rgba(0, 0, 0, 0.28), 0 0 110px rgba(0, 0, 0, 0.8);
+  animation: morphing 3s infinite;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 50% 50% 50% 51% / 60% 80% 70% 80% box-shadow 45px 45px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 78% 42% 75% 55% / 56% 66% 54% 54%;
+  }
+  50% {
+    border-radius: 100% 56% 53% 67% / 75% 67% 63% 82% box-shadow -50px -35px 50px
+      rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 53% 67% 58% 52% / 53% 68% 62% 57%;
+  }
+}
+
+.portfolioSmallCircle{
+  z-index: 10;
+  width: 250px;
+  height: 250px;
+  margin: 190px auto;
+  background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
+  margin: 145px auto;
+  border-radius: 50%;
+  animation: aboutMe_morphingSmall___nb4j 2s infinite;
+  position: relative;
+  top: 30px;
+  animation: morphingSmall 2s infinite;
+}
+
+.portfolioSmallCircleImg{
+  position: absolute;
+  width: 200px;
+  top: 70px;
+  left: 50px;
+  z-index: 5;
+}
 
 
+.portfolioSmallCircleImg img{
+  z-index: 1;
+  width: 550px;
+}
 
 
+.portfolioDarkCircle h1{
+  position: absolute;
+    top: 40%;
+    /* left: 50%; */
+    z-index: 15;
+    font-size: 6vw;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    letter-spacing: -4px;
+}
 
 
+.fontsColorsSection{
+  padding: 8% 4%;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  z-index: 500;
+  position: relative;
+  background-color: #273040bd;
+  box-shadow: 0 0 150px #000000a6;
+  margin-top: 0%;
+  margin-left: 18%;
+  color: #fff;
+  /* margin: 0 auto; */
+}
+
+.fontsColorsSection h1{
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  top: 32px;
+  font-size: 3.5vw;
+  color: #fff;
+  letter-spacing: -3px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.fontsColorsWrapper{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fontsColorsLeft{
+  color:white;
+  text-align: left;
+
+}
+.fontsColorsLeft h5{
+font-size: 40px;
+padding:10px
+}
+
+.fontsColorsLeft p{
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 9px;
+  font-weight: 200;
+  }
+
+  .fontsColorsRight{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    top: 40px;
+  }
 
 /* .portfolioItemDescFonts{
    text-align: right;
    width: 100%;
 }
 
-.portfolioItemDescBoxColor span{
-   margin: 10px;
-   padding: 8px 16px;
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
-   box-sizing: border-box;
-   font-size: 11px;
-   text-transform: capitalize;
-   font-weight: 500;
-   color: #ff7deb;
-   background-color: #0c0d0d29;
-   border-radius: 70%;
-   box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.38), 0 0 20px rgba(0, 0, 0, 0.4);
-
+*/
+.fontsColorsWrapper span{
+  margin: 20px;
+  padding: 10px 16px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 11px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ff7deb;
+  background-color: #0c0d0d29;
+  border-radius: 70%;
+  box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.38), 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-.portfolioItemDescBoxColor span:nth-child(1){
+
+.fontsColorsWrapper span:nth-child(1){
    background-color: #1acece !important;
 }
-.portfolioItemDescBoxColor span:nth-child(2){
+.fontsColorsWrapper span:nth-child(2){
    background-color: #331897 !important;
 }
-.portfolioItemDescBoxColor span:nth-child(3){
+.fontsColorsWrapper span:nth-child(3){
    background-color: #910585 !important;
 }
-.portfolioItemDescBoxColor span:nth-child(4){
+.fontsColorsWrapper span:nth-child(4){
    background-color: #470526 !important;
 }
-.portfolioItemDescBoxColor span:nth-child(5){
+.fontsColorsWrapper span:nth-child(5){
    background-color: #ce801a !important;
 }
-.portfolioItemDescBoxColor span:nth-child(6){
+.fontsColorsWrapper span:nth-child(6){
    background-color: #083333 !important;
-} */
+} 

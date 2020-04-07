@@ -5,6 +5,7 @@ import handPhoto from "../../../assets/Images/handAboutRight.png";
 import splatterAbout from "../../../assets/Images/splatterAbout.png";
 import mainScreenPortfolio from "../../../assets/Images/portfolioBoxScreen.png";
 import exampleImg from "../../../assets/Images/valeyo-device.png";
+import splatterPurple from "../../../assets/Images/splatter1.png";
 
 const Portfolio = () => {
   return (
@@ -40,6 +41,8 @@ const Portfolio = () => {
             <div className={classes.portfolioItemWrapper}>
 
               
+
+
                {/* First portfolio section APP */}  
             <div className={classes.portfolioItem}>
               {/* left section */}
@@ -98,8 +101,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-
-
                {/* Third portfolio section APP */}  
                <div className={classes.portfolioItem}>
               {/* left section */}
@@ -128,7 +129,6 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-
 
               {/* Fourt portfolio section APP */}  
               <div className={classes.portfolioItem} style={{flexDirection:'row-reverse'}}>
@@ -159,14 +159,102 @@ const Portfolio = () => {
               </div>
             </div>
          
+
+
+              {/* WEBSITE circle section APP */}  
+            <div className={classes.portfolioEduCircle}>
+           
+                <div className={classes.portfolioDarkCircle}> 
+                  <div className={classes.portfolioSmallCircle}></div>
+                  <div className={classes.portfolioSmallCircleImg}>
+                  <img src={splatterPurple}></img>
+                  </div>
+              
+                  <h1>Websites</h1>
+
+                </div>
+
+           
+
+
+
+
+            </div>
+             
+             {/* First WEBSITE section APP */}  
+            <div className={classes.portfolioItem}>
+              {/* left section */}
+              <div className={classes.portfolioItemImageSection}>
+                <div className={classes.portfolioItemImage}>
+                  <img src={exampleImg}></img>
+                </div>
+                <div className={classes.portfolioItemImageCircle}> </div>
+              </div>
+
+              {/* right section */}
+              <div className={classes.portfolioItemDesc}>
+                <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+
+                <p>
+                  XoranConnect is web-based service designed to complement
+                  MiniCAT. The service provides online viewing, off-site
+                  archival and backup of images, and easy access for both
+                  physician and patient
+                </p>
+                <a
+                  className={classes.portfolioItemTitleLink}
+                  href="londonborn.html#top"
+                >
+                  View Work
+                </a>
+              </div>
+            </div>
+
+                {/* Second WEBSITE section APP */}  
+            <div className={classes.portfolioItem} style={{flexDirection:'row-reverse'}}>
+              {/* left section */}
+              <div className={classes.portfolioItemImageSection}>
+                <div className={classes.portfolioItemImage}>
+                  <img src={exampleImg}></img>
+                </div>
+                <div className={classes.portfolioItemImageCircle} style={{right:'0px',left:'unset'}}> </div>
+              </div>
+
+              {/* right section */}
+              <div className={classes.portfolioItemDesc} style={{textAlign:'left'}}>
+                <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+
+                <p style={{paddingLeft:'0',paddingRight:'15%'}}>
+                  XoranConnect is web-based service designed to complement
+                  MiniCAT. The service provides online viewing, off-site
+                  archival and backup of images, and easy access for both
+                  physician and patient
+                </p>
+                <a
+                  className={classes.portfolioItemTitleLink}
+                  href="londonborn.html#top"
+                >
+                  View Work
+                </a>
+              </div>
+            </div>
+             
+             
+             
                {/* Font and colors section */}
-               {/* <div className={classes.portfolioItemDescFonts}>
+               <div className={classes.fontsColorsSection}>
                    <h1>Font & colors</h1>
-                   <h5>Raleway</h5>
+
+                   <div className={classes.fontsColorsWrapper}> 
+
+                     <div className={classes.fontsColorsLeft}>
+                     <h5>Raleway</h5>
                      <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
                      <p>abcdefghijklmnopqrstuvwxyz</p>
                      <p>1234567890</p>
-                     <div className={classes.portfolioItemDescBoxColor} >
+                     </div>
+
+                     <div className={classes.fontsColorsRight} >
                         <span></span>
                         <span></span>
                         <span></span>
@@ -174,7 +262,9 @@ const Portfolio = () => {
                         <span></span>
                         <span></span>
                      </div>
-                </div>            */}
+
+                </div>   
+                </div>        
 
          </div>
 
