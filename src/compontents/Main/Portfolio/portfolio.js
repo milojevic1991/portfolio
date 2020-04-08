@@ -180,7 +180,8 @@ const Portfolio = () => {
 
 
             </div>
-             
+
+
              {/* First WEBSITE section APP */}  
             <div className={classes.portfolioItem}>
               {/* left section */}
@@ -209,7 +210,31 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
+               {/* Font and colors section */}
+               <div className={classes.fontsColorsSection}>
+                   <h1>Font & colors</h1>
 
+                   <div className={classes.fontsColorsWrapper}> 
+
+                     <div className={classes.fontsColorsLeft}>
+                     <h5>Raleway</h5>
+                     <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                     <p>abcdefghijklmnopqrstuvwxyz</p>
+                     <p>1234567890</p>
+                     </div>
+
+                     <div className={classes.fontsColorsRight} >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+
+                </div>   
+                </div>   
+              
                 {/* Second WEBSITE section APP */}  
             <div className={classes.portfolioItem} style={{flexDirection:'row-reverse'}}>
               {/* left section */}
@@ -238,9 +263,6 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-             
-             
-             
                {/* Font and colors section */}
                <div className={classes.fontsColorsSection}>
                    <h1>Font & colors</h1>
@@ -265,6 +287,138 @@ const Portfolio = () => {
 
                 </div>   
                 </div>        
+
+
+       
+                {/* Third WEBSITE section APP */}  
+                <div className={classes.portfolioItem} style={{flexDirection:'row-reverse'}}>
+              {/* left section */}
+              <div className={classes.portfolioItemImageSection}>
+                <div className={classes.portfolioItemImage}>
+                  <img src={exampleImg}></img>
+                </div>
+                <div className={classes.portfolioItemImageCircle} style={{right:'0px',left:'unset'}}> </div>
+              </div>
+
+              {/* right section */}
+              <div className={classes.portfolioItemDesc} style={{textAlign:'left'}}>
+                <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+
+                <p style={{paddingLeft:'0',paddingRight:'15%'}}>
+                  XoranConnect is web-based service designed to complement
+                  MiniCAT. The service provides online viewing, off-site
+                  archival and backup of images, and easy access for both
+                  physician and patient
+                </p>
+                <a
+                  className={classes.portfolioItemTitleLink}
+                  href="londonborn.html#top"
+                >
+                  View Work
+                </a>
+              </div>
+            </div>
+               {/* Font and colors section */}
+               <div className={classes.fontsColorsSection}>
+                   <h1>Font & colors</h1>
+
+                   <div className={classes.fontsColorsWrapper}> 
+
+                     <div className={classes.fontsColorsLeft}>
+                     <h5>Raleway</h5>
+                     <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                     <p>abcdefghijklmnopqrstuvwxyz</p>
+                     <p>1234567890</p>
+                     </div>
+
+                     <div className={classes.fontsColorsRight} >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+
+                </div>   
+                </div>        
+
+
+
+
+                {/* Fourth WEBSITE section APP */}  
+                 <div className={classes.portfolioItem} style={{flexDirection:'row-reverse'}}>
+              {/* left section */}
+              <div className={classes.portfolioItemImageSection}>
+                <div className={classes.portfolioItemImage}>
+                  <img src={exampleImg}></img>
+                </div>
+                <div className={classes.portfolioItemImageCircle} style={{right:'0px',left:'unset'}}> </div>
+              </div>
+
+              {/* right section */}
+              <div className={classes.portfolioItemDesc} style={{textAlign:'left'}}>
+                <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+
+                <p style={{paddingLeft:'0',paddingRight:'15%'}}>
+                  XoranConnect is web-based service designed to complement
+                  MiniCAT. The service provides online viewing, off-site
+                  archival and backup of images, and easy access for both
+                  physician and patient
+                </p>
+                <a
+                  className={classes.portfolioItemTitleLink}
+                  href="londonborn.html#top"
+                >
+                  View Work
+                </a>
+              </div>
+            </div>
+               {/* Font and colors section */}
+               <div className={classes.fontsColorsSection}>
+                   <h1>Font & colors</h1>
+
+                   <div className={classes.fontsColorsWrapper}> 
+
+                     <div className={classes.fontsColorsLeft}>
+                     <h5>Raleway</h5>
+                     <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                     <p>abcdefghijklmnopqrstuvwxyz</p>
+                     <p>1234567890</p>
+                     </div>
+
+                     <div className={classes.fontsColorsRight} >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+
+                </div>   
+                </div>        
+
+      <div  className={classes.portfolioItemMore}>
+        <div className={[classes.portfolioItemCard,classes.card1].join(' ')}  ><h1>Name of the website</h1></div>
+        <div className={[classes.portfolioItemCard,classes.card2].join(' ')}  ><h1>Name of the website</h1></div>
+        <div className={[classes.portfolioItemCard,classes.card3].join(' ')}  ><h1>Name of the website</h1></div>
+      </div>
+
+      <div className={classes.portfolioEduCircle}>
+           
+           <div className={classes.portfolioDarkCircle}> 
+             <div className={classes.portfolioSmallCircle}></div>
+             <div className={classes.portfolioSmallCircleImg}>
+             <img src={splatterPurple}></img>
+             </div>
+         
+             <h1>Websites</h1>
+
+           </div>
+           </div>
+
+
 
          </div>
 

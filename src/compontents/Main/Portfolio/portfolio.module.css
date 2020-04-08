@@ -286,6 +286,9 @@
   }
 }
 
+
+
+
 .portfolioSmallCircle{
   z-index: 10;
   width: 250px;
@@ -427,3 +430,33 @@ padding:10px
 .fontsColorsWrapper span:nth-child(6){
    background-color: #083333 !important;
 } 
+
+
+.portfolioItemMore{
+  position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+
+.portfolioItemCard{
+  width: 340px;
+  height: 340px;
+
+  box-shadow: inset 0px 0px 26px rgb(144, 25, 149), 0 0 90px rgba(0, 0, 0, 0.8);
+  background: url('../../../assets/Images/xoran.png'),linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
+   
+    /* opacity: 0.8; */
+    transition: background-image 0.5s ease-in-out;
+}
+
+.portfolioItemCard:hover{
+  border-radius: 10px;
+  opacity: 1;
+  background: url('../../../assets/Images/xoran.png');
+}
+
+.card1{
+  color:white
+}
