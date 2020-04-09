@@ -460,3 +460,12 @@ padding:10px
 .card1{
   color:white
 }
+
+.websiteTabsWrapper{
+  display: flex;
+    padding: 1rem 11%;
+    position: relative;
+    margin: 7rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}

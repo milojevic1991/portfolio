@@ -1,0 +1,30 @@
+.websiteLinkWrapper{
+   padding: 2rem;
+   /* background-color: #a52a2a; */
+   box-sizing: border-box;
+   position: absolute;
+   z-index: 500;
+}
+
+.linkItem {
+  color: white;
+}
+
+.active{
+   font-size: 20px;
+   letter-spacing: 0;
+   font-weight: 300;
+   text-align: center;
+   color: #d3d3d3;
+   width: 100%;
+   padding: 10px 30px;
+   box-sizing: border-box;
+   /* background: #1d2430; */
+   background-color: #273040;
+   box-shadow: 0 0 50px #000000a6;
+   border-radius: 160px;
+   /* box-shadow: inset #000000 4px 4px 15px, inset #7d1b7d -4px -4px 10px; */
+   box-shadow: #000400ab 3px 3px 6px, #ff36e247 -3px -2px 8px;
+   transition: 0.3s all;
+}
+
