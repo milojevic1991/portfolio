@@ -18,15 +18,15 @@ const Portfolio = () => {
   const [linkItem, setLinkItem] = useState([
     {
     id:0,
-    name:'Jedan',
+    name:'Zgodna žena',
     },
     {
       id:1,
-      name:'Dva',
+      name:'Fit kutak',
       },
       {
         id:2,
-        name:'Tri',
+        name:'Šiš ćevaš',
         },
 
       {
@@ -490,8 +490,9 @@ const Portfolio = () => {
                 </div>   
                 </div>        
 
-     
+               
         <div className={classes.websiteTabsWrapper}>
+        <h1>Websites</h1>
             <WebsiteLink
             linksState={linkItem}
             linkClick={linkClickHandler}

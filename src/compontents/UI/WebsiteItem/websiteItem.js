@@ -8,9 +8,10 @@ const WebsiteItem = ({ webItemState }) => {
       {webItemState.map((el) => {
           return (
              <>
-            <div className={classes.webItemImageCircle}> </div>
-             <h1>{el.name}</h1>
+            <div className={classes.webItemImageCircle}> 
+            </div>
              <div className={classes.webItemImageSection}>
+            <a href={el.linkTo}>View Work</a>
              <div className={classes.webItemImage}>
                <img src={el.img}></img>
              </div>

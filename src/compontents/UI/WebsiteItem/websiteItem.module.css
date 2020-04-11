@@ -5,19 +5,19 @@
 }
 
 .webItemImageCircle{
-   width: 520px;
-   height: 520px;
-   top: 0%;
-   right: 10%;
-   margin: 2rem 0;
-   position: absolute;
-   animation: morphing3s infinite;
-   z-index: 1;
-   margin-bottom: -34px;
-   border: #273040 solid 2px;
-   border-radius: 50%;
-   box-shadow: inset 0px 0px 26px rgb(144, 25, 149), 0 0 90px 20px rgba(0, 0, 0, 0.8);
-   background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);;
+  width: 680px;
+  height: 680px;
+  top: 0%;
+  right: -10%;
+  margin: 2rem 0;
+  position: absolute;
+  animation: morphing 3s infinite;
+  z-index: 1;
+  margin-bottom: -34px;
+  border: #681b5d solid 2px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 63px rgba(0, 0, 0, 0.39), 0 0 90px 20px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
 }
 
 @keyframes morphing {
@@ -39,9 +39,8 @@
 
 .webItemImageSection{
    right: 0%;
-   top: 20%;
-   width: 580px;
-   z-index: 10;
+   top: 10%;
+   width: 65%;
    position: absolute;
    margin: 0 auto;
 }
@@ -63,4 +62,16 @@ position: relative;
    transform: translate(-50%, 10%);
    padding: 1rem;
    width: 100%;
+}
+
+.webItemImageSection a{
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  right: 8%;
+  color: #dfdfdf;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 24px;
+  letter-spacing: -2px;
 }
