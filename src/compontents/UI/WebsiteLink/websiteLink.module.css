@@ -9,30 +9,34 @@
 }
 
 .linkItem {
-   color: #ffffff38;
-   font-weight: 700;
-   letter-spacing: -1px;
-   font-size: 25px;
-   padding: 5px 0;
-   /* margin:5px 0 ; */
-   text-shadow: 0 10px 10px #2600215e;
-   transition:  .2s ease-out;
-   cursor: pointer;
-   filter: blur(1.2px);
+color: #ffffff54;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 18px;
+    padding: 5px 0;
+  
+    transition: .2s ease-out;
+    cursor: pointer;
+    filter: blur(0.6px);
+ 
 }
 .linkItem:hover {
    color: #fff;
    filter: blur(0.4px);
    opacity: 1;
-   /* margin-left: 8px; */
 }
 
 .active{
+   color: #a2148d;
+   transform: translateX(10px);
    color: #fff;
-   font-size: 25px;
+   font-weight: 700;
+   letter-spacing: -1px;
+   font-size: 18px;
    padding: 5px 0;
-   transition: 0.1s all;
-   transform: translateX(5px);
+   transition: .15s ease-out;
+   cursor: pointer;
+   filter: blur(0.4px);
 }
 
 /* .active::before{

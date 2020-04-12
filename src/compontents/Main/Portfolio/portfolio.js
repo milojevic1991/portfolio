@@ -273,7 +273,7 @@ const Portfolio = () => {
 
 
              {/* First WEBSITE section APP */}  
-            <div className={classes.portfolioItem}>
+            <div className={classes.portfolioItem} >
               {/* left section */}
               <div className={classes.portfolioItemImageSection}>
                 <div className={classes.portfolioItemImage}>
@@ -492,7 +492,7 @@ const Portfolio = () => {
 
                
         <div className={classes.websiteTabsWrapper}>
-        <h1>Websites</h1>
+        <h1 className={classes.websiteTabsWrapperTitle} >. . . more work</h1>
             <WebsiteLink
             linksState={linkItem}
             linkClick={linkClickHandler}
@@ -505,6 +505,10 @@ const Portfolio = () => {
           />
               
         </div>
+
+        <div className={classes.checkContact}>
+               <a href="/">Contact</a>
+            </div>
 
 
       {/* <div className={classes.portfolioEduCircle}>
