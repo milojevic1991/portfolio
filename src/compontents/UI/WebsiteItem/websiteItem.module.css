@@ -82,3 +82,35 @@ position: relative;
     height: 550px;
   }
 }
+
+
+
+/*Mobile*/
+
+@media only screen and (max-width: 770px) {
+  .webItemImageCircle{
+    width: 300px;
+    height: 300px;
+    top: 0%;
+    right: 5%;
+    margin: 2rem auto;
+  }
+  .webItemImageSection{
+    width: 100%;
+  }
+
+  .webItemImageSection a{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 18px);
+    color: #dfdfdf;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 21px;
+    right: auto;
+  }
+  .webItemWrapp{
+    height: 300px;
+  }
+
+}

@@ -718,7 +718,69 @@
 
 .fontsColorsLeft {
   color: white;
-  text-align: left;
+  text-align: center;
+  width: 100%;
+    word-break: break-all;
+    padding: 0 15px;
+    margin: 25px 0;
 }
+
+.fontsColorsLeft h5{
+  font-size: 23px;
+  padding: 10px;
+  font-weight: 200;
+}
+
+.fontsColorsLeft p{
+  font-size: 12px;
+  padding: 10px;
+  letter-spacing: 4px;
+  font-weight: 200;
+}
+
+.fontsColorsWrapper span{
+  height: 80px;
+  width: 80px;
+}
+
+.fontsColorsRight{
+  position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    top: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.websiteTabsWrapperTitle{
+  font-size: 8.5vw;
+  letter-spacing: -2px;
+}
+
+.websiteTabsWrapper{
+  padding: 0rem 10px;
+  flex-direction: column;
+}
+.checkContact{
+  background: url("../../../assets//Images/contact-image2.png") 16% 92%
+    no-repeat #8f0d93;
+  width: 100%;
+  padding: 33% 0;
+  background-size: 80%;
+  margin-top: 18%;
+  left: 0;
+  margin: 0;
+}
+.checkContact a{
+  letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 13vw;
+}
+.portfolioItemWrapper{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 
 }
