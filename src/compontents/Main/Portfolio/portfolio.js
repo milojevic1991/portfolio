@@ -108,6 +108,7 @@ const Portfolio = () => {
             </div>
             <div className={classes.headerTitle}>
               <div className={classes.smallDarkCircle}> </div>
+              {/* <div className={classes.smallDarkCircleFixed}> </div> */}
               <img className={classes.splatterImg} src={splatterAbout}></img>
             </div>
             <h1>About</h1>

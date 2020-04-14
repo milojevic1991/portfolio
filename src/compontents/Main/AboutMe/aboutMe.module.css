@@ -53,6 +53,7 @@
   left: 125px;
   position: absolute;
   z-index: 5;
+  box-shadow: inset 0px 0px 40px rgba(0,0,0,.2), 0 0 90px rgba(0,0,0,.8);
 }
 
 @keyframes morphingSmall {
@@ -413,6 +414,8 @@
   .aboutMeResumeBox p {
     padding: 0 1rem;
     font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
   }
 
   .aboutMeWorkWrapper {
@@ -460,15 +463,22 @@
     margin-left: -1%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 54px;
+    padding: 0px 15px;
     align-items: center;
     justify-content: center;
   }
 
   .aboutMeWorkItem p {
     align-items: center;
-    width: 90%;
     text-align: justify !important ;
+    padding: 10px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 90%;
+    margin: 10px auto;
+    font-weight: 400;
+    line-height: 30px;
+    color: #7c8898;
   }
 
   .aboutMeEduBlackCircle h1 {
@@ -486,6 +496,7 @@
   
    background: url("../../../assets/Images/bubble2-purple.png") 185% 30% no-repeat,
      url("../../../assets/Images/bubble2-purple.png") -66% 131% no-repeat;
+     padding: 4rem 0;
  }
 
  .checkPortfolio{
@@ -506,6 +517,10 @@
 
    
 
+ }
+
+ .aboutMeHeader {
+  margin-bottom: 20%;
  }
 
 

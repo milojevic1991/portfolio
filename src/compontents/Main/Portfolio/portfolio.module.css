@@ -54,6 +54,7 @@
   left: 125px;
   position: absolute;
   z-index: 5;
+  box-shadow: inset 0px 0px 40px rgba(0,0,0,.2), 0 0 90px rgba(0,0,0,.8);
 }
 
 @keyframes morphingSmall {
@@ -72,6 +73,21 @@
     border-radius: 43% 67% 58% 42% / 63% 68% 42% 47%;
   }
 }
+
+/* .smallDarkCircleFixed{
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  margin: 190px auto;
+  background: radial-gradient(circle, #000 3%, #59005d 100%);
+  margin: 145px auto;
+  border-radius: 50%;
+  animation: morphingSmall 2s infinite;
+  left: 125px;
+  position: absolute;
+  z-index: 5;
+  box-shadow: inset 0px 0px 40px rgba(0,0,0,.2), 0 0 90px rgba(0,0,0,.8);
+} */
 
 .portfolioHeader h1 {
   font-size: 8vw;
@@ -631,22 +647,26 @@
   .portfolioMainBox p {
     padding: 0 1rem;
     font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
   }
 
   .portfolioItemWrapper {
    
-    background: url("../../../assets/Images/bubble2-purple.png") 195% 0% no-repeat,
+    /* background: url("../../../assets/Images/bubble2-purple.png") 195% 0% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") -82% 6% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") 195% 12% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") -82% 20% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") 195% 33% no-repeat,
-      /* url("../../../assets/Images/bubble2-purple.png") -45% 34% no-repeat, */
+     
         url("../../../assets/Images/bubble2-purple.png") -82% 44% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") 195% 60% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") -82% 69% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") 195% 82% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") -82% 89% no-repeat;
-  }
+  } */
+background: none;
+}
 
   .portfolioItem {
    flex-direction: column !important;
@@ -678,6 +698,9 @@
   padding-right: 0 !important;
   width: 90%;
   margin: 10px auto;
+  font-weight: 400;
+    line-height: 30px;
+    color: #7c8898;
 }
 .portfolioItemImageCircle{
   width: 330px;
@@ -754,8 +777,9 @@
 }
 
 .websiteTabsWrapperTitle{
-  font-size: 8.5vw;
+  font-size: 10.5vw;
   letter-spacing: -2px;
+  top:-25%;
 }
 
 .websiteTabsWrapper{
