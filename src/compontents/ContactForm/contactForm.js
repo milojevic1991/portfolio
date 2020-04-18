@@ -1,37 +1,56 @@
-import React, { useState } from "react";
-import classes from "./contactForm.module.css";
+import React, { useState } from 'react';
+import classes from './contactForm.module.css';
+
+import useForm from './useForm';
+
+import { validate } from './validateForm';
+
+// custom Hook za formu
 
 const ContactForm = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [msg, setMsg] = useState();
+  const { sendMailHandler, onChange, values, errors } = useForm(
+    submit,
+    validate
+  );
 
-  const onNameChange = (e) => {
-    setName(e.target.value);
-  };
+  function submit() {
+    console.log('submit fuknicja samo imitacija');
+  }
+  const clearForm = () => {};
 
   return (
-    <form>
+    <form noValidate onSubmit={sendMailHandler}>
       <div className={classes.contactFormInfo}>
         <div className={classes.contactFormLeft}>
-          <h3>Label</h3>
+          <h3>Your Name</h3>
           <input
-            onChange={onNameChange}
-            type="text"
+            onChange={onChange}
+            type="name"
+            name="name"
             placeholder="What's your name?"
+            value={values.name}
           />
         </div>
         <div className={classes.contactFormRight}>
           <h3>Label</h3>
-          <input type="text" placeholder="What's your name?" />
+          <input
+            onChange={onChange}
+            type="email"
+            name="email"
+            placeholder="What's your name?"
+            value={values.email}
+          />
         </div>
       </div>
 
       <div className={classes.contactFormMsg}>
         <h3>Message</h3>
         <textarea
+          name="msg"
+          onChange={onChange}
           className={classes.contactFormTextArea}
           placeholder="I bet its something interesting"
+          value={values.msg}
         ></textarea>
       </div>
       <input type="submit" value="Send message" />

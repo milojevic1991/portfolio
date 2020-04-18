@@ -4,6 +4,7 @@ import ContactForm from "../../ContactForm/contactForm";
 
 import contactPlane from "../../../assets/Images/contact-image.png";
 import splatterAbout from "../../../assets/Images/splatterAbout.png";
+
 const Contact = () => {
   return (
     <div>
