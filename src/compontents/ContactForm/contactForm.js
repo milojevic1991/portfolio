@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import classes from './contactForm.module.css';
+import emailjs from 'emailjs-com';
+import { HalfCircleSpinner } from 'react-epic-spinners';
 
 import useForm from './useForm';
 
@@ -8,15 +10,37 @@ import { validate } from './validateForm';
 // custom Hook za formu
 
 const ContactForm = () => {
-  const { sendMailHandler, onChange, values, errors } = useForm(
+  const [spinner, setSpinner] = useState(false);
+  const [textFormSent, setTextFormSent] = useState(false);
+  const { sendMailHandler, onChange, values, errors, formSent } = useForm(
     submit,
     validate
   );
 
   function submit() {
-    console.log('submit fuknicja samo imitacija');
+    setSpinner(true);
+    let template_params = {
+      reply_to: values.email,
+      userName: values.name,
+      userEmail: values.email,
+      contactMsg: values.msg,
+    };
+
+    let service_id = 'default_service';
+    let template_id = 'template_dvdbWf8K';
+    let user_id = 'user_GNxQo2AWDni3wPZmmDvHA';
+
+    emailjs
+      .send(service_id, template_id, template_params, user_id)
+      .then((resposne) => {
+        setSpinner(false);
+        setTextFormSent(true);
+      })
+      .catch((err) => {
+        setTextFormSent(true);
+        setSpinner(false);
+      });
   }
-  const clearForm = () => {};
 
   return (
     <form noValidate onSubmit={sendMailHandler}>
@@ -30,6 +54,7 @@ const ContactForm = () => {
             placeholder="What's your name?"
             value={values.name}
           />
+          {errors ? <h6>{errors.name}</h6> : null}
         </div>
         <div className={classes.contactFormRight}>
           <h3>Label</h3>
@@ -40,9 +65,9 @@ const ContactForm = () => {
             placeholder="What's your name?"
             value={values.email}
           />
+          {errors ? <h6>{errors.email}</h6> : null}
         </div>
       </div>
-
       <div className={classes.contactFormMsg}>
         <h3>Message</h3>
         <textarea
@@ -53,7 +78,12 @@ const ContactForm = () => {
           value={values.msg}
         ></textarea>
       </div>
-      <input type="submit" value="Send message" />
+      {spinner ? <HalfCircleSpinner color="#ab44a5" size="45" /> : null}
+      {!textFormSent ? (
+        <input type="submit" value="Send message" />
+      ) : (
+        <h4 className={classes.sentFormText}>Alright! Message is sent.</h4>
+      )}
     </form>
   );
 };

@@ -1,5 +1,12 @@
+i {
+  color: #586681;
+  margin: 0 4px;
+  font-size: 24px;
+  vertical-align: middle;
+  padding: 5px;
+}
 .aboutMe {
-  background: url("../../../assets/Images/line.png") top center repeat-y #273040;
+  background: url('../../../assets/Images/line.png') top center repeat-y #273040;
   /* height: 100vh; */
   overflow: hidden;
 }
@@ -9,7 +16,7 @@
   height: 100vh;
   text-align: center;
   margin: 0 auto;
-  background: url("../../../assets/Images/lineAbout.png") top center repeat-y
+  background: url('../../../assets/Images/lineAbout.png') top center repeat-y
     #901995;
   /* background-size: 70%; */
   position: relative;
@@ -53,7 +60,7 @@
   left: 125px;
   position: absolute;
   z-index: 5;
-  box-shadow: inset 0px 0px 40px rgba(0,0,0,.2), 0 0 90px rgba(0,0,0,.8);
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2), 0 0 90px rgba(0, 0, 0, 0.8);
 }
 
 @keyframes morphingSmall {
@@ -86,7 +93,7 @@
 
 .aboutMeResume {
   padding: 12% 0;
-  background: url("../../../assets/Images/wavy-purple1.png") center 25%
+  background: url('../../../assets/Images/wavy-purple1.png') center 25%
     no-repeat;
   background-size: 100%, 44%;
 }
@@ -126,9 +133,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("../../../assets/Images/bubble2-purple.png") 148% 12%
+  background: url('../../../assets/Images/bubble2-purple.png') 148% 12%
       no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") -48% 63% no-repeat;
+    url('../../../assets/Images/bubble2-purple.png') -48% 63% no-repeat;
 }
 
 .aboutMeWorkItem {
@@ -196,7 +203,7 @@
 
 .aboutMeWorkTitleSecond h5 {
   font-size: 15px;
-  letter-spacing: 4px;
+  letter-spacing: 0px;
   color: #918c9c;
   text-transform: initial;
   font-weight: 500;
@@ -313,12 +320,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("../../../assets/Images/bubble2-purple.png") 152% 30%no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") -40% 158% no-repeat;
+  background: url('../../../assets/Images/bubble2-purple.png') 152% 30%no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') -40% 158% no-repeat;
 }
 
 .checkPortfolio {
-  background: url("../../../assets//Images/handRotated.png") 50% 156% no-repeat
+  background: url('../../../assets//Images/handRotated.png') 50% 156% no-repeat
     #901995;
 
   width: 70%;
@@ -493,36 +500,27 @@
   }
 
   .aboutMeWorkWrapperEdu {
-  
-   background: url("../../../assets/Images/bubble2-purple.png") 185% 30% no-repeat,
-     url("../../../assets/Images/bubble2-purple.png") -66% 131% no-repeat;
-     padding: 4rem 0;
- }
+    background: url('../../../assets/Images/bubble2-purple.png') 185% 30%
+        no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -66% 131% no-repeat;
+    padding: 4rem 0;
+  }
 
- .checkPortfolio{
-   width: 100%;
-   margin-bottom: 20%;
-   padding: 33% 0;
-   background-size: 26%;
-   margin-top: 18%;
+  .checkPortfolio {
+    width: 100%;
+    margin-bottom: 20%;
+    padding: 33% 0;
+    background-size: 26%;
+    margin-top: 18%;
+  }
 
-   
+  .checkPortfolio a {
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 13vw;
+  }
 
- }
-
- .checkPortfolio a {
-   letter-spacing: -1px;
-   font-weight: bold;
-   font-size: 13vw;
-
-   
-
- }
-
- .aboutMeHeader {
-  margin-bottom: 20%;
- }
-
-
-
+  .aboutMeHeader {
+    margin-bottom: 20%;
+  }
 }

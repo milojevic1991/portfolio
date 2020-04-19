@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-// import axios from "axios";
-import emailjs from 'emailjs-com';
+import React, { useState, useEffect } from 'react';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({ name: '', email: '', msg: '' });
-  const [errors, setErrors] = useState({ name: '', email: '', msg: '' });
+  const [errors, setErrors] = useState({});
+  const [isSubmiting, setIsSubmiting] = useState(false);
+  const [formSent, setFormSent] = useState(false);
 
+  //On change input handler
   const onChange = (e) => {
     const { name, value } = e.target;
 
@@ -15,32 +16,25 @@ const useForm = (callback, validate) => {
     });
   };
 
+  //Submit Form
   const sendMailHandler = (e) => {
     e.preventDefault();
 
     setErrors(validate(values));
-    // let template_params = {
-    //   reply_to: email,
-    //   userName: name,
-    //   userEmail: email,
-    //   contactMsg: msg,
-    // };
+    setIsSubmiting(true);
+  };
 
-    // let service_id = "default_service";
-    // let template_id = "template_dvdbWf8K";
-    // let user_id = "user_GNxQo2AWDni3wPZmmDvHA";
-    // emailjs
-    //   .send(service_id, template_id, template_params, user_id)
-    //   .then((resposne) => {
-    //     console.log(resposne, "resposne");
-    //     console.log("poslato");
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+  useEffect(() => {
+    if (Object.keys(errors).length === 0 && isSubmiting) {
+      callback();
+      clearForm();
+      setFormSent(true);
+    }
+  }, [errors]);
 
-    // clearForm();
-    callback();
+  //Clear form
+  const clearForm = () => {
+    setValues({ name: '', email: '', msg: '' });
   };
 
   return {
@@ -48,6 +42,7 @@ const useForm = (callback, validate) => {
     sendMailHandler,
     values,
     errors,
+    formSent,
   };
 };
 

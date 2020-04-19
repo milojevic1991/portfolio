@@ -1,7 +1,7 @@
-import React from "react";
-import classes from "./homepage.module.css";
-import map from "../../../assets/Images/mapImg.png";
-import Button from "../../UI/Button/button";
+import React from 'react';
+import classes from './homepage.module.css';
+import map from '../../../assets/Images/mapImg.png';
+import Button from '../../UI/Button/button';
 
 const Homepage = () => {
   return (
@@ -30,6 +30,14 @@ const Homepage = () => {
           <div className={classes.aboutText}>
             <div className={classes.nemanjaImg}> </div>
             <h2>Ćao, ja sam Nemanja.</h2>
+            <div className={classes.socialIcons}>
+              <a href="/">
+                <i class="lab la-linkedin-in"></i>
+              </a>
+              <a href="/">
+                <i class="lab la-github"></i>
+              </a>
+            </div>
             <p>
               Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
               simply dummy text of the printing and typesetting industry. Lorem
@@ -41,9 +49,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div  className={classes.aboutHomeShort}>
-
-      </div>
+        <div className={classes.aboutHomeShort}></div>
       </div>
     </>
   );

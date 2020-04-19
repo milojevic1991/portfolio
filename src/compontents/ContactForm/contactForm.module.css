@@ -8,6 +8,14 @@
 .contactFormRight {
   width: 49%;
 }
+.contactFormLeft h6,
+.contactFormRight h6 {
+  position: absolute;
+  color: #dd1515;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 5px;
+}
 
 .contactFormLeft h3,
 .contactFormRight h3,
@@ -91,4 +99,14 @@ input[type='submit'] {
   border: none;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+}
+
+.sentFormText {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #fff;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: -1px;
+  transition: 0.5s ease-in;
 }
