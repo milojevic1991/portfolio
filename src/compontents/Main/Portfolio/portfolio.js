@@ -1,57 +1,63 @@
-import React, { useState } from "react";
-import classes from "./portfolio.module.css";
-import WebsiteLink from "../../UI/WebsiteLink/websiteLink";
-import WebsiteItem from "../../UI/WebsiteItem/websiteItem";
+import React, { useState, useEffect, useRef } from 'react';
+import classes from './portfolio.module.css';
+import WebsiteLink from '../../UI/WebsiteLink/websiteLink';
+import WebsiteItem from '../../UI/WebsiteItem/websiteItem';
 
-import handPhoto from "../../../assets/Images/handAboutRight.png";
-import splatterAbout from "../../../assets/Images/splatterAbout.png";
-import mainScreenPortfolio from "../../../assets/Images/portfolioBoxScreen.png";
-import exampleImg from "../../../assets/Images/valeyo-device.png";
-import splatterPurple from "../../../assets/Images/splatter1.png";
-import WebScreen from "../../../assets/Images/webScreen.png";
+import handPhoto from '../../../assets/Images/handAboutRight.png';
+import splatterAbout from '../../../assets/Images/splatterAbout.png';
+import mainScreenPortfolio from '../../../assets/Images/portfolioBoxScreen.png';
+import exampleImg from '../../../assets/Images/valeyo-device.png';
+import splatterPurple from '../../../assets/Images/splatter1.png';
+import WebScreen from '../../../assets/Images/webScreen.png';
 
 const Portfolio = () => {
   const [activeLink, setActiveLink] = useState(0);
 
+  const myRef = useRef(null);
+  useEffect(() => {
+    window.scrollTo(0, myRef);
+    console.log('evo ga useeffect');
+  }, []);
+
   const [linkItem, setLinkItem] = useState([
     {
       id: 0,
-      name: "Zgodna žena",
+      name: 'Zgodna žena',
     },
     {
       id: 1,
-      name: "Fit kutak",
+      name: 'Fit kutak',
     },
     {
       id: 2,
-      name: "Šiš ćevaš",
+      name: 'Šiš ćevaš',
     },
 
     {
       id: 3,
-      name: "cetiri",
+      name: 'cetiri',
     },
 
     {
       id: 4,
-      name: "Pet",
+      name: 'Pet',
     },
 
     {
       id: 5,
-      name: "Sest",
+      name: 'Sest',
     },
 
     {
       id: 7,
-      name: "Sedam",
+      name: 'Sedam',
     },
   ]);
 
   const [webItemsDisplayed, setwebItemsDisplayed] = useState([
     {
       id: 0,
-      name: "Neki naslov tamo vamo",
+      name: 'Neki naslov tamo vamo',
       img: WebScreen,
     },
   ]);
@@ -59,16 +65,16 @@ const Portfolio = () => {
   const [webItems, setWebItem] = useState([
     {
       id: 0,
-      name: "Neki naslov tamo vamo",
+      name: 'Neki naslov tamo vamo',
       img: WebScreen,
     },
     {
       id: 1,
-      name: "DRugi naslov ",
+      name: 'DRugi naslov ',
     },
     {
       id: 2,
-      name: "Nesto sesto sasvim ",
+      name: 'Nesto sesto sasvim ',
     },
   ]);
 
@@ -85,7 +91,7 @@ const Portfolio = () => {
     <>
       <div>
         <div className={classes.portfolio}>
-          <div className={classes.portfolioHeader}>
+          <div ref={myRef} className={classes.portfolioHeader}>
             <div className={classes.handImg}>
               <img src={handPhoto}></img>
             </div>
@@ -145,7 +151,7 @@ const Portfolio = () => {
               {/* Second portfolio section APP */}
               <div
                 className={classes.portfolioItem}
-                style={{ flexDirection: "row-reverse" }}
+                style={{ flexDirection: 'row-reverse' }}
               >
                 {/* left section */}
                 <div className={classes.portfolioItemImageSection}>
@@ -154,20 +160,20 @@ const Portfolio = () => {
                   </div>
                   <div
                     className={classes.portfolioItemImageCircle}
-                    style={{ right: "0px", left: "unset" }}
+                    style={{ right: '0px', left: 'unset' }}
                   >
-                    {" "}
+                    {' '}
                   </div>
                 </div>
 
                 {/* right section */}
                 <div
                   className={classes.portfolioItemDesc}
-                  style={{ textAlign: "left" }}
+                  style={{ textAlign: 'left' }}
                 >
                   <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
 
-                  <p style={{ paddingLeft: "0", paddingRight: "15%" }}>
+                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
                     MiniCAT. The service provides online viewing, off-site
                     archival and backup of images, and easy access for both
@@ -214,7 +220,7 @@ const Portfolio = () => {
               {/* Fourt portfolio section APP */}
               <div
                 className={classes.portfolioItem}
-                style={{ flexDirection: "row-reverse" }}
+                style={{ flexDirection: 'row-reverse' }}
               >
                 {/* left section */}
                 <div className={classes.portfolioItemImageSection}>
@@ -223,20 +229,20 @@ const Portfolio = () => {
                   </div>
                   <div
                     className={classes.portfolioItemImageCircle}
-                    style={{ right: "0px", left: "unset" }}
+                    style={{ right: '0px', left: 'unset' }}
                   >
-                    {" "}
+                    {' '}
                   </div>
                 </div>
 
                 {/* right section */}
                 <div
                   className={classes.portfolioItemDesc}
-                  style={{ textAlign: "left" }}
+                  style={{ textAlign: 'left' }}
                 >
                   <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
 
-                  <p style={{ paddingLeft: "0", paddingRight: "15%" }}>
+                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
                     MiniCAT. The service provides online viewing, off-site
                     archival and backup of images, and easy access for both
@@ -317,7 +323,7 @@ const Portfolio = () => {
               {/* Second WEBSITE section APP */}
               <div
                 className={classes.portfolioItem}
-                style={{ flexDirection: "row-reverse" }}
+                style={{ flexDirection: 'row-reverse' }}
               >
                 {/* left section */}
                 <div className={classes.portfolioItemImageSection}>
@@ -326,20 +332,20 @@ const Portfolio = () => {
                   </div>
                   <div
                     className={classes.portfolioItemImageCircle}
-                    style={{ right: "0px", left: "unset" }}
+                    style={{ right: '0px', left: 'unset' }}
                   >
-                    {" "}
+                    {' '}
                   </div>
                 </div>
 
                 {/* right section */}
                 <div
                   className={classes.portfolioItemDesc}
-                  style={{ textAlign: "left" }}
+                  style={{ textAlign: 'left' }}
                 >
                   <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
 
-                  <p style={{ paddingLeft: "0", paddingRight: "15%" }}>
+                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
                     MiniCAT. The service provides online viewing, off-site
                     archival and backup of images, and easy access for both
@@ -431,7 +437,7 @@ const Portfolio = () => {
               {/* Fourth WEBSITE section APP */}
               <div
                 className={classes.portfolioItem}
-                style={{ flexDirection: "row-reverse" }}
+                style={{ flexDirection: 'row-reverse' }}
               >
                 {/* left section */}
                 <div className={classes.portfolioItemImageSection}>
@@ -440,20 +446,20 @@ const Portfolio = () => {
                   </div>
                   <div
                     className={classes.portfolioItemImageCircle}
-                    style={{ right: "0px", left: "unset" }}
+                    style={{ right: '0px', left: 'unset' }}
                   >
-                    {" "}
+                    {' '}
                   </div>
                 </div>
 
                 {/* right section */}
                 <div
                   className={classes.portfolioItemDesc}
-                  style={{ textAlign: "left" }}
+                  style={{ textAlign: 'left' }}
                 >
                   <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
 
-                  <p style={{ paddingLeft: "0", paddingRight: "15%" }}>
+                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
                     MiniCAT. The service provides online viewing, off-site
                     archival and backup of images, and easy access for both

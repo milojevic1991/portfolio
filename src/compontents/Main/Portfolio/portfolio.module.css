@@ -1,7 +1,7 @@
 .portfolio {
-  background: url("../../../assets/Images/line.png") top center repeat-y #273040;
-  /* height: 100vh; */
-  overflow: hidden;
+  background: url('../../../assets/Images/line.png') top center repeat-y #273040;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 .portfolioHeader {
@@ -9,7 +9,7 @@
   height: 100vh;
   text-align: center;
   margin: 0 auto;
-  background: url("../../../assets/Images/lineAbout.png") top center repeat-y
+  background: url('../../../assets/Images/lineAbout.png') top center repeat-y
     #901995;
   /* background-size: 70%; */
   position: relative;
@@ -54,7 +54,7 @@
   left: 125px;
   position: absolute;
   z-index: 5;
-  box-shadow: inset 0px 0px 40px rgba(0,0,0,.2), 0 0 90px rgba(0,0,0,.8);
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2), 0 0 90px rgba(0, 0, 0, 0.8);
 }
 
 @keyframes morphingSmall {
@@ -103,8 +103,8 @@
 .portfolioMain {
   /* padding: 12% 0; */
   padding-top: 12%;
-  background: url("../../../assets/Images/wavy-purple1.png") 100% 3% no-repeat,
-    url("../../../assets/Images/wavy-purple1.png") center 57% no-repeat;
+  background: url('../../../assets/Images/wavy-purple1.png') 100% 3% no-repeat,
+    url('../../../assets/Images/wavy-purple1.png') center 57% no-repeat;
   background-size: 100%, 100%;
 }
 
@@ -147,17 +147,17 @@
   width: 100%;
   padding: 2rem 0;
   margin: 5rem 0;
-  background: url("../../../assets/Images/bubble2-purple.png") 148% 0% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") -43% 6% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") 148% 12% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") -45% 20% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") 145% 33% no-repeat,
+  background: url('../../../assets/Images/bubble2-purple.png') 148% 0% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') -43% 6% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') 148% 12% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') -45% 20% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') 145% 33% no-repeat,
     /* url("../../../assets/Images/bubble2-purple.png") -45% 34% no-repeat, */
-      url("../../../assets/Images/bubble2-purple.png") -45% 44% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") 151% 60% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") -45% 69% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") 147% 82% no-repeat,
-    url("../../../assets/Images/bubble2-purple.png") -38% 89% no-repeat;
+      url('../../../assets/Images/bubble2-purple.png') -45% 44% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') 151% 60% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') -45% 69% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') 147% 82% no-repeat,
+    url('../../../assets/Images/bubble2-purple.png') -38% 89% no-repeat;
 }
 .portfolioItem {
   display: flex;
@@ -447,7 +447,7 @@
   height: 340px;
 
   box-shadow: inset 0px 0px 26px rgb(144, 25, 149), 0 0 90px rgba(0, 0, 0, 0.8);
-  background: url("../../../assets/Images/xoran.png"),
+  background: url('../../../assets/Images/xoran.png'),
     linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
 
   /* opacity: 0.8; */
@@ -457,7 +457,7 @@
 .portfolioItemCard:hover {
   border-radius: 10px;
   opacity: 1;
-  background: url("../../../assets/Images/xoran.png");
+  background: url('../../../assets/Images/xoran.png');
 }
 
 .card1 {
@@ -486,7 +486,7 @@
 }
 
 .checkContact {
-  background: url("../../../assets//Images/contact-image2.png") 16% 116%
+  background: url('../../../assets//Images/contact-image2.png') 16% 116%
     no-repeat #8f0d93;
 
   width: 70%;
@@ -531,65 +531,63 @@
 }
 
 /*Laptop view*/
-@media  screen and (min-width: 1390px) and (max-width: 1490px) {
-
+@media screen and (min-width: 1390px) and (max-width: 1490px) {
   .mainScreenPortfolio img {
     width: 60%;
   }
-  
+
   .portfolioItemWrapper {
-   
-    background: url("../../../assets/Images/bubble2-purple.png") 188% 0% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -80% 6% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 188% 12% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -80% 20% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 188% 33% no-repeat,
+    background: url('../../../assets/Images/bubble2-purple.png') 188% 0%
+        no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -80% 6% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 188% 12% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -80% 20% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 188% 33% no-repeat,
       /* url("../../../assets/Images/bubble2-purple.png") -45% 34% no-repeat, */
-        url("../../../assets/Images/bubble2-purple.png") -80% 44% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 188% 60% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -80% 69% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 188% 82% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -75% 89% no-repeat;
+        url('../../../assets/Images/bubble2-purple.png') -80% 44% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 188% 60% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -80% 69% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 188% 82% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -75% 89% no-repeat;
   }
 
-
-  .fontsColorsWrapper{
+  .fontsColorsWrapper {
     align-items: center;
     justify-content: center;
   }
-  .fontsColorsLeft{
+  .fontsColorsLeft {
     margin-top: 60px;
     box-sizing: border-box;
     text-align: center;
   }
-  .websiteTabsWrapper{
+  .websiteTabsWrapper {
     margin: 8rem 0;
   }
-  .websiteTabsWrapperTitle{
-    top:-7%;
+  .websiteTabsWrapperTitle {
+    top: -7%;
   }
 }
 
-@media  screen and (min-width: 1190px) and (max-width: 1290px) {
+@media screen and (min-width: 1190px) and (max-width: 1290px) {
   .portfolioItemWrapper {
-   
-    background: url("../../../assets/Images/bubble2-purple.png") 208% 0% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -103% 6% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 208% 12% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -103% 20% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 208% 33% no-repeat,
+    background: url('../../../assets/Images/bubble2-purple.png') 208% 0%
+        no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -103% 6% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 208% 12% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -103% 20% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 208% 33% no-repeat,
       /* url("../../../assets/Images/bubble2-purple.png") -45% 34% no-repeat, */
-        url("../../../assets/Images/bubble2-purple.png") -103% 44% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 208% 60% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -103% 69% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") 208% 82% no-repeat,
-      url("../../../assets/Images/bubble2-purple.png") -103% 89% no-repeat;
+        url('../../../assets/Images/bubble2-purple.png') -103% 44% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 208% 60% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -103% 69% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') 208% 82% no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -103% 89% no-repeat;
   }
-  .fontsColorsWrapper{
+  .fontsColorsWrapper {
     align-items: center;
     justify-content: center;
   }
-  .fontsColorsLeft{
+  .fontsColorsLeft {
     margin-top: 60px;
     box-sizing: border-box;
     text-align: center;
@@ -603,9 +601,9 @@
     width: 160%;
     position: absolute;
     right: 28%;
-}
-  
-  .portfolioHeader h1{
+  }
+
+  .portfolioHeader h1 {
     font-size: 15vw;
     color: #fff;
     text-align: center;
@@ -628,12 +626,12 @@
   .mainScreenPortfolio img {
     position: relative;
     top: 0%;
-    left: 0%; 
+    left: 0%;
     transform: none;
     width: 100%;
   }
 
-  .portfolioMainBox{
+  .portfolioMainBox {
     padding: 1rem;
     box-sizing: border-box;
     width: 100%;
@@ -643,7 +641,7 @@
   .portfolioMainBox h2 {
     font-size: 11vw;
   }
-  
+
   .portfolioMainBox p {
     padding: 0 1rem;
     font-size: 18px;
@@ -652,7 +650,6 @@
   }
 
   .portfolioItemWrapper {
-   
     /* background: url("../../../assets/Images/bubble2-purple.png") 195% 0% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") -82% 6% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") 195% 12% no-repeat,
@@ -665,146 +662,144 @@
       url("../../../assets/Images/bubble2-purple.png") 195% 82% no-repeat,
       url("../../../assets/Images/bubble2-purple.png") -82% 89% no-repeat;
   } */
-background: none;
-}
+    background: none;
+  }
 
   .portfolioItem {
-   flex-direction: column !important;
-   padding: 10px;
+    flex-direction: column !important;
+    padding: 10px;
     box-sizing: border-box;
     margin: 10rem 0;
   }
 
   .portfolioItemImageSection,
-.portfolioItemDesc {
-  width: 100%;
-  display: flex;
+  .portfolioItemDesc {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.portfolioItemTitle {
-  font-size: 8vw;
-  color: #fff;
-  text-align: center;
-  letter-spacing: -1px;
-  padding: 0 5px;
-}
+  .portfolioItemTitle {
+    font-size: 8vw;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1px;
+    padding: 0 5px;
+  }
 
-.portfolioItemDesc p{
-  text-align: justify !important;
-  padding: 10px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 90%;
-  margin: 10px auto;
-  font-weight: 400;
+  .portfolioItemDesc p {
+    text-align: justify !important;
+    padding: 10px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 90%;
+    margin: 10px auto;
+    font-weight: 400;
     line-height: 30px;
     color: #7c8898;
-}
-.portfolioItemImageCircle{
-  width: 330px;
+  }
+  .portfolioItemImageCircle {
+    width: 330px;
     height: 330px;
     left: 50% !important;
     right: 0 !important;
     top: -290px;
     transform: translate(-50%, 50%);
-}
+  }
 
-.portfolioDarkCircle h1 {
-  position: absolute;
-  top: 40%;
-  right: 10%;
-  z-index: 15;
-  font-size: 13vw;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-}
+  .portfolioDarkCircle h1 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    z-index: 15;
+    font-size: 13vw;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
 
-.fontsColorsSection{
-  margin-left: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-}
-.fontsColorsSection h1 {
-  font-size: 9vw;
-  color: #fff;
-  text-align: center;
-  letter-spacing: -1px;
-  padding: 0 5px;
-  width: 100%;
-  position: relative;
-  margin-bottom: 30px;
-}
+  .fontsColorsSection {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .fontsColorsSection h1 {
+    font-size: 9vw;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1px;
+    padding: 0 5px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+  }
 
-.fontsColorsLeft {
-  color: white;
-  text-align: center;
-  width: 100%;
+  .fontsColorsLeft {
+    color: white;
+    text-align: center;
+    width: 100%;
     word-break: break-all;
     padding: 0 15px;
     margin: 25px 0;
-}
+  }
 
-.fontsColorsLeft h5{
-  font-size: 23px;
-  padding: 10px;
-  font-weight: 200;
-}
+  .fontsColorsLeft h5 {
+    font-size: 23px;
+    padding: 10px;
+    font-weight: 200;
+  }
 
-.fontsColorsLeft p{
-  font-size: 12px;
-  padding: 10px;
-  letter-spacing: 4px;
-  font-weight: 200;
-}
+  .fontsColorsLeft p {
+    font-size: 12px;
+    padding: 10px;
+    letter-spacing: 4px;
+    font-weight: 200;
+  }
 
-.fontsColorsWrapper span{
-  height: 80px;
-  width: 80px;
-}
+  .fontsColorsWrapper span {
+    height: 80px;
+    width: 80px;
+  }
 
-.fontsColorsRight{
-  position: relative;
+  .fontsColorsRight {
+    position: relative;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
     top: 0;
     margin: 0 auto;
     margin-bottom: 30px;
-}
+  }
 
-.websiteTabsWrapperTitle{
-  font-size: 10.5vw;
-  letter-spacing: -2px;
-  top:-25%;
-}
+  .websiteTabsWrapperTitle {
+    font-size: 10.5vw;
+    letter-spacing: -2px;
+    top: -25%;
+  }
 
-.websiteTabsWrapper{
-  padding: 0rem 10px;
-  flex-direction: column;
-}
-.checkContact{
-  background: url("../../../assets//Images/contact-image2.png") 16% 92%
-    no-repeat #8f0d93;
-  width: 100%;
-  padding: 33% 0;
-  background-size: 80%;
-  margin-top: 18%;
-  left: 0;
-  margin: 0;
-}
-.checkContact a{
-  letter-spacing: -1px;
+  .websiteTabsWrapper {
+    padding: 0rem 10px;
+    flex-direction: column;
+  }
+  .checkContact {
+    background: url('../../../assets//Images/contact-image2.png') 16% 92%
+      no-repeat #8f0d93;
+    width: 100%;
+    padding: 33% 0;
+    background-size: 80%;
+    margin-top: 18%;
+    left: 0;
+    margin: 0;
+  }
+  .checkContact a {
+    letter-spacing: -1px;
     font-weight: bold;
     font-size: 13vw;
-}
-.portfolioItemWrapper{
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-
+  }
+  .portfolioItemWrapper {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }

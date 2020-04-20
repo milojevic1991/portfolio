@@ -7,8 +7,10 @@ i {
 }
 .aboutMe {
   background: url('../../../assets/Images/line.png') top center repeat-y #273040;
-  /* height: 100vh; */
-  overflow: hidden;
+  height: 100vh;
+  /* overflow: hidden; */
+
+  overflow-x: hidden;
 }
 
 .aboutMeHeader {
@@ -152,11 +154,8 @@ i {
   width: 220px;
   height: 220px;
   margin: 2rem 0;
-  /* background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%); */
   border-radius: 50%;
   animation: morphingSmall 2s infinite;
-  /* left: 75px; */
-  /* position: absolute; */
   z-index: 1;
   margin-bottom: -34px;
   border: #273040 solid 2px;

@@ -39,10 +39,16 @@ const Homepage = () => {
               </a>
             </div>
             <p>
-              Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since the
-              1500s
+              I'm a digital designer that made the trip across the pond from
+              Glasgow, Scotland to{' '}
+              <a href="\" target="_blank">
+                #HamOnt
+              </a>
+              , Canada, in 2010. Now I work @{' '}
+              <a href="\" target="_blank">
+                Jan Kelley
+              </a>{' '}
+              in Burlington as UX Lead and Senior Art Director.
             </p>
             <div className={classes.btnRow}>
               <Button>ZDRAVO</Button>

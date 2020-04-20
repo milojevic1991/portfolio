@@ -6,19 +6,17 @@ import Contact from './Contact/contact';
 
 import classes from './main.module.css';
 
-import {Route} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 const Main = () => {
-   return (
-      <main className={classes.mainWrapper} >
-
-         <Route path='/about' component={AboutMe} / >
-         <Route path='/portfolio' component={Portfolio} / >
-         <Route path='/contact' component={Contact} / >
-         <Route path='/' exact component={Homepage} / >
-      
-      </main>
-   );
+  return (
+    <main className={classes.mainWrapper}>
+      <Route path="/" exact component={Homepage} />
+      <Route path="/about" component={AboutMe} />
+      <Route path="/portfolio" component={Portfolio} />
+      <Route path="/contact" component={Contact} />
+    </main>
+  );
 };
 
 export default Main;

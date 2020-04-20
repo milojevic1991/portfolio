@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import classes from './navBar.module.css';
-import nLogo from '../../assets/Images/nemanja-logo.png';
+import nLogo from '../../assets/Images/nemanja-logo4.png';
 
 const NavBar = () => {
   const [openMenuClass, setOpenMenuClass] = useState(
@@ -23,20 +23,44 @@ const NavBar = () => {
       <nav className={classes.mainNav}>
         {/* <div className ={classes.profileImg} /> */}
 
-        <div className={classes.logo}>
+        {/* <div className={classes.logo}> */}
+        <NavLink
+          exact
+          className={classes.logo}
+          // activeClassName={classes.menuLinkActive}
+          to="/"
+        >
           <img alt="logo" src={nLogo}></img>
-        </div>
+        </NavLink>
+        {/* </div> */}
         <div className={classes.menuItems}>
-          <NavLink className={classes.menuLink} to="/">
+          <NavLink
+            exact
+            className={classes.menuLink}
+            activeClassName={classes.menuLinkActive}
+            to="/"
+          >
             Home
           </NavLink>
-          <NavLink className={classes.menuLink} to="/about">
+          <NavLink
+            className={classes.menuLink}
+            activeClassName={classes.menuLinkActive}
+            to="/about"
+          >
             About me
           </NavLink>
-          <NavLink className={classes.menuLink} to="/portfolio">
+          <NavLink
+            className={classes.menuLink}
+            activeClassName={classes.menuLinkActive}
+            to="/portfolio"
+          >
             Portfolio
           </NavLink>
-          <NavLink className={classes.menuLink} to="/idemo">
+          <NavLink
+            className={classes.menuLink}
+            activeClassName={classes.menuLinkActive}
+            to="/idemo"
+          >
             About me
           </NavLink>
         </div>
@@ -46,7 +70,7 @@ const NavBar = () => {
           </a>
           <a href="/">
             <i class="lab la-github"></i>
-          </a>
+          </a>c
         </div> */}
       </nav>
 
@@ -73,13 +97,25 @@ const NavBar = () => {
           >
             About me
           </NavLink>
-          <NavLink className={classes.menuLinkMobile} to="/about">
+          <NavLink
+            onClick={closeMenuHandler}
+            className={classes.menuLinkMobile}
+            to="/about"
+          >
             About me
           </NavLink>
-          <NavLink className={classes.menuLinkMobile} to="/idemo">
+          <NavLink
+            onClick={closeMenuHandler}
+            className={classes.menuLinkMobile}
+            to="/idemo"
+          >
             About me
           </NavLink>
-          <NavLink className={classes.menuLinkMobile} to="/idemo">
+          <NavLink
+            onClick={closeMenuHandler}
+            className={classes.menuLinkMobile}
+            to="/idemo"
+          >
             About me
           </NavLink>
         </div>

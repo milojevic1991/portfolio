@@ -1,5 +1,5 @@
 .contact {
-  background: url("../../../assets/Images/line.png") top center repeat-y #273040;
+  background: url('../../../assets/Images/line.png') top center repeat-y #273040;
   /* height: 100vh; */
   overflow: hidden;
 }
@@ -9,7 +9,7 @@
   height: 100vh;
   text-align: center;
   margin: 0 auto;
-  background: url("../../../assets/Images/lineAbout.png") top center repeat-y
+  background: url('../../../assets/Images/lineAbout.png') top center repeat-y
     #901995;
   /* background-size: 70%; */
   position: relative;

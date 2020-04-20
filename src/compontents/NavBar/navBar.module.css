@@ -18,7 +18,7 @@
 }
 
 .logo img {
-  width: 30%;
+  width: 40%;
 }
 .logo h2 {
   /* text-align: center;
@@ -86,14 +86,21 @@ li a {
   cursor: pointer;
   z-index: 50; */
   transform: rotate(270deg);
-  color: #fff;
+  color: #ffffff59;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   cursor: pointer;
   z-index: 50;
   text-decoration: none;
   transition: 0.3s;
 }
+
+.menuLinkActive {
+  color: #fff;
+  transition: 0.2s ease;
+  /* transform: rotate(270deg) scale(1.2); */
+}
+
 .menuLink::after {
   content: '';
   display: block;
@@ -103,7 +110,7 @@ li a {
   transition: width 0.3s;
 }
 a.menuLink:hover {
-  color: #8e8e8e;
+  color: #fff;
 }
 a.menuLink:hover::after {
   width: 100%;
@@ -149,7 +156,7 @@ a.menuLink:hover::after {
   .mainNavMobileOpen {
     background: #1a202b;
     z-index: 1000;
-    width: 70%;
+    width: 100%;
     position: fixed;
     height: 100vh;
     box-shadow: 40px 0 60px #141414e3, 0px 0 20px #1c1c1c;
@@ -164,14 +171,15 @@ a.menuLink:hover::after {
     height: 100vh;
     box-shadow: 40px 0 60px #141414e3, 0px 0 20px #1c1c1c;
     transition: 0.3s all ease-in-out;
+    /* opacity: 0; */
     transform: translate(-100%);
+    transition-delay: 0.15s;
     opacity: 0;
   }
 
   .menuBtn {
     height: 50px;
     width: 50px;
-    background-color: #0000;
     top: 10px;
     left: 10px;
     position: fixed;
@@ -180,33 +188,39 @@ a.menuLink:hover::after {
     transform: scale(1);
     transition: all 0.3s ease-out;
     display: block;
-    z-index: 500;
+    z-index: 510;
+    background-color: #1a202be3;
+    transition: 0.2s;
   }
 
-  .menuBtn:visited {
-    margin: 50px;
+  .menuBtn:active {
+    transform: translateY(4px);
   }
+  .menuBtnClose:active {
+    transform: translateY(14px);
+  }
+
   .menuBar {
     background-color: #fff;
-    height: 4px;
+    height: 2px;
     border-radius: 5px;
-    left: 0px;
+    left: 9px;
     top: 18px;
   }
   .first {
     position: absolute;
-    width: 45px;
+    width: 30px;
     -webkit-transition: all 0.2s ease-out;
   }
   .second {
-    margin-top: 10px;
+    margin-top: 7px;
     position: absolute;
     width: 30px;
     -webkit-transition: all 0.2s ease-out;
   }
 
   .third {
-    margin-top: 20px;
+    margin-top: 14px;
     width: 15px;
     -webkit-transition: all 0.2s ease-out;
     position: absolute;
@@ -215,29 +229,61 @@ a.menuLink:hover::after {
   .menuItemsActive {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: 85%;
     justify-content: space-evenly;
     margin: 1rem;
     transition: 0.3s all ease-in-out;
   }
 
+  .mainNavMobileClose .menuItemsActive .menuLinkMobile {
+    opacity: 0;
+  }
+  .mainNavMobileOpem .menuItemsActive .menuLinkMobile {
+    opacity: 1;
+  }
+
+  .menuItemsActive .menuLinkMobile:nth-child(1) {
+    transition-delay: 0.2s;
+  }
+  .menuItemsActive .menuLinkMobile:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .menuItemsActive .menuLinkMobile:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+  .menuItemsActive .menuLinkMobile:nth-child(4) {
+    transition-delay: 0.5s;
+  }
   .menuItemsActive .menuLinkMobile {
-    color: #fff;
+    /* color: #fff;
     font-size: 24px;
     font-weight: 600;
     border-bottom: 2px solid #fff;
     text-decoration: none;
+    padding: 0; */
     padding: 0;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 50;
+    text-decoration: none;
+    /* transition: 0.3s; */
+    transition: opacity 1.5s ease;
+    /* transition-delay: 0.5s; */
+    animation: fadeinLoad 1s 5s forwards;
   }
 
   .menuLinkMobile {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    border-bottom: 3px solid #fff;
-    text-decoration: none;
     padding: 0;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 50;
+    text-decoration: none;
+    transition: 0.3s;
   }
 
   .menuBtnClose {
@@ -249,12 +295,12 @@ a.menuLink:hover::after {
     position: relative;
     border-radius: 50%;
     cursor: pointer;
-    -webkit-transform: scale(1);
-    -webkit-transition: all 0.3s ease-out;
+    /* -webkit-transform: scale(1); */
+    -webkit-transition: all 0.5s ease-out;
     display: block;
   }
   .menuBtnClose .first {
-    width: 40px;
+    width: 30px;
     margin-top: 7px;
     transform-origin: 50% 50%;
     transform: rotate(45deg);
@@ -266,7 +312,7 @@ a.menuLink:hover::after {
     -webkit-transition: all 0.2s ease-out;
   }
   .menuBtnClose .third {
-    width: 40px;
+    width: 30px;
     margin-top: 7px;
     transform-origin: 50% 50%;
     transform: rotate(-45deg);

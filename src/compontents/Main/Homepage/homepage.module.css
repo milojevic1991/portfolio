@@ -161,6 +161,12 @@
   margin-top: 30px;
 }
 
+.aboutText p a {
+  text-decoration: none;
+  color: #c609a9;
+  font-weight: 500;
+}
+
 .socialIcons {
   display: flex;
   align-items: center;
@@ -168,12 +174,12 @@
 }
 
 .socialIcons a i {
-  font-size: 35px;
-  color: #fff;
+  font-size: 25px;
+  color: #ffffff63;
   transition: 0.2s all;
 }
 .socialIcons a:hover i {
-  color: #981283;
+  color: #fff;
 }
 
 .langBtn {
@@ -228,6 +234,13 @@
   margin-top: -200px;
 }
 
+/*Laptop view*/
+@media screen and (min-width: 1200px) and (max-width: 1490px) {
+  .homepage {
+    background-size: 44%, 70%;
+  }
+}
+
 /*Mobie view*/
 @media only screen and (max-width: 770px) {
   .langBtn {
@@ -236,6 +249,12 @@
     width: 50px;
     height: 50px;
     font-size: 15px;
+  }
+
+  .nemanjaImg {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
   }
   /* .mainCircles{
    width: 100%;
@@ -297,6 +316,6 @@
   }
   .aboutText p {
     padding: 0 1rem;
-    font-size: 18px;
+    font-size: 8px;
   }
 }

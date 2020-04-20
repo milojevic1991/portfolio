@@ -13,7 +13,7 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -41,16 +41,10 @@ body {
 
 /* Firefox */
 
-.scroller {
-  width: 300px;
-  height: 100px;
-  overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
-}
-
 main {
   flex-grow: 10;
+  height: 100%;
+  width: 100%;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
