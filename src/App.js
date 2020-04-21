@@ -1,8 +1,8 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import NavBar from "./compontents/NavBar/navBar";
-import Main from "./compontents/Main/main";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import NavBar from './compontents/NavBar/navBar';
+import Main from './compontents/Main/main';
 
 function App() {
   return (

@@ -59,7 +59,7 @@ const NavBar = () => {
           <NavLink
             className={classes.menuLink}
             activeClassName={classes.menuLinkActive}
-            to="/idemo"
+            to="/contact"
           >
             About me
           </NavLink>

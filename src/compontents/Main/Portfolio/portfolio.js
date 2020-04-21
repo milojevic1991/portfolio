@@ -14,9 +14,9 @@ const Portfolio = () => {
   const [activeLink, setActiveLink] = useState(0);
 
   const myRef = useRef(null);
+
   useEffect(() => {
-    window.scrollTo(0, myRef);
-    console.log('evo ga useeffect');
+    window.scrollTo(0, 0);
   }, []);
 
   const [linkItem, setLinkItem] = useState([

@@ -531,7 +531,7 @@
 }
 
 /*Laptop view*/
-@media screen and (min-width: 1390px) and (max-width: 1490px) {
+@media screen and (min-width: 1290px) and (max-width: 1490px) {
   .mainScreenPortfolio img {
     width: 60%;
   }
@@ -558,8 +558,16 @@
   .fontsColorsLeft {
     margin-top: 60px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
   }
+  .fontsColorsLeft p {
+    font-size: 15px;
+  }
+  .fontsColorsWrapper span {
+    height: 60px;
+    width: 60px;
+  }
+
   .websiteTabsWrapper {
     margin: 8rem 0;
   }
@@ -586,11 +594,30 @@
   .fontsColorsWrapper {
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   .fontsColorsLeft {
     margin-top: 60px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
+  }
+  .fontsColorsLeft p {
+    font-size: 15px;
+  }
+  .fontsColorsWrapper span {
+    height: 60px;
+    width: 60px;
+  }
+  .portfolioItemImageCircle {
+    width: 420px;
+    height: 420px;
+    left: -30px;
+    top: -120px;
+  }
+  .mainScreenPortfolio img {
+    width: 55%;
+    top: -25%;
   }
 }
 
@@ -792,6 +819,7 @@
     margin-top: 18%;
     left: 0;
     margin: 0;
+    margin-bottom: 20%;
   }
   .checkContact a {
     letter-spacing: -1px;

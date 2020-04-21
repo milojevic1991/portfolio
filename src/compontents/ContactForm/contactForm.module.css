@@ -110,3 +110,12 @@ input[type='submit'] {
   letter-spacing: -1px;
   transition: 0.5s ease-in;
 }
+@media only screen and (max-width: 770px) {
+  .contactFormInfo {
+    flex-direction: column;
+  }
+  .contactFormLeft,
+  .contactFormRight {
+    width: 100%;
+  }
+}

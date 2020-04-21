@@ -1,11 +1,14 @@
-import React from "react";
-import classes from "./contact.module.css";
-import ContactForm from "../../ContactForm/contactForm";
+import React, { useEffect } from 'react';
+import classes from './contact.module.css';
+import ContactForm from '../../ContactForm/contactForm';
 
-import contactPlane from "../../../assets/Images/contact-image.png";
-import splatterAbout from "../../../assets/Images/splatterAbout.png";
+import contactPlane from '../../../assets/Images/contact-image.png';
+import splatterAbout from '../../../assets/Images/splatterAbout.png';
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className={classes.contact}>
@@ -23,7 +26,19 @@ const Contact = () => {
               src={splatterAbout}
             ></img>
           </div>
-          <h1>About</h1>
+          <h1>Contact</h1>
+        </div>
+
+        <div className={classes.contactText}>
+          <h2>Get in touch</h2>
+          <p>
+            Have a question or want to work together? Let's chat.{' '}
+            <a href="n.milojevic1991@gmail.com" target="_blank">
+              n.milojevic1991@gmail.com
+            </a>
+            <br />
+            Or float me a note bellow.
+          </p>
         </div>
 
         <div className={classes.contactForm}>

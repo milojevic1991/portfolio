@@ -13,7 +13,7 @@
     #901995;
   /* background-size: 70%; */
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .planeImg {
@@ -106,6 +106,41 @@
   top: 340px;
 }
 
+.contactText {
+  padding: 2% 5%;
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.contactText h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 4vw;
+  letter-spacing: -1px;
+}
+
+.contactText p {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 44px;
+  margin-top: 30px;
+}
+
+.contactText p a {
+  text-decoration: none;
+  color: #c609a9;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.contactText p a:hover {
+  text-decoration: none;
+  color: #8a0676;
+  font-weight: 500;
+}
+
 .contactForm {
   padding: 5%;
   width: 70%;
@@ -121,4 +156,53 @@
 .contactFormWrapper {
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+  .planeImg {
+    width: 100%;
+    height: 100%;
+  }
+  .planeImg img {
+    top: 15%;
+    width: 100%;
+    position: absolute;
+    right: inherit;
+    z-index: 5;
+  }
+
+  .contactHeader h1 {
+    font-size: 15vw;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    /* z-index: 50; */
+    letter-spacing: -3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .smallDarkCircle {
+    width: 350px;
+    height: 350px;
+    left: 155px;
+  }
+
+  .contactForm {
+    padding: 19px;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 500;
+    position: relative;
+    background-color: #273040bd;
+    box-shadow: 0 0 150px #000000a6;
+    margin-top: 0%;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+  .contactText h2 {
+    font-size: 11vw;
+  }
 }

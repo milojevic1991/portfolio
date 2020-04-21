@@ -343,9 +343,9 @@ i {
 }
 
 .checkPortfolio:hover a {
-  color: #3e0041;
+  /* color: #3e0041;
   font-size: 6vw;
-  text-shadow: 2px 2px 5px #ff5ef1;
+  text-shadow: 2px 2px 5px #ff5ef1; */
 }
 
 .checkPortfolio a {
@@ -368,6 +368,35 @@ i {
   transition: all 0.9s ease-out;
 }
 
+/*Laptop view hiDPI*/
+@media screen and (min-width: 1350px) and (max-width: 1490px) {
+  .aboutMeWorkWrapper {
+    background: url('../../../assets/Images/bubble2-purple.png') 180% 12%
+        no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -80% 63% no-repeat;
+  }
+
+  .aboutMeWorkWrapperEdu {
+    background: url('../../../assets/Images/bubble2-purple.png') 172% 0%
+        no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -80% 158% no-repeat;
+  }
+}
+
+/*Laptop view low DPI*/
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
+  .aboutMeWorkWrapper {
+    background: url('../../../assets/Images/bubble2-purple.png') 210% 12%
+        no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -115% 63% no-repeat;
+  }
+
+  .aboutMeWorkWrapperEdu {
+    background: url('../../../assets/Images/bubble2-purple.png') 205% 0%
+        no-repeat,
+      url('../../../assets/Images/bubble2-purple.png') -110% 148% no-repeat;
+  }
+}
 /*Mobile*/
 
 @media only screen and (max-width: 770px) {
