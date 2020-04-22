@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import classes from './contact.module.css';
 import ContactForm from '../../ContactForm/contactForm';
 
+import ImageFadeIn from 'react-image-fade-in';
 import contactPlane from '../../../assets/Images/contact-image.png';
 import splatterAbout from '../../../assets/Images/splatterAbout.png';
 
@@ -14,7 +15,11 @@ const Contact = () => {
       <div className={classes.contact}>
         <div className={classes.contactHeader}>
           <div className={classes.planeImg}>
-            <img alt="contactNemanja" src={contactPlane}></img>
+            <ImageFadeIn
+              alt="contactNemanja"
+              opacityTransition={0.3}
+              src={contactPlane}
+            />
           </div>
 
           <div className={classes.headerTitle}>

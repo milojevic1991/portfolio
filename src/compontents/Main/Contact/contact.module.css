@@ -25,20 +25,17 @@
   top: 64%;
   left: 40%;
   z-index: 100;
-  animation: float 4s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {
   0% {
-    -webkit-transform: translatey(0px);
     transform: translatey(0px);
   }
   50% {
-    -webkit-transform: translatey(-20px);
     transform: translatey(-20px);
   }
   100% {
-    -webkit-transform: translatey(0px);
     transform: translatey(0px);
   }
 }

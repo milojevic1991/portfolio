@@ -10,6 +10,8 @@ import exampleImg from '../../../assets/Images/valeyo-device.png';
 import splatterPurple from '../../../assets/Images/splatter1.png';
 import WebScreen from '../../../assets/Images/webScreen.png';
 
+import ImageFadeIn from 'react-image-fade-in';
+
 const Portfolio = () => {
   const [activeLink, setActiveLink] = useState(0);
 
@@ -93,14 +95,15 @@ const Portfolio = () => {
         <div className={classes.portfolio}>
           <div ref={myRef} className={classes.portfolioHeader}>
             <div className={classes.handImg}>
-              <img src={handPhoto}></img>
+              <ImageFadeIn alt="" opacityTransition={0.5} src={handPhoto} />
+              {/* <img src={handPhoto}></img> */}
             </div>
             <div className={classes.headerTitle}>
               <div className={classes.smallDarkCircle}> </div>
               {/* <div className={classes.smallDarkCircleFixed}> </div> */}
               <img className={classes.splatterImg} src={splatterAbout}></img>
             </div>
-            <h1>About</h1>
+            <h1>Portfolio</h1>
           </div>
 
           <div className={classes.portfolioMain}>
@@ -124,7 +127,12 @@ const Portfolio = () => {
                 {/* left section */}
                 <div className={classes.portfolioItemImageSection}>
                   <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
+                    <ImageFadeIn
+                      alt=""
+                      opacityTransition={0.5}
+                      src={exampleImg}
+                    />
+                    {/* <img src={exampleImg}></img> */}
                   </div>
                   <div className={classes.portfolioItemImageCircle}> </div>
                 </div>
@@ -156,7 +164,11 @@ const Portfolio = () => {
                 {/* left section */}
                 <div className={classes.portfolioItemImageSection}>
                   <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
+                    <ImageFadeIn
+                      alt=""
+                      opacityTransition={0.5}
+                      src={exampleImg}
+                    />
                   </div>
                   <div
                     className={classes.portfolioItemImageCircle}
@@ -193,7 +205,11 @@ const Portfolio = () => {
                 {/* left section */}
                 <div className={classes.portfolioItemImageSection}>
                   <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
+                    <ImageFadeIn
+                      alt=""
+                      opacityTransition={0.5}
+                      src={exampleImg}
+                    />
                   </div>
                   <div className={classes.portfolioItemImageCircle}> </div>
                 </div>
