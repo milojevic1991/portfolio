@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import classes from './homepage.module.css';
@@ -9,6 +9,8 @@ import { motion } from 'framer-motion';
 import ImageFadeIn from 'react-image-fade-in';
 
 const Homepage = () => {
+  const [isScrolling, setIsScroling] = useState(false);
+
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,9 +20,9 @@ const Homepage = () => {
     <>
       <div className={classes.homepage}>
         <div className={classes.headerSection}>
-          <a className={classes.langBtn} href="/">
+          {/* <a className={classes.langBtn} href="/">
             SR
-          </a>
+          </a> */}
 
           <div className={classes.mainCircles}>
             <div className={classes.circleImg}>
@@ -37,6 +39,9 @@ const Homepage = () => {
 
           <h1>Neki tekst ovde.</h1>
           <h3>Neki tekst ovde.Neki tekst ovde.Neki tekst ovde.</h3>
+        </div>
+        <div className={classes.arrowDown}>
+          <i class="las la-long-arrow-alt-down"></i>
         </div>
         <div className={classes.about}>
           <div className={classes.aboutText}>
@@ -67,7 +72,6 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className={classes.aboutHomeShort}></div>
       </div>
     </>
   );

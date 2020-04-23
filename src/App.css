@@ -3,9 +3,10 @@
   flex-direction: row;
   height: 100vh;
   width: 100vw;
-  background: url('./assets//Images/line.png') top center repeat-y #273040;
+  /* background: url('./assets//Images/line.png') top center repeat-y #273040;
   height: 100vh;
   overflow-x: hidden;
+  */
 }
 
 .App-logo {
