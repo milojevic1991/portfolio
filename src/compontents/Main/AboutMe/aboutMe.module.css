@@ -73,6 +73,7 @@ i {
   border-radius: 50%;
   animation: morphingSmall2 2s infinite;
   animation-delay: 0.5s;
+  will-change: auto;
   left: 125px;
   position: absolute;
   z-index: 5;
@@ -178,7 +179,7 @@ i {
 }
 
 @keyframes morphingSmall {
-  0% {
+  /* 0% {
     border-radius: 30% 70% 70% 50% / 50% 50% 70% 70% box-shadow 15px 15px 50px
       rgba(0, 0, 0, 0.2);
   }
@@ -191,6 +192,16 @@ i {
   }
   75% {
     border-radius: 43% 67% 58% 42% / 63% 68% 42% 47%;
+  } */
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+    /* box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.22),
+      0 0 100px 30px rgba(0, 0, 0, 0.5); */
   }
 }
 
@@ -270,9 +281,10 @@ i {
   left: 0;
   right: 0;
   margin: auto;
+  will-change: auto;
 }
 
-@keyframes morphing {
+@keyframes aboutMe_morphing {
   0% {
     border-radius: 10% 10% 10% 11% / 40% 80% 40% 80% box-shadow 15px 15px 50px
       rgba(0, 0, 0, 0.2);
@@ -301,6 +313,7 @@ i {
   position: relative;
   top: 30px;
   animation: morphingSmall 2s infinite;
+  will-change: auto;
 }
 .aboutMeEduBlackCircle h1 {
   position: absolute;
@@ -333,7 +346,7 @@ i {
   align-items: center;
   justify-content: center;
   background: url('../../../assets/Images/bubble2-purple.png') 152% 30%no-repeat,
-    url('../../../assets/Images/bubble2-purple.png') -40% 158% no-repeat;
+    url('../../../assets/Images/bubble2-purple.png') -45% 127% no-repeat;
 }
 
 .checkPortfolio {
@@ -413,16 +426,11 @@ i {
 /*Mobile*/
 
 @media only screen and (max-width: 770px) {
-  /* p{
-      font-size: 18px;
-
-   }
-
-   h1,h2{
-      font-size: 46px;
-   } */
   .handImg img {
     width: 160%;
+  }
+  .handImg {
+    animation: none;
   }
 
   .aboutMeHeader h1 {
@@ -515,6 +523,12 @@ i {
     align-items: center;
     justify-content: center;
   }
+  .aboutMeWorkTech span {
+    padding: 1px;
+  }
+  .aboutMeWorkTech span i {
+    font-size: 20px;
+  }
 
   .aboutMeWorkItem p {
     align-items: center;
@@ -526,7 +540,7 @@ i {
     margin: 10px auto;
     font-weight: 400;
     line-height: 30px;
-    color: #7c8898;
+    color: #96a2b1;
   }
 
   .aboutMeEduBlackCircle h1 {
@@ -538,6 +552,7 @@ i {
     color: #fff;
     text-align: center;
     width: 100%;
+    letter-spacing: -2px;
   }
 
   .aboutMeWorkWrapperEdu {
@@ -563,5 +578,11 @@ i {
 
   .aboutMeHeader {
     margin-bottom: 20%;
+  }
+
+  .smallDarkCircleAbout {
+    width: 350px;
+    height: 350px;
+    left: 155px;
   }
 }

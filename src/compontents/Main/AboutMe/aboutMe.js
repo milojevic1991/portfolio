@@ -45,7 +45,10 @@ const AboutMe = () => {
             </div>
             <div className={classes.aboutMeWorkWrapper}>
               <div className={classes.aboutMeWorkItem}>
-                <div className={classes.aboutMeWorkItemCircle}></div>
+                <div
+                  className={classes.aboutMeWorkItemCircle}
+                  style={{ animationDelay: '1s' }}
+                ></div>
                 <h1 className={classes.aboutMeWorkTitle}>
                   Lead Front-End Developer
                 </h1>
@@ -93,7 +96,10 @@ const AboutMe = () => {
                 className={classes.aboutMeWorkItem}
                 style={{ alignItems: 'flex-end' }}
               >
-                <div className={classes.aboutMeWorkItemCircle}></div>
+                <div
+                  className={classes.aboutMeWorkItemCircle}
+                  style={{ animationDelay: '2s' }}
+                ></div>
                 <h1 className={classes.aboutMeWorkTitle}>
                   Lead Front-End Developer
                 </h1>
@@ -141,7 +147,10 @@ const AboutMe = () => {
               </div>
 
               <div className={classes.aboutMeWorkItem}>
-                <div className={classes.aboutMeWorkItemCircle}></div>
+                <div
+                  className={classes.aboutMeWorkItemCircle}
+                  style={{ animationDelay: '3s' }}
+                ></div>
                 <h1 className={classes.aboutMeWorkTitle}>
                   Lead Front-End Developer
                 </h1>
@@ -197,7 +206,10 @@ const AboutMe = () => {
           <div className={classes.aboutMeResume} style={{ marginTop: '-30%' }}>
             <div className={classes.aboutMeWorkWrapperEdu}>
               <div className={classes.aboutMeWorkItem} style={{ top: '180px' }}>
-                <div className={classes.aboutMeWorkItemCircle}></div>
+                <div
+                  className={classes.aboutMeWorkItemCircle}
+                  style={{ animationDelay: '4s' }}
+                ></div>
                 <h1 className={classes.aboutMeWorkTitle}>
                   Lead Front-End Developer
                 </h1>
@@ -219,7 +231,10 @@ const AboutMe = () => {
                 className={classes.aboutMeWorkItem}
                 style={{ alignItems: 'flex-end', top: '180px' }}
               >
-                <div className={classes.aboutMeWorkItemCircle}></div>
+                <div
+                  className={classes.aboutMeWorkItemCircle}
+                  style={{ animationDelay: '2s' }}
+                ></div>
                 <h1 className={classes.aboutMeWorkTitle}>
                   Lead Front-End Developer
                 </h1>

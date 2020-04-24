@@ -56,16 +56,20 @@ input[type='email']::placeholder,
 
 input[type='name']::focus,
 input[type='email']::focus,
-.contactFormTextArea:focus {
-  outline: 1px solid #8e1192;
+.contactFormTextArea::focus {
+  outline: 1px solid #cc2bd1;
   outline-style: auto;
   background-color: rebeccapurple;
 }
 input:focus {
-  outline: 1px solid #8e1192 !important;
+  outline: 1px solid #cc2bd1 !important;
   outline-style: auto !important;
 }
 
+textarea:focus {
+  outline: 1px solid #cc2bd1;
+  outline-style: auto;
+}
 .contactFormMsg {
   width: 100%;
 }
@@ -99,6 +103,11 @@ input[type='submit'] {
   border: none;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  transition: 0.2s all;
+}
+input[type='submit']:hover {
+  color: #730a76;
+  transform: translateY(-2px);
 }
 
 .sentFormText {

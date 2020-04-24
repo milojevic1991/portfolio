@@ -25,7 +25,7 @@
   top: 64%;
   left: 40%;
   z-index: 100;
-  animation: float 2s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -146,7 +146,7 @@
   background-color: #273040bd;
   box-shadow: 0 0 150px #000000a6;
   margin-top: 0%;
-  margin-left: 15%;
+  margin-left: 12%;
   margin-bottom: 10%;
 }
 
