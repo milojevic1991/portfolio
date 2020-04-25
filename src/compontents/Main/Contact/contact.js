@@ -6,6 +6,8 @@ import ImageFadeIn from 'react-image-fade-in';
 import contactPlane from '../../../assets/Images/contact-image.png';
 import splatterAbout from '../../../assets/Images/splatterAbout.png';
 
+import { motion } from 'framer-motion';
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,26 +15,36 @@ const Contact = () => {
   return (
     <div>
       <div className={classes.contact}>
-        <div className={classes.contactHeader}>
-          <div className={classes.planeImg}>
-            <ImageFadeIn
-              alt="contactNemanja"
-              opacityTransition={0.3}
-              src={contactPlane}
-            />
-          </div>
+        <motion.div
+          initial={{ x: -200 }}
+          animate={{ x: 0 }}
+          transition={{
+            type: 'spring',
+            damping: 15,
+            stiffness: 300,
+          }}
+        >
+          <div className={classes.contactHeader}>
+            <div className={classes.planeImg}>
+              <ImageFadeIn
+                alt="contactNemanja"
+                opacityTransition={0.3}
+                src={contactPlane}
+              />
+            </div>
 
-          <div className={classes.headerTitle}>
-            <div className={classes.smallDarkCircle}> </div>
-            {/* <div className={classes.smallDarkCircleFixed}> </div> */}
-            <img
-              alt="contactImg"
-              className={classes.splatterImg}
-              src={splatterAbout}
-            ></img>
+            <div className={classes.headerTitle}>
+              <div className={classes.smallDarkCircle}> </div>
+              {/* <div className={classes.smallDarkCircleFixed}> </div> */}
+              <img
+                alt="contactImg"
+                className={classes.splatterImg}
+                src={splatterAbout}
+              ></img>
+            </div>
+            <h1>Contact</h1>
           </div>
-          <h1>Contact</h1>
-        </div>
+        </motion.div>
 
         <div className={classes.contactText}>
           <h2>Get in touch</h2>

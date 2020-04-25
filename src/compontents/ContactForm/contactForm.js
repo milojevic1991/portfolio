@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import classes from './contactForm.module.css';
 import emailjs from 'emailjs-com';
 import { HalfCircleSpinner } from 'react-epic-spinners';
-
+import Fade from 'react-reveal/Fade';
 import useForm from './useForm';
 
 import { validate } from './validateForm';
@@ -57,12 +57,12 @@ const ContactForm = () => {
           {errors ? <h6>{errors.name}</h6> : null}
         </div>
         <div className={classes.contactFormRight}>
-          <h3>Label</h3>
+          <h3>Your Email</h3>
           <input
             onChange={onChange}
             type="email"
             name="email"
-            placeholder="What's your name?"
+            placeholder="What's your email?"
             value={values.email}
           />
           {errors ? <h6>{errors.email}</h6> : null}
@@ -74,7 +74,7 @@ const ContactForm = () => {
           name="msg"
           onChange={onChange}
           className={classes.contactFormTextArea}
-          placeholder="I bet its something interesting"
+          placeholder="I bet it's something interesting . . ."
           value={values.msg}
         ></textarea>
       </div>

@@ -3,6 +3,7 @@
    height: 100vh;
 
 } */
+
 .homepage {
   background: url('../../../assets/Images/line.png') top center repeat-y #273040;
   /* height: 100vh; */
@@ -12,9 +13,10 @@
 }
 @media only screen and (min-width: 770px) {
   .homepage {
-    background: url('../../../assets/Images/bubble2-purple.png') 140% 35%
-        no-repeat,
-      url('../../../assets/Images/line.png') top center repeat-y #273040;
+    background: 
+    /* url('../../../assets/Images/bubble2-purple.png') 140% 35%
+        no-repeat, */ url('../../../assets/Images/line.png')
+      top center repeat-y #273040;
     width: 100%;
     transition: background-image 1s;
     overflow-x: hidden;
@@ -26,9 +28,24 @@
   padding-top: 46vh;
   text-align: center;
   margin: 0 auto;
-  background: url('../../../assets/Images/bubble1-purple.png') top left
-    no-repeat;
+  /* background: url('../../../assets/Images/bubble1-purple.png') top left
+    no-repeat; */
   background-size: 22%;
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+.headerBubble {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.headerBubbleRight {
+  position: absolute;
+  right: -25%;
+  top: 52%;
 }
 .arrowDown {
   width: 100%;
@@ -38,7 +55,7 @@
   margin: 0 auto;
   margin: 0 auto;
   text-align: center;
-  color: #ae1895;
+  color: #ffffff;
   width: 100%;
   z-index: 500;
   position: relative;
@@ -93,15 +110,16 @@
   animation: homepage_morphing__1Ua9S 5s infinite;
   will-change: auto;
   overflow: hidden;
+  transform: scale(0.93);
 }
 
 @keyframes homepage_morphing__1Ua9S {
   0% {
-    transform: scale(1);
+    transform: scale(0.93);
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
     /* box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.22),
       0 0 100px 30px rgba(0, 0, 0, 0.5); */
   }
@@ -147,25 +165,25 @@
 }
 
 .headerSection h1 {
-  font-size: 8vw;
+  font-size: 7vw;
   color: #fff;
   text-align: center;
   font-weight: bold;
   z-index: 20;
   letter-spacing: -4px;
   position: relative;
-  top: -140px;
+  top: -120px;
 }
 
-.headerSection h3 {
+.headerSection h6 {
   font-size: 2vw;
-  color: #e8e8e8;
+  color: #fff;
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
   z-index: 20;
   letter-spacing: -1px;
   position: relative;
-  top: -140px;
+  top: -120px;
 }
 
 .about {
@@ -356,5 +374,15 @@
   .aboutText p {
     padding: 0 1rem;
     font-size: 8px;
+  }
+
+  .headerSection {
+    background: url('../../../assets/Images/bubble1-purple.png') top left
+      no-repeat;
+    background-size: 23%;
+  }
+  .headerBubble,
+  .headerBubbleRight {
+    display: none;
   }
 }

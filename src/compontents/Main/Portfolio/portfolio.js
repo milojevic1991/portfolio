@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import classes from './portfolio.module.css';
 import WebsiteLink from '../../UI/WebsiteLink/websiteLink';
 import WebsiteItem from '../../UI/WebsiteItem/websiteItem';
@@ -10,6 +11,8 @@ import exampleImg from '../../../assets/Images/valeyo-device.png';
 import splatterPurple from '../../../assets/Images/splatter1.png';
 import WebScreen from '../../../assets/Images/webScreen.png';
 
+import { motion } from 'framer-motion';
+import Fade from 'react-reveal/Fade';
 import ImageFadeIn from 'react-image-fade-in';
 
 const Portfolio = () => {
@@ -93,18 +96,28 @@ const Portfolio = () => {
     <>
       <div>
         <div className={classes.portfolio}>
-          <div ref={myRef} className={classes.portfolioHeader}>
-            <div className={classes.handImg}>
-              <ImageFadeIn alt="" opacityTransition={0.5} src={handPhoto} />
-              {/* <img src={handPhoto}></img> */}
+          <motion.div
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            transition={{
+              type: 'spring',
+              damping: 15,
+              stiffness: 300,
+            }}
+          >
+            <div ref={myRef} className={classes.portfolioHeader}>
+              <div className={classes.handImg}>
+                <ImageFadeIn alt="" opacityTransition={0.5} src={handPhoto} />
+                {/* <img src={handPhoto}></img> */}
+              </div>
+              <div className={classes.headerTitle}>
+                <div className={classes.smallDarkCircle}> </div>
+                {/* <div className={classes.smallDarkCircleFixed}> </div> */}
+                <img className={classes.splatterImg} src={splatterAbout}></img>
+              </div>
+              <h1>Portfolio</h1>
             </div>
-            <div className={classes.headerTitle}>
-              <div className={classes.smallDarkCircle}> </div>
-              {/* <div className={classes.smallDarkCircleFixed}> </div> */}
-              <img className={classes.splatterImg} src={splatterAbout}></img>
-            </div>
-            <h1>Portfolio</h1>
-          </div>
+          </motion.div>
 
           <div className={classes.portfolioMain}>
             <div className={classes.portfolioMainBox}>
@@ -132,14 +145,18 @@ const Portfolio = () => {
                       opacityTransition={0.5}
                       src={exampleImg}
                     />
+
                     {/* <img src={exampleImg}></img> */}
                   </div>
+
                   <div className={classes.portfolioItemImageCircle}> </div>
                 </div>
 
                 {/* right section */}
                 <div className={classes.portfolioItemDesc}>
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p>
                     XoranConnect is web-based service designed to complement
@@ -183,7 +200,9 @@ const Portfolio = () => {
                   className={classes.portfolioItemDesc}
                   style={{ textAlign: 'left' }}
                 >
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
@@ -216,7 +235,9 @@ const Portfolio = () => {
 
                 {/* right section */}
                 <div className={classes.portfolioItemDesc}>
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p>
                     XoranConnect is web-based service designed to complement
@@ -256,7 +277,9 @@ const Portfolio = () => {
                   className={classes.portfolioItemDesc}
                   style={{ textAlign: 'left' }}
                 >
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
@@ -297,7 +320,9 @@ const Portfolio = () => {
 
                 {/* right section */}
                 <div className={classes.portfolioItemDesc}>
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p>
                     XoranConnect is web-based service designed to complement
@@ -359,7 +384,9 @@ const Portfolio = () => {
                   className={classes.portfolioItemDesc}
                   style={{ textAlign: 'left' }}
                 >
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
@@ -410,7 +437,9 @@ const Portfolio = () => {
 
                 {/* right section */}
                 <div className={classes.portfolioItemDesc}>
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p>
                     XoranConnect is web-based service designed to complement
@@ -473,7 +502,9 @@ const Portfolio = () => {
                   className={classes.portfolioItemDesc}
                   style={{ textAlign: 'left' }}
                 >
-                  <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  <Fade bottom>
+                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
+                  </Fade>
 
                   <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
                     XoranConnect is web-based service designed to complement
@@ -526,7 +557,7 @@ const Portfolio = () => {
               </div>
 
               <div className={classes.checkContact}>
-                <a href="/">Contact</a>
+                <NavLink to="/contact">Contact</NavLink>
               </div>
 
               {/* <div className={classes.portfolioEduCircle}>

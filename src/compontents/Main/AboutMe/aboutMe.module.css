@@ -27,7 +27,7 @@ i {
 .handImg {
   position: absolute;
   top: 50%;
-  left: -40px;
+  left: -60px;
   margin-top: -9%;
   width: 60%;
   z-index: 6;
@@ -115,7 +115,7 @@ i {
 }
 
 .aboutMeResumeBox {
-  padding: 8% 8%;
+  padding: 4% 8%;
   width: 60%;
   z-index: 500;
   position: relative;
@@ -140,6 +140,34 @@ i {
   font-size: 23px;
   line-height: 44px;
   margin-top: 30px;
+}
+
+.btnRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0rem;
+  margin-top: 4rem;
+}
+.btnRow a {
+  font-weight: 400;
+  font-size: 17px;
+  padding: 1.3rem 4rem;
+  background-color: #0000;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
+  box-shadow: 0 7px 60px rgba(0, 0, 0, 0.51);
+  cursor: pointer;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+.btnRow a:hover {
+  opacity: 0.9;
+  box-shadow: 0 15px 60px 0px rgba(0, 0, 0, 0.77);
+  transform: translateY(-5px);
 }
 
 .aboutMeWorkWrapper {
@@ -282,6 +310,7 @@ i {
   right: 0;
   margin: auto;
   will-change: auto;
+  background: #273040;
 }
 
 @keyframes aboutMe_morphing {
@@ -324,6 +353,7 @@ i {
   color: #fff;
   text-align: center;
   width: 100%;
+  letter-spacing: -3px;
 }
 
 .aboutMeEduCircleImg {
@@ -373,6 +403,9 @@ i {
   font-size: 6vw;
   text-shadow: 2px 2px 5px #ff5ef1; */
 }
+/* .checkPortfolio a:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+} */
 
 .checkPortfolio a {
   color: #fff;
@@ -391,7 +424,7 @@ i {
   letter-spacing: -4px;
   font-weight: bold;
   font-size: 6vw;
-  transition: all 0.9s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 /*Laptop view hiDPI*/
@@ -552,7 +585,7 @@ i {
     color: #fff;
     text-align: center;
     width: 100%;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
   }
 
   .aboutMeWorkWrapperEdu {

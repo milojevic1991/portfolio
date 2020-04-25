@@ -271,7 +271,7 @@
   border-radius: 50%;
   box-shadow: inset 0px 0px 40px 5px rgba(0, 0, 0, 0.28),
     0 0 110px rgba(0, 0, 0, 0.8);
-  animation: morphing 3s infinite;
+  /* animation: morphing 3s infinite; */
   overflow: hidden;
   position: absolute;
   left: 0;

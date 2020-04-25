@@ -4,8 +4,12 @@ import { useLocation } from 'react-router-dom';
 import classes from './homepage.module.css';
 import map from '../../../assets/Images/mapImg.png';
 import Button from '../../UI/Button/button';
+import Bubble from '../../../assets/Images/bubble1-purple.png';
+import BubbleRight from '../../../assets/Images/bubble2-purple.png';
 import { motion } from 'framer-motion';
+import TextLoop from 'react-text-loop';
 
+import Fade from 'react-reveal/Fade';
 import ImageFadeIn from 'react-image-fade-in';
 
 const Homepage = () => {
@@ -19,27 +23,37 @@ const Homepage = () => {
   return (
     <>
       <div className={classes.homepage}>
+        <ImageFadeIn
+          className={classes.headerBubbleRight}
+          alt=""
+          opacityTransition={0.2}
+          src={BubbleRight}
+        />
         <div className={classes.headerSection}>
-          {/* <a className={classes.langBtn} href="/">
-            SR
-          </a> */}
+          <ImageFadeIn
+            className={classes.headerBubble}
+            alt=""
+            opacityTransition={0.2}
+            src={Bubble}
+          />
 
           <div className={classes.mainCircles}>
             <div className={classes.circleImg}>
-              <ImageFadeIn alt="" opacityTransition={0.5} src={map} />
-              {/* <img src={map}></img> */}
+              <ImageFadeIn alt="" opacityTransition={1} src={map} />
             </div>
             <div className={classes.smallPurpleCircle}> </div>
             <div className={classes.bigBlackCircle}> </div>
-
-            {/* <div className={classes.circleImg}>
-                     <img src={map}></img>
-                      </div> */}
           </div>
 
-          <h1>Neki tekst ovde.</h1>
-          <h3>Neki tekst ovde.Neki tekst ovde.Neki tekst ovde.</h3>
+          <Fade delay={330}>
+            <h1> Hello. I'm Nemanja.</h1>
+          </Fade>
+
+          <Fade delay={1000}>
+            <h6> Front-End Developer {'&'} UX/UI Designer</h6>
+          </Fade>
         </div>
+
         <div className={classes.arrowDown}>
           <i class="las la-long-arrow-alt-down"></i>
         </div>
