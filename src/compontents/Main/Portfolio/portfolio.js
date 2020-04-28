@@ -101,7 +101,7 @@ const Portfolio = () => {
             animate={{ x: 0 }}
             transition={{
               type: 'spring',
-              damping: 15,
+              damping: 13,
               stiffness: 300,
             }}
           >
