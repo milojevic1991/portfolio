@@ -15,6 +15,9 @@ import { motion } from 'framer-motion';
 import Fade from 'react-reveal/Fade';
 import ImageFadeIn from 'react-image-fade-in';
 
+import PortfolioCard from '../../PortfolioCard/portfolioCard';
+import ColorBox from '../../ColorBox/colorBox';
+
 const Portfolio = () => {
   const [activeLink, setActiveLink] = useState(0);
 
@@ -88,8 +91,6 @@ const Portfolio = () => {
 
     const websiteArr = webItems.filter((webId) => webId.id === elId);
     setwebItemsDisplayed(websiteArr);
-
-    console.log(elId);
   };
 
   return (
@@ -113,7 +114,11 @@ const Portfolio = () => {
               <div className={classes.headerTitle}>
                 <div className={classes.smallDarkCircle}> </div>
                 {/* <div className={classes.smallDarkCircleFixed}> </div> */}
-                <img className={classes.splatterImg} src={splatterAbout}></img>
+                <img
+                  className={classes.splatterImg}
+                  src={splatterAbout}
+                  alt=""
+                ></img>
               </div>
               <h1>Portfolio</h1>
             </div>
@@ -135,166 +140,49 @@ const Portfolio = () => {
 
             {/*  portfolio section APP */}
             <div className={classes.portfolioItemWrapper}>
-              {/* First portfolio section APP */}
-              <div className={classes.portfolioItem}>
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <ImageFadeIn
-                      alt=""
-                      opacityTransition={0.5}
-                      src={exampleImg}
-                    />
+              <PortfolioCard
+                // reverse={true}
+                title="componenta"
+                desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s"
+                image={exampleImg}
+                displayLink={false}
+              />
 
-                    {/* <img src={exampleImg}></img> */}
-                  </div>
+              <PortfolioCard
+                reverse={true}
+                title="componenta"
+                desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s"
+                image={exampleImg}
+                displayLink={false}
+              />
 
-                  <div className={classes.portfolioItemImageCircle}> </div>
-                </div>
+              <PortfolioCard
+                // reverse={true}
+                title="componenta"
+                desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s"
+                image={exampleImg}
+                displayLink={false}
+              />
 
-                {/* right section */}
-                <div className={classes.portfolioItemDesc}>
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
-
-              {/* Second portfolio section APP */}
-              <div
-                className={classes.portfolioItem}
-                style={{ flexDirection: 'row-reverse' }}
-              >
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <ImageFadeIn
-                      alt=""
-                      opacityTransition={0.5}
-                      src={exampleImg}
-                    />
-                  </div>
-                  <div
-                    className={classes.portfolioItemImageCircle}
-                    style={{ right: '0px', left: 'unset' }}
-                  >
-                    {' '}
-                  </div>
-                </div>
-
-                {/* right section */}
-                <div
-                  className={classes.portfolioItemDesc}
-                  style={{ textAlign: 'left' }}
-                >
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
-
-              {/* Third portfolio section APP */}
-              <div className={classes.portfolioItem}>
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <ImageFadeIn
-                      alt=""
-                      opacityTransition={0.5}
-                      src={exampleImg}
-                    />
-                  </div>
-                  <div className={classes.portfolioItemImageCircle}> </div>
-                </div>
-
-                {/* right section */}
-                <div className={classes.portfolioItemDesc}>
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
-
-              {/* Fourt portfolio section APP */}
-              <div
-                className={classes.portfolioItem}
-                style={{ flexDirection: 'row-reverse' }}
-              >
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
-                  </div>
-                  <div
-                    className={classes.portfolioItemImageCircle}
-                    style={{ right: '0px', left: 'unset' }}
-                  >
-                    {' '}
-                  </div>
-                </div>
-
-                {/* right section */}
-                <div
-                  className={classes.portfolioItemDesc}
-                  style={{ textAlign: 'left' }}
-                >
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
+              <PortfolioCard
+                reverse={true}
+                title="componenta"
+                desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s"
+                image={exampleImg}
+                displayLink={false}
+              />
 
               {/* WEBSITE circle section APP */}
               <div className={classes.portfolioEduCircle}>
@@ -308,240 +196,21 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              {/* First WEBSITE section APP */}
-              <div className={classes.portfolioItem}>
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
-                  </div>
-                  <div className={classes.portfolioItemImageCircle}> </div>
-                </div>
+              <PortfolioCard
+                // reverse={true}
+                title="componenta"
+                desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s"
+                image={exampleImg}
+                displayLink={false}
+              />
 
-                {/* right section */}
-                <div className={classes.portfolioItemDesc}>
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
-              {/* Font and colors section */}
-              <div className={classes.fontsColorsSection}>
-                <h1>Font & colors</h1>
-
-                <div className={classes.fontsColorsWrapper}>
-                  <div className={classes.fontsColorsLeft}>
-                    <h5>Raleway</h5>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                    <p>1234567890</p>
-                  </div>
-
-                  <div className={classes.fontsColorsRight}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Second WEBSITE section APP */}
-              <div
-                className={classes.portfolioItem}
-                style={{ flexDirection: 'row-reverse' }}
-              >
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
-                  </div>
-                  <div
-                    className={classes.portfolioItemImageCircle}
-                    style={{ right: '0px', left: 'unset' }}
-                  >
-                    {' '}
-                  </div>
-                </div>
-
-                {/* right section */}
-                <div
-                  className={classes.portfolioItemDesc}
-                  style={{ textAlign: 'left' }}
-                >
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
-              {/* Font and colors section */}
-              <div className={classes.fontsColorsSection}>
-                <h1>Font & colors</h1>
-
-                <div className={classes.fontsColorsWrapper}>
-                  <div className={classes.fontsColorsLeft}>
-                    <h5>Raleway</h5>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                    <p>1234567890</p>
-                  </div>
-
-                  <div className={classes.fontsColorsRight}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-
-              {/* First WEBSITE section APP */}
-              <div className={classes.portfolioItem}>
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
-                  </div>
-                  <div className={classes.portfolioItemImageCircle}> </div>
-                </div>
-
-                {/* right section */}
-                <div className={classes.portfolioItemDesc}>
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
-
-              {/* Font and colors section */}
-              <div className={classes.fontsColorsSection}>
-                <h1>Font & colors</h1>
-
-                <div className={classes.fontsColorsWrapper}>
-                  <div className={classes.fontsColorsLeft}>
-                    <h5>Raleway</h5>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                    <p>1234567890</p>
-                  </div>
-
-                  <div className={classes.fontsColorsRight}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Fourth WEBSITE section APP */}
-              <div
-                className={classes.portfolioItem}
-                style={{ flexDirection: 'row-reverse' }}
-              >
-                {/* left section */}
-                <div className={classes.portfolioItemImageSection}>
-                  <div className={classes.portfolioItemImage}>
-                    <img src={exampleImg}></img>
-                  </div>
-                  <div
-                    className={classes.portfolioItemImageCircle}
-                    style={{ right: '0px', left: 'unset' }}
-                  >
-                    {' '}
-                  </div>
-                </div>
-
-                {/* right section */}
-                <div
-                  className={classes.portfolioItemDesc}
-                  style={{ textAlign: 'left' }}
-                >
-                  <Fade bottom>
-                    <h1 className={classes.portfolioItemTitle}>XoranConnect</h1>
-                  </Fade>
-
-                  <p style={{ paddingLeft: '0', paddingRight: '15%' }}>
-                    XoranConnect is web-based service designed to complement
-                    MiniCAT. The service provides online viewing, off-site
-                    archival and backup of images, and easy access for both
-                    physician and patient
-                  </p>
-                  <a
-                    className={classes.portfolioItemTitleLink}
-                    href="londonborn.html#top"
-                  >
-                    View Work
-                  </a>
-                </div>
-              </div>
-              {/* Font and colors section */}
-              <div className={classes.fontsColorsSection}>
-                <h1>Font & colors</h1>
-
-                <div className={classes.fontsColorsWrapper}>
-                  <div className={classes.fontsColorsLeft}>
-                    <h5>Raleway</h5>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                    <p>1234567890</p>
-                  </div>
-
-                  <div className={classes.fontsColorsRight}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
+              <ColorBox
+                colors={['#fff', '#fff', '#fff', '#fff', '#fff', '#fff']}
+                fontFam="Poppins"
+              />
 
               <div className={classes.websiteTabsWrapper}>
                 <h1 className={classes.websiteTabsWrapperTitle}>
@@ -559,19 +228,6 @@ const Portfolio = () => {
               <div className={classes.checkContact}>
                 <NavLink to="/contact">Contact</NavLink>
               </div>
-
-              {/* <div className={classes.portfolioEduCircle}>
-           
-           <div className={classes.portfolioDarkCircle}> 
-             <div className={classes.portfolioSmallCircle}></div>
-             <div className={classes.portfolioSmallCircleImg}>
-             <img src={splatterPurple}></img>
-             </div>
-         
-             <h1>Websites</h1>
-
-           </div>
-           </div> */}
             </div>
           </div>
         </div>

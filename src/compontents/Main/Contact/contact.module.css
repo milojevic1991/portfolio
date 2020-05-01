@@ -68,7 +68,7 @@
   background: radial-gradient(circle, #000 3%, #59005d 100%);
   margin: 145px auto;
   border-radius: 50%;
-  animation: morphingSmall 12s infinite;
+  /* animation: morphingSmall 12s infinite; */
   left: 125px;
   position: absolute;
   z-index: 5;

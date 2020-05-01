@@ -26,14 +26,14 @@ const Homepage = () => {
         <ImageFadeIn
           className={classes.headerBubbleRight}
           alt=""
-          opacityTransition={0.2}
+          opacityTransition={0.9}
           src={BubbleRight}
         />
         <div className={classes.headerSection}>
           <ImageFadeIn
             className={classes.headerBubble}
             alt=""
-            opacityTransition={0.2}
+            opacityTransition={0.7}
             src={Bubble}
           />
 

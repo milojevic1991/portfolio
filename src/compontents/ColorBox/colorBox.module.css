@@ -1,0 +1,129 @@
+.fontsColorsSection {
+  padding: 6% 4%;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  z-index: 500;
+  position: relative;
+  background-color: #273040bd;
+  box-shadow: 0 0 150px #000000a6;
+  margin-top: 0%;
+  margin-left: 18%;
+  color: #fff;
+}
+
+.fontsColorsSection h1 {
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  top: 37px;
+  font-size: 3.5vw;
+  color: #fff;
+  letter-spacing: -3px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.fontsColorsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.fontsColorsLeft {
+  color: white;
+  text-align: left;
+}
+.fontsColorsLeft h5 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.fontsColorsLeft p {
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 9px;
+  font-weight: 200;
+}
+
+.fontsColorsRight {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  top: 40px;
+}
+
+.fontsColorsWrapper span {
+  margin: 20px;
+  padding: 10px 16px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 11px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ff7deb;
+  background-color: #0c0d0d29;
+  border-radius: 70%;
+  /* box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.38),
+    0 0 20px rgba(0, 0, 0, 0.4); */
+}
+
+@media only screen and (max-width: 770px) {
+  .fontsColorsSection {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .fontsColorsSection h1 {
+    font-size: 9vw;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1px;
+    padding: 0 5px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .fontsColorsLeft {
+    color: white;
+    text-align: center;
+    width: 100%;
+    word-break: break-all;
+    padding: 0 15px;
+    margin: 25px 0;
+  }
+
+  .fontsColorsLeft h5 {
+    font-size: 23px;
+    padding: 10px;
+    font-weight: 200;
+  }
+
+  .fontsColorsLeft p {
+    font-size: 12px;
+    padding: 10px;
+    letter-spacing: 4px;
+    font-weight: 200;
+  }
+
+  .fontsColorsWrapper span {
+    height: 80px;
+    width: 80px;
+  }
+
+  .fontsColorsRight {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    top: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}

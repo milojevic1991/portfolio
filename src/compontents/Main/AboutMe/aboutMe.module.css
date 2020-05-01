@@ -72,7 +72,7 @@ i {
   margin: 145px auto;
   border-radius: 50%;
   animation: morphingSmall2 2s infinite;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
   will-change: auto;
   left: 125px;
   position: absolute;
