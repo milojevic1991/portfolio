@@ -28,7 +28,7 @@ const Contact = () => {
             <div className={classes.planeImg}>
               <ImageFadeIn
                 alt="contactNemanja"
-                opacityTransition={0.3}
+                opacityTransition={1}
                 src={contactPlane}
               />
             </div>

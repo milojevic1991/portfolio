@@ -23,12 +23,6 @@ const Homepage = () => {
   return (
     <>
       <div className={classes.homepage}>
-        <ImageFadeIn
-          className={classes.headerBubbleRight}
-          alt=""
-          opacityTransition={0.9}
-          src={BubbleRight}
-        />
         <div className={classes.headerSection}>
           <ImageFadeIn
             className={classes.headerBubble}
@@ -36,7 +30,12 @@ const Homepage = () => {
             opacityTransition={0.7}
             src={Bubble}
           />
-
+          <ImageFadeIn
+            className={classes.headerBubbleRight}
+            alt=""
+            opacityTransition={0.9}
+            src={BubbleRight}
+          />
           <div className={classes.mainCircles}>
             <div className={classes.circleImg}>
               <ImageFadeIn alt="" opacityTransition={1} src={map} />
