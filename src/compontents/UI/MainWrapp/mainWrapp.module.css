@@ -1,0 +1,8 @@
+.mainWrapp {
+  background: url('../../../assets//Images/line.png') top center repeat-y
+    #273040;
+  height: 100vh;
+  /* overflow: hidden; */
+  will-change: transform;
+  overflow-x: hidden;
+}

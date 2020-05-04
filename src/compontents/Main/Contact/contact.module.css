@@ -2,6 +2,7 @@
   background: url('../../../assets/Images/line.png') top center repeat-y #273040;
   /* height: 100vh; */
   overflow: hidden;
+  will-change: transform;
 }
 
 .contactHeader {
@@ -65,7 +66,7 @@
   width: 400px;
   height: 400px;
   margin: 190px auto;
-  background: radial-gradient(circle, #000 3%, #59005d 100%);
+  background: radial-gradient(circle, #000 3%, #3a013d 100%);
   margin: 145px auto;
   border-radius: 50%;
   /* animation: morphingSmall 12s infinite; */
@@ -161,7 +162,7 @@
     height: 100%;
   }
   .planeImg img {
-    top: 15%;
+    top: 22%;
     width: 100%;
     position: absolute;
     right: inherit;
@@ -176,15 +177,23 @@
     /* z-index: 50; */
     letter-spacing: -3px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
   }
   .smallDarkCircle {
-    width: 350px;
-    height: 350px;
-    left: 155px;
+    width: 250px;
+    height: 250px;
+    left: 30%;
+    top: 15%;
+    background: radial-gradient(circle, #000 3%, #3b013e 100%);
+  }
+  .splatterImg {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 25%;
   }
 
   .contactForm {
@@ -199,7 +208,15 @@
     margin-left: 0;
     margin-bottom: 10%;
   }
+  .contactText {
+    padding: 2% 5%;
+    width: 90%;
+    margin: 5rem auto;
+  }
   .contactText h2 {
     font-size: 11vw;
+  }
+  .contactText p {
+    font-size: 18px;
   }
 }

@@ -20,7 +20,7 @@ const Contact = () => {
           animate={{ x: 0 }}
           transition={{
             type: 'spring',
-            damping: 15,
+            damping: 20,
             stiffness: 300,
           }}
         >

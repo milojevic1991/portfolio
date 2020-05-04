@@ -2,6 +2,7 @@
   background: url('../../../assets/Images/line.png') top center repeat-y #273040;
   height: 100vh;
   overflow-x: hidden;
+  will-change: transform;
 }
 
 .portfolioHeader {
@@ -47,10 +48,10 @@
   width: 400px;
   height: 400px;
   margin: 190px auto;
-  background: radial-gradient(circle, #000 3%, #59005d 100%);
+  background: radial-gradient(circle, #000 3%, #3a013d 100%);
   margin: 145px auto;
   border-radius: 50%;
-  animation: morphingSmall 2s infinite;
+  /* animation: morphingSmall 2s infinite; */
   animation-delay: 1s;
   left: 125px;
   position: absolute;
@@ -104,8 +105,7 @@
 .portfolioMain {
   /* padding: 12% 0; */
   padding-top: 12%;
-  background: url('../../../assets/Images/wavy-purple1.png') 100% 3% no-repeat,
-    url('../../../assets/Images/wavy-purple1.png') center 57% no-repeat;
+  background: url('../../../assets/Images/wavy-purple1.png') 100% 3% no-repeat;
   background-size: 100%, 100%;
 }
 
@@ -174,7 +174,7 @@
   top: -150px;
   margin: 2rem 0;
   position: absolute;
-  animation: morphingSmall 5s infinite;
+  /* animation: morphingSmall 5s infinite; */
   z-index: 1;
   margin-bottom: -34px;
   border: #273040 solid 2px;
@@ -310,10 +310,10 @@
   background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
   margin: 145px auto;
   border-radius: 50%;
-  animation: aboutMe_morphingSmall___nb4j 2s infinite;
+  /* animation: aboutMe_morphingSmall___nb4j 2s infinite; */
   position: relative;
   top: 30px;
-  animation: morphingSmall 2s infinite;
+  /* animation: morphingSmall 2s infinite; */
 }
 
 .portfolioSmallCircleImg {
@@ -631,7 +631,7 @@
 
 @media only screen and (max-width: 770px) {
   .handImg img {
-    width: 160%;
+    width: 180%;
     position: absolute;
     right: 28%;
   }
@@ -644,18 +644,26 @@
     z-index: 20;
     letter-spacing: -3px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
   }
 
   .smallDarkCircle {
-    width: 350px;
-    height: 350px;
-    left: 155px;
+    width: 250px;
+    height: 250px;
+    left: 30%;
+    top: 15%;
+    background: radial-gradient(circle, #000 3%, #3b013e 100%);
   }
 
+  .splatterImg {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+  }
   .mainScreenPortfolio img {
     position: relative;
     top: 0%;

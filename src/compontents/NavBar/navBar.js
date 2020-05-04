@@ -61,7 +61,7 @@ const NavBar = () => {
             activeClassName={classes.menuLinkActive}
             to="/contact"
           >
-            About me
+            Contact
           </NavLink>
         </div>
         {/* <div className={classes.footerName}>
@@ -95,7 +95,7 @@ const NavBar = () => {
             className={classes.menuLinkMobile}
             to="/"
           >
-            About me
+            Home
           </NavLink>
           <NavLink
             onClick={closeMenuHandler}
@@ -107,16 +107,16 @@ const NavBar = () => {
           <NavLink
             onClick={closeMenuHandler}
             className={classes.menuLinkMobile}
-            to="/idemo"
+            to="/portfolio"
           >
-            About me
+            Portfolio
           </NavLink>
           <NavLink
             onClick={closeMenuHandler}
             className={classes.menuLinkMobile}
-            to="/idemo"
+            to="/contact"
           >
-            About me
+            Contact
           </NavLink>
         </div>
       </nav>

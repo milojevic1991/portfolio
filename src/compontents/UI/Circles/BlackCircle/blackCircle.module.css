@@ -1,0 +1,25 @@
+.darkCircle {
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  margin: 190px auto;
+  background: radial-gradient(circle, #000 3%, #3a013d 100%);
+  margin: 145px auto;
+  border-radius: 50%;
+  animation-delay: 1s;
+  will-change: auto;
+  left: 125px;
+  position: absolute;
+  z-index: 5;
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2), 0 0 90px rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 770px) {
+  .darkCircle {
+    width: 250px;
+    height: 250px;
+    left: 30%;
+    top: 15%;
+    background: radial-gradient(circle, #000 3%, #3b013e 100%);
+  }
+}

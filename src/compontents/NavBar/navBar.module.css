@@ -160,7 +160,7 @@ a.menuLink:hover::after {
     position: fixed;
     height: 100vh;
     box-shadow: 40px 0 60px #141414e3, 0px 0 20px #1c1c1c;
-    transition: 0.3s all ease-in-out;
+    transition: 0.15s all ease-in-out;
   }
 
   .mainNavMobileClose {
@@ -186,7 +186,7 @@ a.menuLink:hover::after {
     border-radius: 50%;
     cursor: pointer;
     transform: scale(1);
-    transition: all 0.3s ease-out;
+    transition: all 0.15s ease-out;
     display: block;
     z-index: 510;
     background-color: #1a202be3;

@@ -1,0 +1,121 @@
+.aboutWrapp {
+  padding: 4rem 15%;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../../../../assets/Images/bubble2-purple.png') 148% 12%
+      no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') -48% 63% no-repeat;
+}
+
+.aboutWrappEdu {
+  padding: 4rem 15%;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../../../../assets/Images/bubble2-purple.png') 152% 30%no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') -45% 127% no-repeat;
+}
+
+.portfolioWrapp {
+  width: 100%;
+  padding: 2rem 0;
+  margin: 5rem 0;
+  background: url('../../../../assets/Images/bubble2-purple.png') 148% 0%
+      no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') -43% 6% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') 148% 12% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') -45% 20% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') 145% 33% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') -45% 44% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') 151% 60% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') -45% 69% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') 147% 82% no-repeat,
+    url('../../../../assets/Images/bubble2-purple.png') -38% 89% no-repeat;
+}
+
+/*Laptop view hiDPI*/
+@media screen and (min-width: 1350px) and (max-width: 1490px) {
+  .aboutWrapp {
+    background: url('../../../../assets/Images/bubble2-purple.png') 180% 12%
+        no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -80% 63% no-repeat;
+  }
+  .aboutWrappEdu {
+    background: url('../../../../assets/Images/bubble2-purple.png') 172% 0%
+        no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -80% 158% no-repeat;
+  }
+  .portfolioWrapp {
+    background: url('../../../../assets/Images/bubble2-purple.png') 188% 0%
+        no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -80% 6% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 188% 12% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -80% 20% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 188% 33% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -80% 44% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 188% 60% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -80% 69% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 188% 82% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -75% 89% no-repeat;
+  }
+}
+
+@media screen and (min-width: 1190px) and (max-width: 1290px) {
+  .portfolioWrapp {
+    background: url('../../../../assets/Images/bubble2-purple.png') 208% 0%
+        no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -103% 6% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 208% 12% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -103% 20% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 208% 33% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -103% 44% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 208% 60% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -103% 69% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') 208% 82% no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -103% 89% no-repeat;
+  }
+}
+
+/*Laptop view low DPI*/
+
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
+  .aboutWrapp {
+    background: url('../../../../assets/Images/bubble2-purple.png') 210% 12%
+        no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -115% 63% no-repeat;
+  }
+
+  .aboutWrappEdu {
+    background: url('../../../../assets/Images/bubble2-purple.png') 205% 0%
+        no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png')-110% 148% no-repeat;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .aboutWrapp {
+    width: 100%;
+    padding: 4rem 0%;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+  }
+
+  .aboutWrappEdu {
+    background: url('../../../../assets/Images/bubble2-purple.png') 185% 30%
+        no-repeat,
+      url('../../../../assets/Images/bubble2-purple.png') -66% 131% no-repeat;
+    padding: 4rem 0;
+  }
+  .portfolioWrapp {
+    background: none;
+  }
+}

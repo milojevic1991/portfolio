@@ -11,6 +11,7 @@
   height: 100vh;
   overflow-x: hidden;
   position: relative;
+  /* will-change: transform; */
 }
 
 .App-logo {

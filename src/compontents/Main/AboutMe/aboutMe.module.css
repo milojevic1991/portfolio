@@ -5,48 +5,8 @@ i {
   vertical-align: middle;
   padding: 5px;
 }
-.aboutMe {
-  background: url('../../../assets/Images/line.png') top center repeat-y #273040;
-  height: 100vh;
-  /* overflow: hidden; */
 
-  overflow-x: hidden;
-}
-
-.aboutMeHeader {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  margin: 0 auto;
-  background: url('../../../assets/Images/lineAbout.png') top center repeat-y
-    #901995;
-  /* background-size: 70%; */
-  position: relative;
-}
-
-.handImg {
-  position: absolute;
-  top: 50%;
-  left: -60px;
-  margin-top: -9%;
-  width: 60%;
-  z-index: 6;
-  /* animation: float 2s ease-in-out infinite; */
-}
-
-@keyframes float {
-  0% {
-    transform: translatex(-20px);
-  }
-  50% {
-    transform: translatex(0px);
-  }
-  100% {
-    transform: translatex(-20px);
-  }
-}
-
-.headerTitle {
+/* .headerTitle {
   margin-left: -325px;
   margin-top: -325px;
   width: 650px;
@@ -54,31 +14,30 @@ i {
   position: absolute;
   top: 50%;
   left: 50%;
-}
+} */
 
-.splatterImg {
+/* .splatterImg {
   position: absolute;
   width: 95%;
   top: 0%;
   left: 0%;
-}
+} */
 
-.smallDarkCircleAbout {
+/* .smallDarkCircleAbout {
   z-index: 2;
   width: 400px;
   height: 400px;
   margin: 190px auto;
-  background: radial-gradient(circle, #000 3%, #59005d 100%);
+  background: radial-gradient(circle, #000 3%, #3a013d 100%);
   margin: 145px auto;
   border-radius: 50%;
-  /* animation: morphingSmall2 2s infinite; */
   animation-delay: 1s;
   will-change: auto;
   left: 125px;
   position: absolute;
   z-index: 5;
   box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2), 0 0 90px rgba(0, 0, 0, 0.8);
-}
+} */
 
 @keyframes morphingSmall2 {
   0% {
@@ -96,7 +55,7 @@ i {
   } */
 }
 
-.aboutMeHeader h1 {
+/* .aboutMeHeader h1 {
   font-size: 8vw;
   color: #fff;
   text-align: center;
@@ -105,7 +64,7 @@ i {
   letter-spacing: -4px;
   position: relative;
   top: 340px;
-}
+} */
 
 .aboutMeResume {
   padding: 12% 0;
@@ -125,13 +84,13 @@ i {
   margin-left: 15%;
 }
 
-.aboutMeResumeBox h2 {
+/* .aboutMeResumeBox h2 {
   color: #fff;
   text-align: center;
   font-weight: normal;
   font-size: 4vw;
   letter-spacing: -1px;
-}
+} */
 
 .aboutMeResumeBox p {
   color: #fff;
@@ -429,62 +388,54 @@ i {
 
 /*Laptop view hiDPI*/
 @media screen and (min-width: 1350px) and (max-width: 1490px) {
-  .aboutMeWorkWrapper {
+  /* .aboutMeWorkWrapper {
     background: url('../../../assets/Images/bubble2-purple.png') 180% 12%
         no-repeat,
       url('../../../assets/Images/bubble2-purple.png') -80% 63% no-repeat;
-  }
+  } */
 
-  .aboutMeWorkWrapperEdu {
+  /* .aboutMeWorkWrapperEdu {
     background: url('../../../assets/Images/bubble2-purple.png') 172% 0%
         no-repeat,
       url('../../../assets/Images/bubble2-purple.png') -80% 158% no-repeat;
-  }
+  } */
 }
 
 /*Laptop view low DPI*/
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
-  .aboutMeWorkWrapper {
+  /* .aboutMeWorkWrapper {
     background: url('../../../assets/Images/bubble2-purple.png') 210% 12%
         no-repeat,
       url('../../../assets/Images/bubble2-purple.png') -115% 63% no-repeat;
-  }
+  } */
 
-  .aboutMeWorkWrapperEdu {
+  /* .aboutMeWorkWrapperEdu {
     background: url('../../../assets/Images/bubble2-purple.png') 205% 0%
         no-repeat,
       url('../../../assets/Images/bubble2-purple.png') -110% 148% no-repeat;
-  }
+  } */
 }
 /*Mobile*/
 
 @media only screen and (max-width: 770px) {
   .handImg img {
-    width: 160%;
-  }
-  .handImg {
+    width: 180%;
     animation: none;
   }
 
-  .aboutMeHeader h1 {
-    font-size: 15vw;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    z-index: 20;
-    letter-spacing: -3px;
+  /* .smallDarkCircleAbout {
+    width: 250px;
+    height: 250px;
+    left: 30%;
+    top: 15%;
+    background: radial-gradient(circle, #000 3%, #3b013e 100%);
+  } */
+  /* .splatterImg {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-  }
-
-  .smallDarkCircle {
-    width: 350px;
-    height: 350px;
-    left: 155px;
-  }
+    width: 50%;
+    top: 20%;
+    left: 25%;
+  } */
 
   .aboutMeResumeBox {
     width: 100%;
@@ -500,14 +451,14 @@ i {
   .aboutMeResumeBox h2 {
     font-size: 11vw;
   }
-  .aboutMeResumeBox p {
+  /* .aboutMeResumeBox p {
     padding: 0 1rem;
     font-size: 18px;
     line-height: 34px;
     font-weight: 400;
-  }
+  } */
 
-  .aboutMeWorkWrapper {
+  /* .aboutMeWorkWrapper {
     width: 100%;
     padding: 4rem 0%;
     display: flex;
@@ -516,7 +467,7 @@ i {
     align-items: center;
     justify-content: center;
     background: none;
-  }
+  } */
 
   .aboutMeWorkItem {
     align-items: center !important;
@@ -588,12 +539,12 @@ i {
     letter-spacing: -3px;
   }
 
-  .aboutMeWorkWrapperEdu {
+  /* .aboutMeWorkWrapperEdu {
     background: url('../../../assets/Images/bubble2-purple.png') 185% 30%
         no-repeat,
       url('../../../assets/Images/bubble2-purple.png') -66% 131% no-repeat;
     padding: 4rem 0;
-  }
+  } */
 
   .checkPortfolio {
     width: 100%;
@@ -613,9 +564,9 @@ i {
     margin-bottom: 20%;
   }
 
-  .smallDarkCircleAbout {
+  /* .smallDarkCircleAbout {
     width: 350px;
     height: 350px;
     left: 155px;
-  }
+  } */
 }

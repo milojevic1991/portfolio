@@ -118,11 +118,11 @@
     color: #96a2b1;
   }
   .portfolioItemImageCircle {
-    width: 330px;
-    height: 330px;
+    width: 250px;
+    height: 250px;
     left: 50% !important;
     right: 0 !important;
-    top: -290px;
+    top: -100%;
     transform: translate(-50%, 50%);
   }
 }

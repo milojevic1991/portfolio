@@ -1,0 +1,16 @@
+.splatterImg {
+  position: absolute;
+  width: 95%;
+  top: 0%;
+  left: 0%;
+}
+/*  */
+
+@media only screen and (max-width: 770px) {
+  .splatterImg {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+  }
+}
