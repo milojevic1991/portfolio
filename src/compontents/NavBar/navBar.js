@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import classes from './navBar.module.css';
 import nLogo from '../../assets/Images/nemanja-logo4.png';
+
+import MenuLink from '../../compontents/NavBar/Link/menuLink';
+import Fade from 'react-reveal/Fade';
+
+import { MENU_ITEMS } from '../../data/data';
 
 const NavBar = () => {
   const [openMenuClass, setOpenMenuClass] = useState(
@@ -10,68 +15,28 @@ const NavBar = () => {
 
   const openMenuHandler = () => {
     setOpenMenuClass(classes.mainNavMobileOpen);
-    console.log('klik meni');
   };
 
   const closeMenuHandler = () => {
     setOpenMenuClass(classes.mainNavMobileClose);
-    console.log('klik meni');
+    console.log('cao');
   };
 
   return (
     <>
       <nav className={classes.mainNav}>
-        {/* <div className ={classes.profileImg} /> */}
-
-        {/* <div className={classes.logo}> */}
-        <NavLink
-          exact
-          className={classes.logo}
-          // activeClassName={classes.menuLinkActive}
-          to="/"
-        >
+        {/* <NavLink exact className={classes.logo} to="/"></NavLink> */}
+        <MenuLink ex={true} to={''} type={'image'}>
           <img alt="logo" src={nLogo}></img>
-        </NavLink>
-        {/* </div> */}
+        </MenuLink>
+
         <div className={classes.menuItems}>
-          <NavLink
-            exact
-            className={classes.menuLink}
-            activeClassName={classes.menuLinkActive}
-            to="/"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            className={classes.menuLink}
-            activeClassName={classes.menuLinkActive}
-            to="/about"
-          >
-            About me
-          </NavLink>
-          <NavLink
-            className={classes.menuLink}
-            activeClassName={classes.menuLinkActive}
-            to="/portfolio"
-          >
-            Portfolio
-          </NavLink>
-          <NavLink
-            className={classes.menuLink}
-            activeClassName={classes.menuLinkActive}
-            to="/contact"
-          >
-            Contact
-          </NavLink>
+          {MENU_ITEMS.map((el, index) => (
+            <MenuLink key={index} ex={el.ex} to={el.to}>
+              {el.text}
+            </MenuLink>
+          ))}
         </div>
-        {/* <div className={classes.footerName}>
-          <a href="/">
-            <i class="lab la-linkedin-in"></i>
-          </a>
-          <a href="/">
-            <i class="lab la-github"></i>
-          </a>c
-        </div> */}
       </nav>
 
       <div onClick={openMenuHandler} className={classes.menuBtn}>
@@ -81,8 +46,6 @@ const NavBar = () => {
       </div>
 
       <nav className={openMenuClass}>
-        {/* <div className ={classes.profileImg} /> */}
-
         <div onClick={closeMenuHandler} className={classes.menuBtnClose}>
           <div className={[classes.menuBar, classes.first].join(' ')}></div>
           <div className={[classes.menuBar, classes.second].join(' ')}></div>
@@ -90,7 +53,19 @@ const NavBar = () => {
         </div>
 
         <div className={classes.menuItemsActive}>
-          <NavLink
+          {MENU_ITEMS.map((el, index) => (
+            <MenuLink
+              click={closeMenuHandler}
+              key={index}
+              ex={el.ex}
+              to={el.to}
+              type={'mobile'}
+            >
+              {el.text}
+            </MenuLink>
+          ))}
+
+          {/* <NavLink
             onClick={closeMenuHandler}
             className={classes.menuLinkMobile}
             to="/"
@@ -117,7 +92,7 @@ const NavBar = () => {
             to="/contact"
           >
             Contact
-          </NavLink>
+          </NavLink> */}
         </div>
       </nav>
     </>

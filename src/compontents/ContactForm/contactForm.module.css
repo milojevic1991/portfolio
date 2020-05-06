@@ -1,3 +1,20 @@
+.contactForm {
+  padding: 5%;
+  width: 70%;
+  z-index: 500;
+  position: relative;
+  background-color: #273040bd;
+  box-shadow: 0 0 150px #000000a6;
+  margin-top: 0%;
+  margin-left: 12%;
+  margin-bottom: 10%;
+}
+
+.contactFormWrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .contactFormInfo {
   display: flex;
   align-items: center;
@@ -120,6 +137,19 @@ input[type='submit']:hover {
   transition: 0.5s ease-in;
 }
 @media only screen and (max-width: 770px) {
+  .contactForm {
+    padding: 19px;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 500;
+    position: relative;
+    background-color: #273040bd;
+    box-shadow: 0 0 150px #000000a6;
+    margin-top: 0%;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+
   .contactFormInfo {
     flex-direction: column;
   }

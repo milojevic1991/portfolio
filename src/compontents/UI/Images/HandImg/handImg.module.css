@@ -7,9 +7,23 @@
   z-index: 6;
 }
 
+.handImgRight {
+  position: absolute;
+  top: 50%;
+  right: -120px;
+  margin-top: -9%;
+  width: 60%;
+  z-index: 6;
+}
+
 @media only screen and (max-width: 770px) {
   .handImg img {
     width: 180%;
     animation: none;
+  }
+  .handImgRight img {
+    width: 180%;
+    position: absolute;
+    right: 28%;
   }
 }

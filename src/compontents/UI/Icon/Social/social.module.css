@@ -1,0 +1,16 @@
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 10px 0;
+}
+
+.socialIcons a i {
+  font-size: 25px;
+  color: #ffffffd4;
+  transition: 0.2s all;
+}
+.socialIcons a:hover i {
+  color: #fff;
+  transform: translateY(-3px);
+}

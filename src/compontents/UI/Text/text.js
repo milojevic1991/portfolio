@@ -1,13 +1,20 @@
 import React from 'react';
 import classes from './text.module.css';
 
-const Text = ({ size, children }) => {
+const Text = ({ size, children, styled }) => {
   let tag;
   switch (size) {
     case 'title':
       tag = <h2 className={classes.title}>{children}</h2>;
       break;
 
+    case 'boldTitle':
+      tag = <h1 className={classes.boldTitle}>{children}</h1>;
+      break;
+
+    case 'subTitle':
+      tag = <h1 className={classes.subTitle}>{children}</h1>;
+      break;
     case 'workTitle':
       tag = <h1 className={classes.workTitle}>{children}</h1>;
       break;
@@ -22,6 +29,14 @@ const Text = ({ size, children }) => {
 
     case 'textMain':
       tag = <p className={classes.textMain}>{children}</p>;
+      break;
+
+    case 'textSecond':
+      tag = (
+        <p style={styled} className={classes.textSecond}>
+          {children}
+        </p>
+      );
       break;
 
     default:

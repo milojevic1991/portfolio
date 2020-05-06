@@ -1,0 +1,55 @@
+i {
+  color: #586681;
+  margin: 0 4px;
+  font-size: 24px;
+  vertical-align: middle;
+  padding: 5px;
+}
+.lab {
+  transition: 0.2 all;
+}
+.aboutMeWorkTech {
+  margin: 1rem 0;
+  margin-left: -1%;
+}
+
+.aboutMeWorkTech span {
+  margin: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+  font-size: 11px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ff7deb;
+  /* background: #000; */
+  background-color: #0c0d0d29;
+  border-radius: 10%;
+  box-shadow: inset 0px 0px 19px rgba(0, 0, 0, 0.38),
+    0 0 20px rgba(0, 0, 0, 0.4);
+  transition: 0.2 all;
+}
+
+.aboutMeWorkTech span:hover {
+  background-color: #0c0d0d45;
+}
+.aboutMeWorkTech span:hover i {
+  color: #abbbdb;
+}
+
+@media only screen and (max-width: 770px) {
+  .aboutMeWorkTech {
+    margin: 1rem auto;
+    margin-left: -1%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutMeWorkTech span {
+    padding: 1px;
+  }
+  .aboutMeWorkTech span i {
+    font-size: 20px;
+  }
+}

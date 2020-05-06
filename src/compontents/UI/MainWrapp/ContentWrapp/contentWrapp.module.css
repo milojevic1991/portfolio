@@ -1,7 +1,7 @@
 .aboutWrapp {
   padding: 4rem 15%;
   display: flex;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -11,9 +11,9 @@
 }
 
 .aboutWrappEdu {
-  padding: 4rem 15%;
+  padding: 0rem 15%;
   display: flex;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,8 +23,8 @@
 
 .portfolioWrapp {
   width: 100%;
-  padding: 2rem 0;
-  margin: 5rem 0;
+  padding: 0;
+  margin: 0;
   background: url('../../../../assets/Images/bubble2-purple.png') 148% 0%
       no-repeat,
     url('../../../../assets/Images/bubble2-purple.png') -43% 6% no-repeat,

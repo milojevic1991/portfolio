@@ -1,0 +1,111 @@
+.portfolio {
+  background: url('../../../../assets//Images/handRotated.png') 50% 156%
+    no-repeat #901995;
+
+  width: 70%;
+  margin: 6% auto 10%;
+  background-size: 20%;
+  box-shadow: 0 0 150px #000000a6, inset 0px 0px 49px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 14% 0;
+  transition: all 0.7s ease-out;
+}
+
+.portfolio:hover {
+  background-color: #3e0041;
+  background-position-y: 376%;
+  background-size: 22%;
+}
+
+.portfolio a {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  z-index: 100;
+  font-size: 5vw;
+  letter-spacing: -4px;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  letter-spacing: -4px;
+  font-weight: bold;
+  font-size: 6vw;
+  transition: all 0.3s ease-out;
+}
+
+.contact {
+  background: url('../../../../assets//Images/contact-image2.png') 16% 116%
+    no-repeat #8f0d93;
+
+  width: 70%;
+  margin: 6% auto 10%;
+  background-size: 60%;
+  box-shadow: 0 0 150px #000000a6, inset 0px 0px 49px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 14% 0;
+  transition: all 1s ease-out;
+  left: 3%;
+}
+
+.contact:hover {
+  background-color: #3e0041;
+  background-position-x: 216%;
+  background-size: 30%;
+}
+
+.contact a {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  z-index: 100;
+  font-size: 5vw;
+  letter-spacing: -4px;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  letter-spacing: -4px;
+  font-weight: bold;
+  font-size: 6vw;
+  transition: all 0.9s ease-out;
+}
+
+@media only screen and (max-width: 770px) {
+  .portfolio {
+    width: 100%;
+    margin-bottom: 20%;
+    padding: 33% 0;
+    background-size: 26%;
+    margin-top: 18%;
+  }
+
+  .portfolio a {
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 13vw;
+  }
+
+  .contact {
+    background: url('../../../../assets//Images/contact-image2.png') 16% 92%
+      no-repeat #8f0d93;
+    width: 100%;
+    padding: 33% 0;
+    background-size: 80%;
+    margin-top: 18%;
+    left: 0;
+    margin: 0;
+    margin-bottom: 20%;
+  }
+  .contact a {
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 13vw;
+  }
+}

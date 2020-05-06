@@ -24,6 +24,28 @@
   top: 111px;
 }
 
+.boldTitle {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: -15%;
+  font-size: 3.5vw;
+  color: #fff;
+  letter-spacing: -3px;
+}
+.subTitle {
+  font-size: 2vw;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  z-index: 20;
+  letter-spacing: -1px;
+  position: relative;
+  top: 360px;
+}
+
 .workTitleMedium {
   color: white;
   font-weight: 500;
@@ -41,9 +63,30 @@
   font-weight: 500;
 }
 
+.textSecond {
+  margin-top: 10px;
+  color: #ffedfc96;
+  width: 60%;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/*Laptop view*/
+@media screen and (min-width: 1290px) and (max-width: 1490px) {
+  .boldTitle {
+    top: -7%;
+  }
+}
+
 @media only screen and (max-width: 770px) {
   .title {
     font-size: 11vw;
+  }
+  .boldTitle {
+    font-size: 10.5vw;
+    letter-spacing: -2px;
+    top: -25%;
   }
   .textMain {
     padding: 0 1rem;
@@ -75,5 +118,32 @@
     z-index: 10;
     position: relative;
     padding: 3px 0;
+  }
+
+  .textSecond {
+    align-items: center;
+    text-align: justify !important ;
+    padding: 10px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 90%;
+    margin: 10px auto;
+    font-weight: 400;
+    line-height: 30px;
+    color: #96a2b1;
+  }
+
+  .subTitle {
+    font-size: 5vw;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    z-index: 20;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
   }
 }

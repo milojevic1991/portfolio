@@ -11,9 +11,34 @@ import TextLoop from 'react-text-loop';
 
 import Fade from 'react-reveal/Fade';
 import ImageFadeIn from 'react-image-fade-in';
+import Title from '../../UI/Text/Title/title.js';
+import Text from '../../UI/Text/text';
+
+// imported components
+import MainWrap from '../../UI/MainWrapp/mainWrapp';
+import Header from '../../UI/Header/header';
+import HomeCircles from '../../UI/Circles/BlackCircle/HomeCircles/homeCircles';
+import Box from '../../UI/Box/box';
+import Social from '../../UI/Icon/Social/social';
+
+import Arrow from '../../UI/Icon/Arrow/arrow';
 
 const Homepage = () => {
   const [isScrolling, setIsScroling] = useState(false);
+
+  const [styleBox, setStyleBox] = useState(null);
+
+  function resized() {
+    if (window.innerWidth > 768) {
+      setStyleBox({ padding: '5% 8%' });
+    } else {
+      setStyleBox(null);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', resized);
+  }, []);
 
   const { pathname } = useLocation();
   useEffect(() => {
@@ -22,8 +47,8 @@ const Homepage = () => {
 
   return (
     <>
-      <div className={classes.homepage}>
-        <div className={classes.headerSection}>
+      <MainWrap>
+        <Header style={{ backgroundColor: 'transparent' }}>
           <ImageFadeIn
             className={classes.headerBubble}
             alt=""
@@ -36,30 +61,49 @@ const Homepage = () => {
             opacityTransition={0.9}
             src={BubbleRight}
           />
-          <div className={classes.mainCircles}>
-            <div className={classes.circleImg}>
-              <ImageFadeIn alt="" opacityTransition={1} src={map} />
-            </div>
-            <div className={classes.smallPurpleCircle}> </div>
-            <div className={classes.bigBlackCircle}> </div>
-          </div>
 
-          <Fade delay={330}>
-            <h1> Hello. I'm Nemanja.</h1>
-          </Fade>
+          <HomeCircles />
 
-          <Fade delay={1000}>
-            <h6> Front-End Developer {'&'} UX/UI Designer</h6>
-          </Fade>
-        </div>
+          <Title>
+            <Fade delay={330}>Hello. </Fade>
+          </Title>
 
-        <div className={classes.arrowDown}>
+          <Text size={'subTitle'}>
+            <Fade delay={1000}>
+              I'm Nemanja. Front-End Developer UX/UI Designer.{' '}
+            </Fade>
+          </Text>
+        </Header>
+
+        {/* <div className={classes.arrowDown}>
           <i class="las la-long-arrow-alt-down"></i>
-        </div>
-        <div className={classes.about}>
+        </div> */}
+
+        <Arrow />
+
+        <Box style={{ padding: '5% 0' }} innerStyle={styleBox}>
+          <div className={classes.nemanjaImg}></div>
+          <Social git="/" linkedin="/" />
+          <Text size="title">Ćao, ja sam Nemanja.</Text>
+          <Text size="textMain">
+            I'm a digital designer that made the trip across the pond from
+            Glasgow, Scotland to{' '}
+            <a href="\" target="_blank">
+              #HamOnt
+            </a>
+            , Canada, in 2010. Now I work @{' '}
+            <a href="\" target="_blank">
+              Jan Kelley
+            </a>{' '}
+            in Burlington as UX Lead and Senior Art Director.
+          </Text>
+          <div className={classes.btnRow}>
+            <Button to="/about">About me</Button>
+          </div>
+        </Box>
+
+        {/* <div className={classes.about}>
           <div className={classes.aboutText}>
-            <div className={classes.nemanjaImg}> </div>
-            <h2>Ćao, ja sam Nemanja.</h2>
             <div className={classes.socialIcons}>
               <a href="/">
                 <i class="lab la-linkedin-in"></i>
@@ -80,12 +124,9 @@ const Homepage = () => {
               </a>{' '}
               in Burlington as UX Lead and Senior Art Director.
             </p>
-            <div className={classes.btnRow}>
-              <Button to="/about">About me</Button>
-            </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+      </MainWrap>
     </>
   );
 };

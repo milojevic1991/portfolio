@@ -1,0 +1,76 @@
+.portfolioEduCircle {
+  width: 100%;
+  position: relative;
+  background: url(/static/media/wavy-purple1.b69b3700.png) center no-repeat;
+  background-size: 100%;
+  height: 650px;
+  top: -130px;
+  margin: 10rem 0;
+}
+
+.portfolioDarkCircle {
+  background: #273040;
+  z-index: 1;
+  top: 18%;
+  display: inline;
+  width: 650px;
+  height: 650px;
+  border: #191f2a solid 2px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 40px 5px rgba(0, 0, 0, 0.28),
+    0 0 110px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.portfolioSmallCircle {
+  z-index: 10;
+  width: 250px;
+  height: 250px;
+  margin: 190px auto;
+  background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
+  margin: 145px auto;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+}
+
+.portfolioSmallCircleImg {
+  position: absolute;
+  width: 200px;
+  top: 70px;
+  left: 50px;
+  z-index: 5;
+}
+
+.portfolioSmallCircleImg img {
+  z-index: 1;
+  width: 550px;
+}
+
+.portfolioDarkCircle h1 {
+  position: absolute;
+  top: 33%;
+  z-index: 15;
+  font-size: 6vw;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  letter-spacing: -4px;
+}
+
+@media only screen and (max-width: 770px) {
+  .portfolioDarkCircle h1 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    z-index: 15;
+    font-size: 13vw;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+}

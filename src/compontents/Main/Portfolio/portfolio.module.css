@@ -137,7 +137,7 @@
   margin-top: 30px;
 }
 
-.mainScreenPortfolio img {
+.mainScreenPortfolio {
   position: absolute;
   top: -30%;
   left: 50%;
@@ -251,7 +251,7 @@
   position: relative;
 }
 
-.portfolioEduCircle {
+/* .portfolioEduCircle {
   width: 100%;
   position: relative;
   background: url(/static/media/wavy-purple1.b69b3700.png) center no-repeat;
@@ -277,7 +277,6 @@
   border-radius: 50%;
   box-shadow: inset 0px 0px 40px 5px rgba(0, 0, 0, 0.28),
     0 0 110px rgba(0, 0, 0, 0.8);
-  /* animation: morphing 3s infinite; */
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -300,9 +299,9 @@
   75% {
     border-radius: 53% 67% 58% 52% / 53% 68% 62% 57%;
   }
-}
+} */
 
-.portfolioSmallCircle {
+/* .portfolioSmallCircle {
   z-index: 10;
   width: 250px;
   height: 250px;
@@ -310,10 +309,8 @@
   background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
   margin: 145px auto;
   border-radius: 50%;
-  /* animation: aboutMe_morphingSmall___nb4j 2s infinite; */
   position: relative;
   top: 30px;
-  /* animation: morphingSmall 2s infinite; */
 }
 
 .portfolioSmallCircleImg {
@@ -327,19 +324,18 @@
 .portfolioSmallCircleImg img {
   z-index: 1;
   width: 550px;
-}
+} */
 
-.portfolioDarkCircle h1 {
+/* .portfolioDarkCircle h1 {
   position: absolute;
   top: 40%;
-  /* left: 50%; */
   z-index: 15;
   font-size: 6vw;
   color: #fff;
   text-align: center;
   width: 100%;
   letter-spacing: -4px;
-}
+} */
 
 .fontsColorsSection {
   padding: 6% 4%;
@@ -479,7 +475,7 @@
   box-sizing: border-box;
 }
 
-.websiteTabsWrapperTitle {
+/* .websiteTabsWrapperTitle {
   position: absolute;
   margin: 0 auto;
   width: 100%;
@@ -489,7 +485,7 @@
   font-size: 3.5vw;
   color: #fff;
   letter-spacing: -3px;
-}
+} */
 
 .checkContact {
   background: url('../../../assets//Images/contact-image2.png') 16% 116%
@@ -538,7 +534,7 @@
 
 /*Laptop view*/
 @media screen and (min-width: 1290px) and (max-width: 1490px) {
-  .mainScreenPortfolio img {
+  .mainScreenPortfolio {
     width: 60%;
   }
 
@@ -577,9 +573,9 @@
   .websiteTabsWrapper {
     margin: 8rem 0;
   }
-  .websiteTabsWrapperTitle {
+  /* .websiteTabsWrapperTitle {
     top: -7%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1190px) and (max-width: 1290px) {
@@ -621,7 +617,7 @@
     left: -30px;
     top: -120px;
   }
-  .mainScreenPortfolio img {
+  .mainScreenPortfolio {
     width: 55%;
     top: -25%;
   }
@@ -664,7 +660,7 @@
     top: 20%;
     left: 25%;
   }
-  .mainScreenPortfolio img {
+  .mainScreenPortfolio {
     position: relative;
     top: 0%;
     left: 0%;
@@ -749,7 +745,7 @@
     transform: translate(-50%, 50%);
   } */
 
-  .portfolioDarkCircle h1 {
+  /* .portfolioDarkCircle h1 {
     position: absolute;
     top: 40%;
     right: 10%;
@@ -758,7 +754,7 @@
     color: #fff;
     text-align: center;
     width: 100%;
-  }
+  } */
 
   .websiteTabsWrapperTitle {
     font-size: 10.5vw;

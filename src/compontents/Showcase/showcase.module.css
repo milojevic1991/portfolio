@@ -1,0 +1,24 @@
+.showcase {
+  display: flex;
+  padding: 1rem 11%;
+  position: relative;
+  margin: 15rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*Laptop view*/
+@media screen and (min-width: 1290px) and (max-width: 1490px) {
+  .showcase {
+    margin: 8rem 0;
+  }
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 770px) {
+  .showcase {
+    padding: 0rem 10px;
+    flex-direction: column;
+  }
+}

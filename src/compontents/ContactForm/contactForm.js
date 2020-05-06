@@ -43,48 +43,52 @@ const ContactForm = () => {
   }
 
   return (
-    <form noValidate onSubmit={sendMailHandler}>
-      <div className={classes.contactFormInfo}>
-        <div className={classes.contactFormLeft}>
-          <h3>Your Name</h3>
-          <input
-            onChange={onChange}
-            type="name"
-            name="name"
-            placeholder="What's your name?"
-            value={values.name}
-          />
-          {errors ? <h6>{errors.name}</h6> : null}
-        </div>
-        <div className={classes.contactFormRight}>
-          <h3>Your Email</h3>
-          <input
-            onChange={onChange}
-            type="email"
-            name="email"
-            placeholder="What's your email?"
-            value={values.email}
-          />
-          {errors ? <h6>{errors.email}</h6> : null}
-        </div>
+    <div className={classes.contactForm}>
+      <div className={classes.contactFormWrapper}>
+        <form noValidate onSubmit={sendMailHandler}>
+          <div className={classes.contactFormInfo}>
+            <div className={classes.contactFormLeft}>
+              <h3>Your Name</h3>
+              <input
+                onChange={onChange}
+                type="name"
+                name="name"
+                placeholder="What's your name?"
+                value={values.name}
+              />
+              {errors ? <h6>{errors.name}</h6> : null}
+            </div>
+            <div className={classes.contactFormRight}>
+              <h3>Your Email</h3>
+              <input
+                onChange={onChange}
+                type="email"
+                name="email"
+                placeholder="What's your email?"
+                value={values.email}
+              />
+              {errors ? <h6>{errors.email}</h6> : null}
+            </div>
+          </div>
+          <div className={classes.contactFormMsg}>
+            <h3>Message</h3>
+            <textarea
+              name="msg"
+              onChange={onChange}
+              className={classes.contactFormTextArea}
+              placeholder="I bet it's something interesting . . ."
+              value={values.msg}
+            ></textarea>
+          </div>
+          {spinner ? <HalfCircleSpinner color="#ab44a5" size="45" /> : null}
+          {!textFormSent ? (
+            <input type="submit" value="Send message" />
+          ) : (
+            <h4 className={classes.sentFormText}>Alright! Message is sent.</h4>
+          )}
+        </form>
       </div>
-      <div className={classes.contactFormMsg}>
-        <h3>Message</h3>
-        <textarea
-          name="msg"
-          onChange={onChange}
-          className={classes.contactFormTextArea}
-          placeholder="I bet it's something interesting . . ."
-          value={values.msg}
-        ></textarea>
-      </div>
-      {spinner ? <HalfCircleSpinner color="#ab44a5" size="45" /> : null}
-      {!textFormSent ? (
-        <input type="submit" value="Send message" />
-      ) : (
-        <h4 className={classes.sentFormText}>Alright! Message is sent.</h4>
-      )}
-    </form>
+    </div>
   );
 };
 

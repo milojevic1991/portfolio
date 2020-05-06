@@ -1,10 +1,15 @@
 import React from 'react';
 import classes from './colorBox.module.css';
+import Fade from 'react-reveal/Fade';
 
 const ColorBox = ({ fontFam, colors }) => {
   const fonts = { fontFamily: fontFam };
   const spanColors = colors.map((el, index) => {
-    return <span key={index} style={{ backgroundColor: el }}></span>;
+    return (
+      <Fade bottom delay={index * 160}>
+        <span key={index} style={{ backgroundColor: el }}></span>
+      </Fade>
+    );
   });
   return (
     <>
@@ -20,16 +25,7 @@ const ColorBox = ({ fontFam, colors }) => {
             <p style={fonts}>1234567890</p>
           </div>
 
-          <div className={classes.fontsColorsRight}>
-            {spanColors}
-
-            {/* <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span> */}
-          </div>
+          <div className={classes.fontsColorsRight}>{spanColors}</div>
         </div>
       </div>
     </>

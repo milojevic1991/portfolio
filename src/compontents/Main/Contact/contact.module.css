@@ -17,34 +17,6 @@
   margin-bottom: 5%;
 }
 
-.planeImg {
-  margin-left: -325px;
-  margin-top: -325px;
-  width: 1010px;
-  height: 810px;
-  position: absolute;
-  top: 64%;
-  left: 40%;
-  z-index: 100;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-.planeImg img {
-  width: 100%;
-}
-
 .headerTitle {
   margin-left: -325px;
   margin-top: -325px;
@@ -157,18 +129,6 @@
 }
 
 @media only screen and (max-width: 770px) {
-  .planeImg {
-    width: 100%;
-    height: 100%;
-  }
-  .planeImg img {
-    top: 22%;
-    width: 100%;
-    position: absolute;
-    right: inherit;
-    z-index: 5;
-  }
-
   .contactHeader h1 {
     font-size: 15vw;
     color: #fff;
