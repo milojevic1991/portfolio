@@ -6,10 +6,10 @@
 }
 
 .portfolioItemImageCircle {
-  width: 540px;
-  height: 540px;
+  width: 440px;
+  height: 440px;
   left: -30px;
-  top: -150px;
+  top: -90px;
   margin: 2rem 0;
   position: absolute;
   /* animation: pulse 5s infinite; */

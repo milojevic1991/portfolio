@@ -3,13 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import DocumentMeta from 'react-document-meta';
 
 import { BrowserRouter } from 'react-router-dom';
+
+const meta = {
+  title: 'Nemanja Milojević | Front-End Developer',
+  description: 'I am a description, and I can create multiple tags',
+  canonical: 'http://example.com/path/to/page',
+  meta: {
+    charset: 'utf-8',
+    name: {
+      keywords: 'react,meta,document,html,tags',
+    },
+  },
+};
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <DocumentMeta {...meta}>
+        <App />
+      </DocumentMeta>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

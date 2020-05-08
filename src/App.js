@@ -1,8 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './compontents/NavBar/navBar';
-import Main from './compontents/Main/main';
 
 import Homepage from './compontents/Main/Homepage/homepage';
 import AboutMe from './compontents/Main/AboutMe/aboutMe';

@@ -8,9 +8,32 @@
   position: relative;
   top: 340px;
 }
+.titleHome {
+  font-size: 7vw;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  z-index: 20;
+  letter-spacing: -4px;
+  position: relative;
+  top: 340px;
+}
 
 @media only screen and (max-width: 770px) {
   .title {
+    font-size: 15vw;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    z-index: 20;
+    letter-spacing: -3px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .titleHome {
     font-size: 15vw;
     color: #fff;
     text-align: center;

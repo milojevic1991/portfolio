@@ -24,22 +24,22 @@ const PortfolioCard = ({
       {/* First portfolio section APP */}
       <div className={classes.portfolioItem} style={reverseRow}>
         {/* left section */}
-        <div className={classes.portfolioItemImageSection}>
-          <div className={classes.portfolioItemImage}>
-            <ImageFadeIn alt="" opacityTransition={0.5} src={image} />
+        <Fade delay={340}>
+          <div className={classes.portfolioItemImageSection}>
+            <div className={classes.portfolioItemImage}>
+              <ImageFadeIn alt="" opacityTransition={0.5} src={image} />
+            </div>
 
-            {/* <img src={exampleImg}></img> */}
+            <div
+              className={classes.portfolioItemImageCircle}
+              style={imageRowReverse}
+            ></div>
           </div>
-
-          <div
-            className={classes.portfolioItemImageCircle}
-            style={imageRowReverse}
-          ></div>
-        </div>
+        </Fade>
 
         {/* right section */}
         <div className={classes.portfolioItemDesc} style={mainItemReverse}>
-          <Fade bottom>
+          <Fade>
             <h1 className={classes.portfolioItemTitle}>{title}</h1>
           </Fade>
 

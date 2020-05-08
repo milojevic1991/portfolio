@@ -54,12 +54,12 @@ const Contact = () => {
         <Text size={'title'}>Get in touch</Text>
 
         <Text size={'textMain'}>
-          Have a question or want to work together? Let's chat.{' '}
+          Have a question or want to work together? Let's chat -{' '}
           <a href="n.milojevic1991@gmail.com" target="_blank">
             n.milojevic1991@gmail.com
           </a>
           <br />
-          Or float me a note bellow.
+          Or float me a note :
         </Text>
       </div>
 

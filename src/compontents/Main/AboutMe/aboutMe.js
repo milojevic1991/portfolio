@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 // imported components
@@ -27,7 +27,23 @@ import Box from '../../UI/Box/box';
 import ShadowCircle from '../../UI/Circles/BlackCircle/ShadowCircle/shadowCircle';
 import FooterBox from '../../UI/Box/FooterBox/footerBox';
 
+import { WORK_ITEM, EDU_ITEM } from '../../../data/data';
+
 const AboutMe = () => {
+  const [styleBox, setStyleBox] = useState({ padding: '3% 8%' });
+
+  function resized() {
+    if (window.innerWidth > 768) {
+      setStyleBox({ padding: '5% 8%' });
+    } else {
+      setStyleBox(null);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', resized);
+  }, []);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -55,69 +71,49 @@ const AboutMe = () => {
           </Header>
         </motion.div>
 
-        <Box>
-          <Text size="title">Ćao, ja sam Nemanja.</Text>
+        <Box innerStyle={styleBox}>
+          <Text size="title">Who am i?</Text>
           <Text size="textMain">
-            Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
-            simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s
+            Shortly after graduating from Belgrade University in 2015, I started
+            my journey as a front-end developer where I worked on a wide variety
+            of interesting and meaningful projects on a daily basis. I value
+            creative content structure, clean design patterns, and thoughtful
+            interactions. Oh, and I also know how to play Smoke on the water.
           </Text>
           <div className={classes.btnRow}>
             <a href={Pdf} target="blank">
-              Resume
+              View my resume (pdf)
             </a>
           </div>
         </Box>
 
         <ContentWrapp type="about">
-          <WorkItem
-            reverse={false}
-            title="Lead Front-End Developer"
-            company="Neka firma"
-            year="1222"
-            desc="fasfsfsanhfuasuhnfj sahnf sab fsba fsbaf "
-            iconStack={1}
-          />
-
-          <WorkItem
-            reverse={true}
-            title="proba"
-            company="Neka firma"
-            year="1222"
-            desc="fasfsfsanhfuasuhnfj sahnf sab fsba fsbaf "
-            // hideStack={true}
-          />
-
-          <WorkItem
-            reverse={false}
-            title="Lead Front-End Developer"
-            company="Neka firma"
-            year="1222"
-            desc="fasfsfsanhfuasuhnfj sahnf sab fsba fsbaf "
-            iconStack={1}
-          />
+          {WORK_ITEM.map((el, index) => (
+            <WorkItem
+              key={index}
+              title={el.title}
+              company={el.company}
+              year={el.year}
+              desc={el.desc}
+              iconStack={el.iconStack}
+              reverse={el.reverse}
+            />
+          ))}
         </ContentWrapp>
         <ShadowCircle text="Education" />
 
         <ContentWrapp type="aboutEdu">
-          <WorkItem
-            reverse={false}
-            title="Lead Front-End Developer"
-            company="Neka firma"
-            year="1222"
-            desc="fasfsfsanhfuasuhnfj sahnf sab fsba fsbaf "
-            iconStack={1}
-          />
-
-          <WorkItem
-            reverse={true}
-            title="proba"
-            company="Neka firma"
-            year="1222"
-            desc="fasfsfsanhfuasuhnfj sahnf sab fsba fsbaf "
-            // hideStack={true}
-          />
+          {EDU_ITEM.map((el, index) => (
+            <WorkItem
+              key={index}
+              title={el.title}
+              company={el.company}
+              year={el.year}
+              desc={el.desc}
+              hideStack={el.hideStack}
+              reverse={el.reverse}
+            />
+          ))}
         </ContentWrapp>
 
         <FooterBox type="portfolio" to="portfolio" title="Portfolio" />

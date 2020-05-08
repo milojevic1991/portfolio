@@ -6,7 +6,7 @@ import WebsiteItem from '../../UI/WebsiteItem/websiteItem';
 
 import handPhoto from '../../../assets/Images/handAboutRight.png';
 import splatterAbout from '../../../assets/Images/splatterAbout.png';
-import mainScreenPortfolio from '../../../assets/Images/portfolioBoxScreen.png';
+import mainScreenPortfolio from '../../../assets/Images/CodeSymphonyBigScreen.png';
 import exampleImg from '../../../assets/Images/valeyo-device.png';
 import splatterPurple from '../../../assets/Images/splatter1.png';
 import WebScreen from '../../../assets/Images/webScreen.png';
@@ -33,6 +33,8 @@ import PortfolioCard from '../../PortfolioCard/portfolioCard';
 import ColorBox from '../../ColorBox/colorBox';
 import ShadowCircle from '../../UI/Circles/BlackCircle/ShadowCircle/shadowCircle';
 import Showcase from '../../Showcase/showcase';
+
+import { APP_ITEM } from '../../../data/data';
 
 const Portfolio = () => {
   const [activeLink, setActiveLink] = useState(0);
@@ -135,15 +137,18 @@ const Portfolio = () => {
           <Box>
             <img
               className={classes.mainScreenPortfolio}
-              alt=""
+              alt="portfolio"
               src={mainScreenPortfolio}
             ></img>
-            <Text size="title">Ćao, ja sam Nemanja.</Text>
+            <Text size="title">Some things I've built</Text>
             <Text size="textMain">
-              Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since the
-              1500s
+              Here are a few projects I've worked on recently. From UI libraries
+              and CMS(WordPress) / Gatsby / Next.js websites to good ol'
+              JavaScript and React / Redux applications.
+              {/* From UI
+              templates/UX designs, SPA React applications, and Next.js/Gatsby
+              websites to full-stack experience with open source CMS like
+              (WordPress, Drupal). */}
             </Text>
             <div className={classes.btnRow}>
               {/* <a href={Pdf} target="blank">
@@ -154,49 +159,17 @@ const Portfolio = () => {
         </Fade>
 
         <ContentWrapp>
-          <PortfolioCard
-            // reverse={true}
-            title="componenta"
-            desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s"
-            image={exampleImg}
-            displayLink={false}
-          />
-
-          <PortfolioCard
-            reverse={true}
-            title="componenta"
-            desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s"
-            image={exampleImg}
-            displayLink={false}
-          />
-
-          <PortfolioCard
-            // reverse={true}
-            title="componenta"
-            desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s"
-            image={exampleImg}
-            displayLink={false}
-          />
-
-          <PortfolioCard
-            reverse={true}
-            title="componenta"
-            desc="Ovde neki tekst, nesto bezveze o meni , bla bla.Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s"
-            image={exampleImg}
-            displayLink={false}
-          />
+          {APP_ITEM.map((el, index) => (
+            <PortfolioCard
+              key={index}
+              reverse={el.reverse}
+              title={el.title}
+              desc={el.desc}
+              image={el.image}
+              displayLink={el.displayLink}
+              workLink={el.workLink}
+            />
+          ))}
 
           <ShadowCircle text="Websites" />
 

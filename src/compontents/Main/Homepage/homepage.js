@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import classes from './homepage.module.css';
 import map from '../../../assets/Images/mapImg.png';
@@ -26,11 +25,11 @@ import Arrow from '../../UI/Icon/Arrow/arrow';
 const Homepage = () => {
   const [isScrolling, setIsScroling] = useState(false);
 
-  const [styleBox, setStyleBox] = useState(null);
+  const [styleBox, setStyleBox] = useState({ padding: '3% 8%' });
 
   function resized() {
     if (window.innerWidth > 768) {
-      setStyleBox({ padding: '5% 8%' });
+      setStyleBox({ padding: '3% 8%' });
     } else {
       setStyleBox(null);
     }
@@ -64,14 +63,13 @@ const Homepage = () => {
 
           <HomeCircles />
 
-          <Title>
-            <Fade delay={330}>Hello. </Fade>
+          <Title home={true}>
+            <Fade delay={330}>Hello. I'm Nemanja.</Fade>
           </Title>
+          {/* <Title>Hello</Title> */}
 
           <Text size={'subTitle'}>
-            <Fade delay={1000}>
-              I'm Nemanja. Front-End Developer UX/UI Designer.{' '}
-            </Fade>
+            <Fade delay={1000}>Front-End Developer & UX/UI Designer.</Fade>
           </Text>
         </Header>
 
@@ -82,24 +80,26 @@ const Homepage = () => {
         <Arrow />
 
         <Box style={{ padding: '5% 0' }} innerStyle={styleBox}>
-          <div className={classes.nemanjaImg}></div>
+          <Fade top>
+            <div className={classes.nemanjaImg}></div>
+          </Fade>
           <Social git="/" linkedin="/" />
-          <Text size="title">Ćao, ja sam Nemanja.</Text>
-          <Text size="textMain">
-            I'm a digital designer that made the trip across the pond from
-            Glasgow, Scotland to{' '}
-            <a href="\" target="_blank">
-              #HamOnt
-            </a>
-            , Canada, in 2010. Now I work @{' '}
-            <a href="\" target="_blank">
-              Jan Kelley
-            </a>{' '}
-            in Burlington as UX Lead and Senior Art Director.
+          <Text size="title">
+            <Fade delay={130}> I build things that people use.</Fade>
           </Text>
-          <div className={classes.btnRow}>
-            <Button to="/about">About me</Button>
-          </div>
+          <Text size="textMain">
+            Hi, i'm Nemanja, a front-end developer and founder of{' '}
+            <a href="\" target="_blank">
+              CodeSymphony.io
+            </a>{' '}
+            web agency. I enjoy creating things from scratch, whether that be
+            websites, applications, or anything in between.
+          </Text>
+          <Fade top delay={260}>
+            <div className={classes.btnRow}>
+              <Button to="/about">About me</Button>
+            </div>
+          </Fade>
         </Box>
 
         {/* <div className={classes.about}>
