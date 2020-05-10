@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import classes from './navBar.module.css';
 import nLogo from '../../assets/Images/nemanja-logo4.png';
-
 import MenuLink from '../../compontents/NavBar/Link/menuLink';
-import Fade from 'react-reveal/Fade';
 
 import { MENU_ITEMS } from '../../data/data';
 
@@ -64,35 +61,6 @@ const NavBar = () => {
               {el.text}
             </MenuLink>
           ))}
-
-          {/* <NavLink
-            onClick={closeMenuHandler}
-            className={classes.menuLinkMobile}
-            to="/"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            onClick={closeMenuHandler}
-            className={classes.menuLinkMobile}
-            to="/about"
-          >
-            About me
-          </NavLink>
-          <NavLink
-            onClick={closeMenuHandler}
-            className={classes.menuLinkMobile}
-            to="/portfolio"
-          >
-            Portfolio
-          </NavLink>
-          <NavLink
-            onClick={closeMenuHandler}
-            className={classes.menuLinkMobile}
-            to="/contact"
-          >
-            Contact
-          </NavLink> */}
         </div>
       </nav>
     </>

@@ -18,21 +18,21 @@
     transition: .2s ease-out;
     cursor: pointer;
     filter: blur(0.6px); */
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   z-index: 50;
   text-decoration: none;
-  transition: 0.2s ease-in;
+  transition: 0.15s ease-in;
   padding: 5px 15px;
   cursor: pointer;
   letter-spacing: -1px;
-  color: #b7c0ce94;
+  color: #ffffff;
   background: #fff0;
   border-radius: 28px;
   margin: 10px 0px;
 }
 .linkItem:hover {
-  color: #fff;
+  color: #bd3fa6;
 }
 
 .active {
@@ -46,11 +46,11 @@
   transition: 0.15s ease-out;
   cursor: pointer;
   filter: blur(0.4px); */
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   z-index: 50;
   text-decoration: none;
-  transition: 0.2s ease-in;
+  transition: 0.15s ease-in;
   padding: 5px 15px;
   cursor: pointer;
   letter-spacing: -1px;
@@ -96,16 +96,14 @@
     margin-top: -50px;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
   }
 
-  /* .linkItem {
-    font-size: 18px;
-    font-weight: 400;
+  .linkItem {
+    font-size: 15px;
   }
 
   .active {
-    font-size: 20px;
-    font-weight: 500;
-  } */
+    font-size: 15px;
+  }
 }

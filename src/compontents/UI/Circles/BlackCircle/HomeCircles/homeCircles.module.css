@@ -97,6 +97,7 @@
     width: 85%;
     top: 30px;
     position: relative;
+    opacity: 0.5 !important;
   }
   .smallPurpleCircle {
     width: 250px;

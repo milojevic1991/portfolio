@@ -82,6 +82,17 @@
   position: relative;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1490px) {
+  .fontsColorsSection {
+    width: 80%;
+    margin-left: 14%;
+  }
+  .fontsColorsWrapper span {
+    height: 55px;
+    width: 55px;
+  }
+}
+
 @media only screen and (max-width: 770px) {
   .portfolioItem {
     flex-direction: column !important;

@@ -6,7 +6,7 @@ const ColorBox = ({ fontFam, colors }) => {
   const fonts = { fontFamily: fontFam };
   const spanColors = colors.map((el, index) => {
     return (
-      <Fade key={index} bottom delay={index * 160}>
+      <Fade key={index} bottom delay={index * 90}>
         <span style={{ backgroundColor: el }}></span>
       </Fade>
     );

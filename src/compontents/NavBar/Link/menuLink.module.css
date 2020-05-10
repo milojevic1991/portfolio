@@ -71,17 +71,6 @@ a.menuLink:hover::after {
     transition: opacity 1.5s ease;
     /* transition-delay: 0.5s; */
     animation: fadeinLoad 1s 5s forwards;
+    letter-spacing: -2px;
   }
-
-  /* .menuLinkMobile {
-    padding: 0;
-    color: #fff;
-    font-size: 33px;
-    font-weight: 500;
-    cursor: pointer;
-    z-index: 50;
-    text-decoration: none;
-    transition: opacity 1.5s ease;
-    animation: fadeinLoad 1s 5s forwards;
-  } */
 }

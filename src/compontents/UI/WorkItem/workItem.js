@@ -12,6 +12,7 @@ const WorkItem = ({
   reverse = false,
   iconStack,
   hideStack = false,
+  description,
 }) => {
   const reverseRow = reverse ? { alignItems: 'flex-end' } : null;
   const textReverse = reverse ? { textAlign: 'right' } : null;
@@ -35,7 +36,6 @@ const WorkItem = ({
       {hideStack === true ? null : <Icons icons={iconStack} />}
       <Text styled={textReverse} size="textSecond">
         {desc}
-        <br></br>
       </Text>
     </div>
   );

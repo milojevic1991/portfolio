@@ -5,7 +5,7 @@ import classes from './menuLink.module.css';
 const MenuLink = ({ ex, to, children, style, type = 'text', click }) => {
   return (
     <NavLink
-      onClick={type !== 'text' ? () => click() : null}
+      onClick={type !== 'text' && type !== 'image' ? () => click() : null}
       style={style}
       exact={ex}
       className={

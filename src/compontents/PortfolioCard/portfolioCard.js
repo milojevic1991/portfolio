@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './portfolioCard.module.css';
 import ImageFadeIn from 'react-image-fade-in';
 import Fade from 'react-reveal/Fade';
+import ColorBox from '../ColorBox/colorBox';
 
 const PortfolioCard = ({
   image,
@@ -10,6 +11,9 @@ const PortfolioCard = ({
   workLink,
   displayLink = true,
   reverse = false,
+  showColorBox = false,
+  color,
+  fontFam,
 }) => {
   const reverseRow = reverse ? { flexDirection: 'row-reverse' } : null;
   const imageRowReverse = reverse ? { right: '0px', left: 'unset' } : null;
@@ -24,7 +28,7 @@ const PortfolioCard = ({
       {/* First portfolio section APP */}
       <div className={classes.portfolioItem} style={reverseRow}>
         {/* left section */}
-        <Fade delay={340}>
+        <Fade>
           <div className={classes.portfolioItemImageSection}>
             <div className={classes.portfolioItemImage}>
               <ImageFadeIn alt="" opacityTransition={0.5} src={image} />
@@ -39,7 +43,7 @@ const PortfolioCard = ({
 
         {/* right section */}
         <div className={classes.portfolioItemDesc} style={mainItemReverse}>
-          <Fade>
+          <Fade delay={350}>
             <h1 className={classes.portfolioItemTitle}>{title}</h1>
           </Fade>
 
@@ -51,6 +55,8 @@ const PortfolioCard = ({
           ) : null}
         </div>
       </div>
+
+      {showColorBox ? <ColorBox fontFam={fontFam} colors={color} /> : null}
     </>
   );
 };

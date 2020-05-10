@@ -1,40 +1,7 @@
-.homepage {
-  background: url('../../../assets/Images/line.png') top center repeat-y #273040;
-  /* height: 100vh; */
-  width: 100%;
-
-  overflow-x: hidden;
-}
-@media only screen and (min-width: 770px) {
-  .homepage {
-    background: 
-    /* url('../../../assets/Images/bubble2-purple.png') 140% 35%
-        no-repeat, */ url('../../../assets/Images/line.png')
-      top center repeat-y #273040;
-    width: 100%;
-    transition: background-image 1s;
-    overflow-x: hidden;
-  }
-}
-
 .loop {
   z-index: 9999;
 }
 
-.headerSection {
-  width: 100%;
-  padding-top: 46vh;
-  text-align: center;
-  margin: 0 auto;
-  /* background: url('../../../assets/Images/bubble1-purple.png') top left
-    no-repeat; */
-  background-size: 22%;
-  animation-fill-mode: both;
-  animation-duration: 1000ms;
-  animation-delay: 0ms;
-  animation-iteration-count: 1;
-  opacity: 1;
-}
 .headerBubble {
   position: absolute;
   left: 0;
@@ -46,181 +13,12 @@
   top: 52%;
 }
 
-.mainCircles {
-  margin-left: -325px;
-  margin-top: -325px;
-  width: 650px;
-  height: 650px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.bigBlackCircle {
-  z-index: 1;
-  position: absolute;
-  top: -5%;
-  left: 0%;
-  display: inline;
-  width: 650px;
-  height: 650px;
-  border: #1c232e solid 2px;
-  border-radius: 50%;
-  background: #273040;
-  box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.22),
-    0 0 90px rgba(0, 0, 0, 0.8);
-  animation: homepage_morphing__1Ua9S 5s infinite;
-  will-change: auto;
-  overflow: hidden;
-  transform: scale(0.93);
-}
-
-@keyframes homepage_morphing__1Ua9S {
-  0% {
-    transform: scale(0.93) translateZ(0);
-  }
-
-  50% {
-    transform: scale(1.05) translateZ(0);
-    /* box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.22),
-      0 0 100px 30px rgba(0, 0, 0, 0.5); */
-  }
-}
-
-.smallPurpleCircle {
-  z-index: 5;
-  width: 250px;
-  height: 250px;
-  margin: 190px auto;
-  background: linear-gradient(90deg, #5c0852 0%, #9c1387 100%);
-  margin: 145px auto;
-  border-radius: 50%;
-  animation: morphingSmall 2s infinite;
-  will-change: auto;
-  position: absolute;
-  left: 30%;
-}
-
-@keyframes morphingSmall {
-  0% {
-    border-radius: 30% 70% 70% 50% / 50% 50% 70% 70% box-shadow 15px 15px 50px
-      rgba(0, 0, 0, 0.2);
-  }
-  25% {
-    border-radius: 58% 42% 75% 45% / 76% 46% 54% 44%;
-  }
-  50% {
-    border-radius: 50% 50% 43% 67% / 55% 47% 73% 45% box-shadow -10px -5px 50px
-      rgba(0, 0, 0, 0.2);
-  }
-  75% {
-    border-radius: 43% 67% 58% 42% / 63% 68% 42% 47%;
-  }
-}
-
 .circleImg {
   position: absolute;
   width: 500px;
   top: 85px;
   left: 75px;
   z-index: 10;
-}
-
-.headerSection h1 {
-  font-size: 7vw;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  z-index: 20;
-  letter-spacing: -4px;
-  position: relative;
-  top: -120px;
-}
-
-.headerSection h6 {
-  font-size: 2vw;
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
-  z-index: 20;
-  letter-spacing: -1px;
-  position: relative;
-  top: -120px;
-}
-
-.about {
-  margin-bottom: 10%;
-}
-
-.aboutText {
-  padding: 3% 8%;
-  width: 60%;
-  z-index: 500;
-  position: relative;
-  background-color: #273040bd;
-  box-shadow: 0 0 150px #000000a6;
-  margin-top: 15%;
-  margin-left: 13%;
-}
-
-.aboutText h2 {
-  color: #fff;
-  text-align: center;
-  font-weight: normal;
-  font-size: 4vw;
-  letter-spacing: -1px;
-}
-
-.aboutText p {
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
-  font-size: 23px;
-  line-height: 44px;
-  margin-top: 30px;
-}
-
-.aboutText p a {
-  text-decoration: none;
-  color: #c609a9;
-  font-weight: 500;
-}
-
-/* .socialIcons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.socialIcons a i {
-  font-size: 25px;
-  color: #ffffff63;
-  transition: 0.2s all;
-}
-.socialIcons a:hover i {
-  color: #fff;
-} */
-
-.langBtn {
-  position: absolute;
-  top: 40px;
-  right: 50px;
-  width: 70px;
-  height: 70px;
-  border: #273040 solid 2px;
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.2), 0 0 20px rgb(137, 11, 118),
-    0 0 90px rgb(140, 16, 122);
-  /* animation: morphing 4s infinite; */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  z-index: 2000;
 }
 
 .nemanjaImg {
@@ -243,14 +41,6 @@
   padding: 2rem;
   margin: 0rem;
   margin-top: 2rem;
-}
-
-.aboutHomeShort {
-  background: url('../../../assets/Images/wavy-purple1.png') top center
-    no-repeat;
-  background-size: 100%, 44%;
-  padding: 0 7% 15%;
-  margin-top: -200px;
 }
 
 /*Laptop view*/
@@ -278,13 +68,7 @@
     width: 150px;
     height: 150px;
   }
-  /* .mainCircles{
-   width: 100%;
-  } */
 
-  .bigBlackCircle {
-    display: none;
-  }
   .circleImg {
     width: 100%;
     top: 155px;
@@ -295,76 +79,6 @@
     width: 85%;
     top: 30px;
     position: relative;
-  }
-
-  .headerSection h1 {
-    font-size: 13vw;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    z-index: 20;
-    letter-spacing: -3px;
-    position: relative;
-    top: -20px;
-    line-height: 1.2;
-  }
-  .headerSection h6 {
-    font-size: 5vw;
-    color: #fff;
-    text-align: center;
-    font-weight: 300;
-    z-index: 20;
-    letter-spacing: -1px;
-    position: relative;
-    top: 0px;
-  }
-  .headerSection h3 {
-    font-size: 4vw;
-    color: #ddd;
-    text-align: center;
-    font-weight: 400;
-    margin: 1rem;
-    z-index: 20;
-    letter-spacing: -1px;
-    position: relative;
-    top: -30px;
-  }
-
-  .smallPurpleCircle {
-    width: 250px;
-    height: 250px;
-    margin: 170px auto;
-    position: absolute;
-    left: 200px;
-    top: 10%;
-  }
-  .mainCircles {
-    width: auto;
-  }
-  .about {
-    /* padding: 1rem; */
-  }
-  .aboutText {
-    margin-top: 95%;
-    width: 100%;
-    margin-left: 0;
-    padding: 2rem 0;
-    margin-bottom: 46%;
-  }
-  .aboutText h2 {
-    font-size: 11vw;
-  }
-  .aboutText p {
-    padding: 0 1rem;
-    font-size: 18px;
-    line-height: 34px;
-    font-weight: 400;
-  }
-
-  .headerSection {
-    background: url('../../../assets/Images/bubble1-purple.png') top left
-      no-repeat;
-    background-size: 23%;
   }
 
   .headerBubbleRight {

@@ -7,6 +7,9 @@ const Text = ({ size, children, styled }) => {
     case 'title':
       tag = <h2 className={classes.title}>{children}</h2>;
       break;
+    case 'titleHome':
+      tag = <h2 className={classes.titleHome}>{children}</h2>;
+      break;
 
     case 'boldTitle':
       tag = <h1 className={classes.boldTitle}>{children}</h1>;

@@ -138,7 +138,7 @@ input[type='submit']:hover {
 }
 @media only screen and (max-width: 770px) {
   .contactForm {
-    padding: 19px;
+    padding: 25px;
     box-sizing: border-box;
     width: 100%;
     z-index: 500;
@@ -156,5 +156,15 @@ input[type='submit']:hover {
   .contactFormLeft,
   .contactFormRight {
     width: 100%;
+  }
+
+  input[type='name'],
+  input[type='email'] {
+    padding: 10px 25px;
+  }
+  .contactFormLeft h3,
+  .contactFormRight h3,
+  .contactFormMsg h3 {
+    font-size: 16px;
   }
 }

@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import classes from './contactForm.module.css';
 import emailjs from 'emailjs-com';
 import { HalfCircleSpinner } from 'react-epic-spinners';
-import Fade from 'react-reveal/Fade';
 import useForm from './useForm';
 
 import { validate } from './validateForm';
 
-// custom Hook za formu
-
+// custom Hook
 const ContactForm = () => {
   const [spinner, setSpinner] = useState(false);
   const [textFormSent, setTextFormSent] = useState(false);
@@ -48,7 +46,7 @@ const ContactForm = () => {
         <form noValidate onSubmit={sendMailHandler}>
           <div className={classes.contactFormInfo}>
             <div className={classes.contactFormLeft}>
-              <h3>Your Name</h3>
+              <h3>Name :</h3>
               <input
                 onChange={onChange}
                 type="name"
@@ -59,7 +57,7 @@ const ContactForm = () => {
               {errors ? <h6>{errors.name}</h6> : null}
             </div>
             <div className={classes.contactFormRight}>
-              <h3>Your Email</h3>
+              <h3>Email :</h3>
               <input
                 onChange={onChange}
                 type="email"
@@ -71,7 +69,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className={classes.contactFormMsg}>
-            <h3>Message</h3>
+            <h3>Message :</h3>
             <textarea
               name="msg"
               onChange={onChange}

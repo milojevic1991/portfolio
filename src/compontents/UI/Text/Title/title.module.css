@@ -34,7 +34,7 @@
     -webkit-transform: translate(-50%, -50%);
   }
   .titleHome {
-    font-size: 15vw;
+    font-size: 14vw;
     color: #fff;
     text-align: center;
     font-weight: bold;
@@ -45,5 +45,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    line-height: 1;
   }
 }
